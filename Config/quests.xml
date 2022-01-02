@@ -1,0 +1,2643 @@
+<configs>
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests">
+		<quest id="+Quest For Amelia Earhart's Gyrocopter Start"> 
+			<property name="name_key" value="quest_toc_amelia1_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia1_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia1_description"/>
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_amelia1_offer"/>
+			<property name="statement_key" value="quest_toc_amelia1_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia1"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Amelia Earhart's Gyrocopter"/>
+			<reward type="Item" id="questitem_vetcoin_amelia" count="1"/>
+		</quest>
+		<quest id="+Quest For Amelia Earhart's Gyrocopter"> 
+			<property name="name_key" value="quest_toc_amelia1_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia1_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia1_description"/>
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_amelia1_offer"/>
+			<property name="statement_key" value="quest_toc_amelia1_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia1"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<objective type="FetchKeep" id="casinoCoin" value="5000" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="writitem_toc_amelia1_name" value="1" phase="2" />
+			<reward type="Exp" value="1500" />
+		</quest>
+		<quest id="+Reward of Amelia's Map"> 
+			<property name="name_key" value="questreward_toc_amelia1_name"/>
+			<property name="subtitle_key" value="questreward_toc_amelia1_subtitle"/>
+			<property name="description_key" value="questreward_toc_amelia1_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="questreward_toc_amelia1_offer"/>
+			<property name="statement_key" value="questreward_toc_amelia1_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_amelia1"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="1" />
+			<objective type="Goto" value="5" phase="1" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<reward type="Item" id="questitem_toc_amelia1map_name" ischosen="true" value="1" />
+			<reward type="Exp" value="1000" />
+		</quest>
+		<quest id="+Quest to find Amelia Earhart's Coffin">
+			<property name="name_key" value="quest_toc_amelia2_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia2_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia2_description"/>
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_amelia2_offer"/>
+			<property name="statement_key" value="quest_toc_amelia2_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia2"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<objective type="TreasureChest">
+				<property name="block" value="questblock_toc_amelia_coffin"/>
+				<property name="distance" value="1500-1800"/>
+				<property name="default_radius" value="20"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="20" />
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+			<action type="SpawnEnemy" id="animalMountainLion" value="1" phase="2"/>
+			<reward type="Item" id="casinoCoin" value="500" />
+			<reward type="Exp" value="1500" />
+		</quest>
+		<quest id="+Quest For Amelia's Lost Plans">
+			<property name="name_key" value="quest_toc_amelia3_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia3_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia3_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="quest_toc_amelia3_offer"/>
+			<property name="statement_key" value="quest_toc_amelia3_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia3"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<objective type="RandomGoto" value="1100-2500" phase="1">
+			  <property name="completion_distance" value="5"/>
+			  <property name="nav_object" value="quest" />
+			</objective>
+			<reward type="Quest" id="+Completion of Amelia Step 4"/>
+		</quest>
+		<quest id="+Completion of Amelia Step 4">
+			<property name="name_key" value="quest_toc_amelia3_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia3_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia3_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="hard" />
+			<property name="statement_key" value="quest_toc_amelia3_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia3"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<property name="login_rally_reset" value="true"/>
+			<action type="ShowTip" value="quest_toc_amelia3_description">
+				<property name="delay" value="1"/>
+			</action>
+			<objective type="RandomGoto" value="1-5" phase="1">
+			  <property name="completion_distance" value="5"/>
+			  <property name="nav_object" value="quest" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="150" phase="3"/>
+			<objective type="BlockUpgrade" id="frameShapes" value="100" phase="4"/>
+			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="5"/>
+			<action type="SpawnEnemy" id="animalMountainLion" value="4" phase="5"/>
+			<objective type="ZombieKill" id="zombieToCWendigo" value="1" phase="5"/>
+			<reward type="Quest" id="+Reward of Amelia Earhart's Schematics"/>
+			<reward type="Exp" value="500" />
+		</quest>
+		<quest id="+Reward of Amelia Earhart's Schematics">
+			<property name="name_key" value="quest_toc_amelia4_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia4_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia4_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_amelia4_offer"/>
+			<property name="statement_key" value="quest_toc_amelia4_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia4"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Item" id="item_toc_amelia_schem_name" value="1" />
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+			<reward type="Exp" value="1500" />
+			<reward type="SkillPoints" value="1" />
+		</quest>
+  </append>
+<!-- END White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Quest For Bambi's Killer Bow Start">
+			<property name="name_key" value="quest_toc_bambi_name"/>
+			<property name="subtitle_key" value="quest_toc_bambi_subtitle"/>
+			<property name="description_key" value="quest_toc_bambi_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_bambi_offer"/>
+			<property name="statement_key" value="quest_toc_bambi_statement"/>
+			<property name="response_key" value="questdialog_toc_bambi"/>
+			<property name="group_name_key" value="quest_toc_bambi_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Bambi's Killer Bow"/>
+			<reward type="Item" id="questitem_coin_bambi" count="1"/>
+		</quest>
+			<quest id="+Quest For Bambi's Killer Bow">
+				<property name="name_key" value="quest_toc_bambi_name"/>
+				<property name="subtitle_key" value="quest_toc_bambi_subtitle"/>
+				<property name="description_key" value="quest_toc_bambi_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_bambi_offer"/>
+				<property name="statement_key" value="quest_toc_bambi_statement"/>
+				<property name="response_key" value="questdialog_toc_bambi"/>
+				<property name="group_name_key" value="quest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1" />
+				<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="questwrit_toc_bambi_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Reward of Bambi's Killer Bow">
+				<property name="name_key" value="questreward_toc_bambi_name"/>
+				<property name="subtitle_key" value="questreward_toc_bambi_subtitle"/>
+				<property name="description_key" value="questreward_toc_bambi_description"/>
+				<property name="completion_key" value="quest_toc_bambi_completion"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_bambi_offer"/>
+				<property name="statement_key" value="questreward_toc_bambi_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_bambi"/>
+				<property name="group_name_key" value="quest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCBambi" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCBowMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCArrows" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Vet. Quest For Bambi's Killer Compound Bow Start">
+				<property name="name_key" value="vetquest_toc_bambi_name"/>
+				<property name="subtitle_key" value="vetquest_toc_bambi_subtitle"/>
+				<property name="description_key" value="vetquest_toc_bambi_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_bambi_offer"/>
+				<property name="statement_key" value="vetquest_toc_bambi_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_bambi"/>
+				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Quest" id="+Vet. Quest For Bambi's Killer Compound Bow"/>
+				<reward type="Item" id="questitem_vetcoin_bambi" count="1"/>
+			</quest>
+			<quest id="+Vet. Quest For Bambi's Killer Compound Bow">
+				<property name="name_key" value="vetquest_toc_bambi_name"/>
+				<property name="subtitle_key" value="vetquest_toc_bambi_subtitle"/>
+				<property name="description_key" value="vetquest_toc_bambi_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_bambi_offer"/>
+				<property name="statement_key" value="vetquest_toc_bambi_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_bambi"/>
+				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="15" phase="1" />
+				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
+				<objective type="FetchKeep" id="resourceWood" value="4000" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="vetquestwrit_toc_bambi_name" value="1" phase="2" />
+				<reward type="Exp" value="1500" />
+			</quest>
+			<quest id="+Veteran Reward of Bambi's Killer Compound Bow">
+				<property name="name_key" value="vetquestreward_toc_bambi_name"/>
+				<property name="subtitle_key" value="vetquestreward_toc_bambi_subtitle"/>
+				<property name="description_key" value="vetquestreward_toc_bambi_desc"/>
+				<property name="completion_key" value="quest_toc_bambi_completion"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquestreward_toc_bambi_offer"/>
+				<property name="statement_key" value="vetquestreward_toc_bambi_statement"/>
+				<property name="response_key" value="vetquestrewarddialog_toc_bambi"/>
+				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="3000" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCBambiVet" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCBowMods" value="1"/>
+				<reward type="LootItem" id="groupQuestToCBowMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT3Food" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCArrowsVet" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Forest Prince Bow Elite Quest Start">
+				<property name="name_key" value="elitequest_toc_bambi_name"/>
+				<property name="subtitle_key" value="elitequest_toc_bambi_subtitle"/>
+				<property name="description_key" value="elitequest_toc_bambi_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_bambi_offer"/>
+				<property name="statement_key" value="elitequest_toc_bambi_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_bambi"/>
+				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Quest" id="+Forest Prince Bow Elite Quest"/>
+				<reward type="Item" id="questitem_elitecoin_bambi" count="1"/>
+			</quest>
+			<quest id="+Forest Prince Bow Elite Quest">
+				<property name="name_key" value="elitequest_toc_bambi_name"/>
+				<property name="subtitle_key" value="elitequest_toc_bambi_subtitle"/>
+				<property name="description_key" value="elitequest_toc_bambi_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_bambi_offer"/>
+				<property name="statement_key" value="elitequest_toc_bambi_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_bambi"/>
+				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="25" phase="1" />
+				<objective type="FetchKeep" id="resourceAnimalFat" value="100" phase="1" />
+				<objective type="FetchKeep" id="resourceWood" value="12000" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="elitequestwrit_toc_bambi_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+			</quest>
+			<quest id="+Elite Reward of Forest Prince Compound Bow">
+				<property name="name_key" value="elitequestreward_toc_bambi_name"/>
+				<property name="subtitle_key" value="elitequestreward_toc_bambi_subtitle"/>
+				<property name="description_key" value="elitequestreward_toc_bambi_desc"/>
+				<property name="completion_key" value="quest_toc_bambi_completion"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequestreward_toc_bambi_offer"/>
+				<property name="statement_key" value="elitequestreward_toc_bambi_statement"/>
+				<property name="response_key" value="elitequestrewarddialog_toc_bambi"/>
+				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="2000" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	
+				<reward type="Item" id="eliteitem_toc_bambi_name" value="6" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCBowMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT4Food" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCArrowsVet" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests">
+		<quest id="+Quest For Bear Grylls Iron Knuckles">
+			<property name="name_key" value="quest_toc_claws_name"/>
+			<property name="subtitle_key" value="quest_toc_claws_subtitle"/>
+			<property name="description_key" value="quest_toc_claws_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_claws_offer"/>
+			<property name="statement_key" value="quest_toc_claws_statement"/>
+			<property name="response_key" value="questdialog_toc_claws"/>
+			<property name="group_name_key" value="quest_toc_claws_group"/>
+			<property name="shareable" value="false" />
+			<property name="reward_choices_count" value="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+      <objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1" />
+      <objective type="RandomGoto" value="500-1000" phase="2">
+				<property name="completion_distance" value="50"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			<action type="SpawnEnemy" id="animalBear" value="3" phase="4"/>
+			<objective type="AnimalKill" id="animalBear" value="3" phase="4"/>
+			<requirement type="Holding" id="meleeWpnKnucklesT1IronKnuckles" phase="4"/>
+			<reward type="Item" id="schemitem_toc_claws_name" value="1" />
+      <reward type="Item" id="questitem_toc_citizencard_name" value="1" />
+			<reward type="Item" id="modMeleeClubBurningShaft" ischosen="true" count="1"/>
+			<reward type="Item" id="casinoCoin" value="560"/>
+      <reward type="Exp" value="1000" />
+		</quest>
+    <quest id="+Quest For Bear Grylls Steel Knuckles">
+      <property name="name_key" value="vetquest_toc_claws_name"/>
+      <property name="subtitle_key" value="vetquest_toc_claws_subtitle"/>
+      <property name="description_key" value="vetquest_toc_claws_description"/>
+      <property name="icon" value="ui_game_symbol_zombie" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="difficulty" value="easy" />
+      <property name="offer_key" value="vetquest_toc_claws_offer"/>
+      <property name="statement_key" value="vetquest_toc_claws_statement"/>
+      <property name="response_key" value="vetquestdialog_toc_claws"/>
+      <property name="group_name_key" value="vetquest_toc_claws_group"/>
+      <property name="shareable" value="false" />
+			<property name="reward_choices_count" value="1" />
+      <objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+      <objective type="FetchKeep" id="resourceForgedSteel" value="100" phase="1" />
+      <objective type="RandomGoto" value="500-1000" phase="2">
+        <property name="completion_distance" value="50"/>
+        <property name="nav_object" value="quest" />
+      </objective>
+      <objective type="RallyPoint">
+        <property name="start_mode" value="Create"/>
+        <property name="phase" value="3"/>
+        <property name="nav_object" value="rally" />
+      </objective>
+      <action type="SpawnEnemy" id="animalZombieBear" value="1" phase="4"/>
+      <objective type="AnimalKill" id="animalZombieBear" value="1" phase="4"/>
+			<requirement type="Holding" id="meleeWpnKnucklesT3SteelKnuckles" phase="4"/>
+      <reward type="Item" id="vetschemitem_toc_claws_name" value="1" />
+      <reward type="Item" id="modMeleeClubBurningShaft" ischosen="true" count="1"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+      <reward type="Exp" value="2000" />
+    </quest>
+  </append>
+<!-- END White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests">
+		<quest id="+Quest For Black Bart's Flaming Dig Tools Start">
+			<property name="name_key" value="vetquest_toc_blackb_name"/>
+			<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
+			<property name="description_key" value="vetquest_toc_blackb_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_blackb_offer"/>
+			<property name="statement_key" value="vetquest_toc_blackb_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_blackb"/>
+			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Black Bart's Flaming Dig Tools"/>
+			<reward type="Item" id="questitem_vetcoin_blackb" count="1"/>
+		</quest>
+			<quest id="+Quest For Black Bart's Flaming Dig Tools">
+				<property name="name_key" value="vetquest_toc_blackb_name"/>
+				<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
+				<property name="description_key" value="vetquest_toc_blackb_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="offer_key" value="vetquest_toc_blackb_offer"/>
+				<property name="statement_key" value="vetquest_toc_blackb_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_blackb"/>
+				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="resourceScrapIron" value="600" phase="1" />
+				<objective type="FetchKeep" id="meleeToolShovelT1IronShovel" value="1" phase="1" />
+				<objective type="FetchKeep" id="meleeToolPickT1IronPickaxe" value="1" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="vetquestwrit_toc_blackb_name" value="1" phase="2" />
+				<reward type="Exp" value="1500" />
+			</quest>
+			<quest id="+Reward of Black Bart's Treasure Map">
+				<property name="name_key" value="vetquestreward_toc_blackb_name"/>
+				<property name="subtitle_key" value="vetquestreward_toc_blackb_subtitle"/>
+				<property name="description_key" value="vetquestreward_toc_blackb_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquestreward_toc_blackb_offer"/>
+				<property name="statement_key" value="vetquestreward_toc_blackb_statement"/>
+				<property name="response_key" value="vetquestrewarddialog_toc_blackb"/>
+				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="Item" id="vetquestmap_toc_blackb_name" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+			<quest id="map_Black_Bart">
+				<property name="name_key" value="vetquest_toc_blackb_map_name"/>
+				<property name="subtitle_key" value="vetquest_toc_blackb_map_subtitle"/>
+				<property name="description_key" value="vetquest_toc_blackb_map_description"/>
+				<property name="icon" value="ui_game_symbol_map" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="treasure" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_blackb_map_offer"/>
+				<property name="statement_key" value="vetquest_toc_blackb_map_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_blackb_map"/>
+				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+				<property name="shareable" value="false" />
+				<objective type="TreasureChest">
+					<property name="block" value="questblock_toc_blackb_coffin"/>
+					<property name="distance" value="500-1200"/>
+					<property name="default_radius" value="12"/>
+	        <property name="nav_object" value="treasure" />
+	        <property name="direct_nav_object" value="treasure_direct" />
+	        <property name="blocks_per_reduction" value="12" />
+	        <property name="radius_reduction_sound" value="ui_radius_shrink" />
+				</objective>
+				<reward type="Quest" id="+Black Bart's Tool Challenge"/>
+				<reward type="Exp" value="500"/>
+			</quest>
+			<quest id="+Black Bart's Tool Challenge">
+				<property name="name_key" value="vetquest_toc_blackb_chlng_name"/>
+				<property name="subtitle_key" value="vetquest_toc_blackb_chlng_subtitle"/>
+				<property name="description_key" value="vetquest_toc_blackb_chlng_desc"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_blackb_chlng_offer"/>
+				<property name="statement_key" value="vetquest_toc_blackb_chlng_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_blackb_chlng"/>
+				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+				<property name="shareable" value="false" />
+				<property name="reward_choices_count" value="2" />
+				<action type="SpawnEnemy" id="zombieSkateboarderRadiated" value="1" phase="1"/>
+				<objective type="ZombieKill" id="zombieSkateboarderRadiated" value="1" phase="1"/>
+				<reward type="Exp" value="2000" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCBlackBartShovel" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCBlackBartPickaxe" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" ischosen="true" isfixed="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Brass for Lead by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+			<quest id="+Quest For White River Brass">
+				<property name="name_key" value="quest_toc_brass_name"/>
+				<property name="subtitle_key" value="quest_toc_brass_subtitle"/>
+				<property name="description_key" value="quest_toc_brass_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_brass_offer"/>
+				<property name="statement_key" value="quest_toc_brass_statement"/>
+				<property name="response_key" value="questdialog_toc_brass"/>
+				<property name="group_name_key" value="quest_toc_brass_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Fetch" id="resourceScrapLead" value="2500" phase="1" />
+				<objective type="Goto" value="5" phase="2" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="resourceScrapBrass" value="500" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Brass for Lead by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Quest For Bunyan's FireAxe Start">
+			<property name="name_key" value="quest_toc_bunyan_name"/>
+			<property name="subtitle_key" value="quest_toc_bunyan_subtitle"/>
+			<property name="description_key" value="quest_toc_bunyan_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_bunyan_offer"/>
+			<property name="statement_key" value="quest_toc_bunyan_statement"/>
+			<property name="response_key" value="questdialog_toc_bunyan"/>
+			<property name="group_name_key" value="quest_toc_bunyan_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Bunyan's FireAxe"/>
+			<reward type="Item" id="questitem_coin_bunyan" count="1"/>
+		</quest>
+			<quest id="+Quest For Bunyan's FireAxe">
+				<property name="name_key" value="quest_toc_bunyan_name"/>
+				<property name="subtitle_key" value="quest_toc_bunyan_subtitle"/>
+				<property name="description_key" value="quest_toc_bunyan_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_bunyan_offer"/>
+				<property name="statement_key" value="quest_toc_bunyan_statement"/>
+				<property name="response_key" value="questdialog_toc_bunyan"/>
+				<property name="group_name_key" value="quest_toc_bunyan_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="drinkJarBoiledWater" value="50" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="questwrit_toc_bunyan_name" value="1" phase="2" />
+				<reward type="Exp" value="1000" />
+			</quest>
+			<quest id="+Reward of Bunyan's FireAxe">
+				<property name="name_key" value="questreward_toc_bunyan_name"/>
+				<property name="subtitle_key" value="questreward_toc_bunyan_subtitle"/>
+				<property name="description_key" value="questreward_toc_bunyan_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_bunyan_offer"/>
+				<property name="statement_key" value="questreward_toc_bunyan_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_bunyan"/>
+				<property name="group_name_key" value="quest_toc_taza_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCBunyan" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT3MeleeMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+			<quest id="+Callinicus Greek Fire">
+				<property name="name_key" value="quest_toc_greekfire_name"/>
+				<property name="subtitle_key" value="quest_toc_greekfire_subtitle"/>
+				<property name="description_key" value="quest_toc_greekfire_desc"/>
+				<property name="icon" value="ui_game_symbol_archery" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_greekfire_offer"/>
+				<property name="statement_key" value="quest_toc_greekfire_statement"/>
+				<property name="response_key" value="questdialog_toc_greekfire"/>
+				<property name="group_name_key" value="quest_toc_greekfire_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Item" id="item_toc_greekfire_schem_name" value="1" />
+				<reward type="Exp" value="1000" />
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow Start">
+			<property name="name_key" value="vetquest_toc_daryl_name"/>
+			<property name="subtitle_key" value="vetquest_toc_daryl_subtitle"/>
+			<property name="description_key" value="vetquest_toc_daryl_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquest_toc_daryl_offer"/>
+			<property name="statement_key" value="vetquest_toc_daryl_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_daryl"/>
+			<property name="group_name_key" value="vetquest_toc_daryl_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Veteran Quest For Daryl's Zombiekiller Crossbow"/>
+			<reward type="Item" id="questitem_vetcoin_daryl" count="1"/>
+		</quest>
+			<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow">
+				<property name="name_key" value="vetquest_toc_daryl_name"/>
+				<property name="subtitle_key" value="vetquest_toc_daryl_subtitle"/>
+				<property name="description_key" value="vetquest_toc_daryl_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquest_toc_daryl_offer"/>
+				<property name="statement_key" value="vetquest_toc_daryl_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_daryl"/>
+				<property name="group_name_key" value="vetquest_toc_daryl_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1" />
+				<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="vetwrititem_toc_daryl_name" value="1" phase="2" />
+				<reward type="Exp" value="1000" />
+			</quest>
+			<quest id="+Veteran Reward of Daryl's Zombiekiller Crossbow">
+				<property name="name_key" value="vetquestreward_toc_daryl_name"/>
+				<property name="subtitle_key" value="vetquestreward_toc_daryl_subtitle"/>
+				<property name="description_key" value="vetquestreward_toc_daryl_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquestreward_toc_daryl_offer"/>
+				<property name="statement_key" value="vetquestreward_toc_daryl_statement"/>
+				<property name="response_key" value="vetquestrewarddialog_toc_daryl"/>
+				<property name="group_name_key" value="vetquest_toc_daryl_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="500" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCDarylVet" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDarylArrowsVet" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow Start">
+				<property name="name_key" value="elitequest_toc_daryl_name"/>
+				<property name="subtitle_key" value="elitequest_toc_daryl_subtitle"/>
+				<property name="description_key" value="elitequest_toc_daryl_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_daryl_offer"/>
+				<property name="statement_key" value="elitequest_toc_daryl_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_daryl"/>
+				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Quest" id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow"/>
+				<reward type="Item" id="questitem_elitecoin_daryl" count="1"/>
+			</quest>
+			<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow">
+				<property name="name_key" value="elitequest_toc_daryl_name"/>
+				<property name="subtitle_key" value="elitequest_toc_daryl_subtitle"/>
+				<property name="description_key" value="elitequest_toc_daryl_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_daryl_offer"/>
+				<property name="statement_key" value="elitequest_toc_daryl_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_daryl"/>
+				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
+				<objective type="FetchKeep" id="resourceWood" value="4000" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="elitewrititem_toc_daryl_name" value="1" phase="2" />
+				<reward type="Exp" value="2000" />
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	
+			</quest>
+			<quest id="+Elite Reward of Daryl's Zombiekiller Compound Crossbow">
+				<property name="name_key" value="elitequestreward_toc_daryl_name"/>
+				<property name="subtitle_key" value="elitequestreward_toc_daryl_subtitle"/>
+				<property name="description_key" value="elitequestreward_toc_daryl_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="elitequestreward_toc_daryl_offer"/>
+				<property name="statement_key" value="elitequestreward_toc_daryl_statement"/>
+				<property name="response_key" value="elitequestrewarddialog_toc_daryl"/>
+				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1000" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCDarylElite" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDarylArrowsElite" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+			<quest id="+Quest For Deschain's Revolver">
+				<property name="name_key" value="quest_toc_desch_name"/>
+				<property name="subtitle_key" value="quest_toc_desch_subtitle"/>
+				<property name="description_key" value="quest_toc_desch_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="quest_toc_desch_offer"/>
+				<property name="statement_key" value="quest_toc_desch_statement"/>
+				<property name="response_key" value="questdialog_toc_desch"/>
+				<property name="group_name_key" value="quest_toc_desch_group"/>
+				<property name="shareable" value="false" />
+				<objective type="Craft" id="item_toc_desc_book14_name" value="1" phase="1" />
+				<objective type="Craft" id="item_toc_desc_book58_name" value="1" phase="1" />
+				<objective type="FetchKeep" id="secureDoorWooden" value="18" phase="2" />
+				<objective type="FetchKeep" id="vaultDoor01" value="1" phase="2" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="2" />
+				<objective type="Craft" id="questwrit_toc_desch_name" value="1" phase="3" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Reward of Deschain's Revolver">
+				<property name="name_key" value="questreward_toc_desch_name"/>
+				<property name="subtitle_key" value="questreward_toc_desch_subtitle"/>
+				<property name="description_key" value="questreward_toc_desch_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_desch_offer"/>
+				<property name="statement_key" value="questreward_toc_desch_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_desch"/>
+				<property name="group_name_key" value="quest_toc_desch_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="SkillPoints" value="1" />
+				<reward type="Exp" value="1500" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCDeschain" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCDeschainAmmo" value="1"/>
+				<reward type="Item" id="itemreward_toc_deschhat_name" value="1" />
+				<reward type="LootItem" id="groupTreasureMaps" ischosen="true" isfixed="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT3RangedMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2HeavyArmorBonus" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2LightArmorBonus" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Quest For Dundee's Knife Start">
+			<property name="name_key" value="quest_toc_dundee_name"/>
+			<property name="subtitle_key" value="quest_toc_dundee_subtitle"/>
+			<property name="description_key" value="quest_toc_dundee_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="offer_key" value="quest_toc_dundee_offer"/>
+			<property name="statement_key" value="quest_toc_dundee_statement"/>
+			<property name="response_key" value="questdialog_toc_dundee"/>
+			<property name="group_name_key" value="quest_toc_dundee_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Dundee's Knife"/>
+			<reward type="Item" id="questitem_coin_dundee" count="1"/>
+		</quest>
+			<quest id="+Quest For Dundee's Knife">
+				<property name="name_key" value="quest_toc_dundee_name"/>
+				<property name="subtitle_key" value="quest_toc_dundee_subtitle"/>
+				<property name="description_key" value="quest_toc_dundee_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="offer_key" value="quest_toc_dundee_offer"/>
+				<property name="statement_key" value="quest_toc_dundee_statement"/>
+				<property name="response_key" value="questdialog_toc_dundee"/>
+				<property name="group_name_key" value="quest_toc_dundee_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="meleeWpnBladeT0BoneKnife" value="10" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="questwrit_toc_dundee_name" value="1" phase="2" />
+				<reward type="Exp" value="1000" />
+			</quest>
+			<quest id="+Reward of Dundee's Knife">
+				<property name="name_key" value="questreward_toc_dundee_name"/>
+				<property name="subtitle_key" value="questreward_toc_dundee_subtitle"/>
+				<property name="description_key" value="questreward_toc_dundee_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="offer_key" value="questreward_toc_dundee_offer"/>
+				<property name="statement_key" value="questreward_toc_dundee_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_dundee"/>
+				<property name="group_name_key" value="quest_toc_dundee_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCDundee" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests">
+		<quest id="+Quest For Everdeen's Arrows Start">
+			<property name="name_key" value="quest_toc_earrows_name"/>
+			<property name="subtitle_key" value="quest_toc_earrows_subtitle"/>
+			<property name="description_key" value="quest_toc_earrows_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_earrows_offer"/>
+			<property name="statement_key" value="quest_toc_earrows_statement"/>
+			<property name="response_key" value="questdialog_toc_earrows"/>
+			<property name="group_name_key" value="quest_toc_earrows_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Everdeen's Arrows"/>
+			<reward type="Item" id="questitem_coin_everdeen" count="1"/>
+		</quest>
+		<quest id="+Quest For Everdeen's Arrows">
+			<property name="name_key" value="quest_toc_earrows_name"/>
+			<property name="subtitle_key" value="quest_toc_earrows_subtitle"/>
+			<property name="description_key" value="quest_toc_earrows_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_earrows_offer"/>
+			<property name="statement_key" value="quest_toc_earrows_statement"/>
+			<property name="response_key" value="questdialog_toc_earrows"/>
+			<property name="group_name_key" value="quest_toc_earrows_group"/>
+			<property name="shareable" value="false" />
+			<objective type="FetchKeep" id="foodCropCorn" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodCropBlueberries" value="3" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="writitem_toc_earrows_name" value="1" phase="2" />
+			<reward type="Exp" value="1500" />
+		</quest>
+		<quest id="+Reward of Everdeen's Arrows">
+			<property name="name_key" value="questreward_toc_earrows_name"/>
+			<property name="subtitle_key" value="questreward_toc_earrows_subtitle"/>
+			<property name="description_key" value="questreward_toc_earrows_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="questreward_toc_earrows_offer"/>
+			<property name="statement_key" value="questreward_toc_earrows_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_earrows"/>
+			<property name="group_name_key" value="quest_toc_earrows_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="2" />
+			<objective type="Goto" value="5" phase="1" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenArrows" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenStew" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+		<quest id="+Quest For Everdeen's Bolts Start">
+			<property name="name_key" value="quest_toc_ebolts_name"/>
+			<property name="subtitle_key" value="quest_toc_ebolts_subtitle"/>
+			<property name="description_key" value="quest_toc_ebolts_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="quest_toc_ebolts_offer"/>
+			<property name="statement_key" value="quest_toc_ebolts_statement"/>
+			<property name="response_key" value="questdialog_toc_ebolts"/>
+			<property name="group_name_key" value="quest_toc_ebolts_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Everdeen's Bolts"/>
+			<reward type="Item" id="questitem_coin_everdeen" count="1"/>
+		</quest>
+		<quest id="+Quest For Everdeen's Bolts">
+			<property name="name_key" value="quest_toc_ebolts_name"/>
+			<property name="subtitle_key" value="quest_toc_ebolts_subtitle"/>
+			<property name="description_key" value="quest_toc_ebolts_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="quest_toc_ebolts_offer"/>
+			<property name="statement_key" value="quest_toc_ebolts_statement"/>
+			<property name="response_key" value="questdialog_toc_ebolts"/>
+			<property name="group_name_key" value="quest_toc_ebolts_group"/>
+			<property name="shareable" value="false" />
+			<objective type="FetchKeep" id="foodCropPotato" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodCropMushrooms" value="3" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="writitem_toc_ebolts_name" value="1" phase="2" />
+			<reward type="Exp" value="1500" />
+		</quest>
+		<quest id="+Reward of Everdeen's Bolts">
+			<property name="name_key" value="questreward_toc_ebolts_name"/>
+			<property name="subtitle_key" value="questreward_toc_ebolts_subtitle"/>
+			<property name="description_key" value="questreward_toc_ebolts_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="questreward_toc_ebolts_offer"/>
+			<property name="statement_key" value="questreward_toc_ebolts_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_ebolts"/>
+			<property name="group_name_key" value="quest_toc_ebolts_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="2" />
+			<objective type="Goto" value="5" phase="1" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenBolts" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenStew" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+			<quest id="+Quest For Gupta's Bandages">
+				<property name="name_key" value="quest_toc_gupta_name"/>
+				<property name="subtitle_key" value="quest_toc_gupta_subtitle"/>
+				<property name="description_key" value="quest_toc_gupta_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="offer_key" value="quest_toc_gupta_offer"/>
+				<property name="statement_key" value="quest_toc_gupta_statement"/>
+				<property name="response_key" value="questdialog_toc_gupta"/>
+				<property name="group_name_key" value="quest_toc_gupta_group"/>
+				<property name="shareable" value="false" />
+				<objective type="Fetch" id="resourceCropAloeLeaf" value="10" phase="1" />
+				<objective type="Fetch" id="resourceCloth" value="10" phase="1" />
+				<objective type="Fetch" id="medicalBandage" value="10" phase="1" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="Item" id="medicalGuptaFirstAidKit" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCGuptas" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Quest For Jason's Machete Start">
+			<property name="name_key" value="quest_toc_jason_name"/>
+			<property name="subtitle_key" value="quest_toc_jason_subtitle"/>
+			<property name="description_key" value="quest_toc_jason_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="offer_key" value="quest_toc_jason_offer"/>
+			<property name="statement_key" value="quest_toc_jason_statement"/>
+			<property name="response_key" value="questdialog_toc_jason"/>
+			<property name="group_name_key" value="quest_toc_jason_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Jason's Machete"/>
+			<reward type="Item" id="questitem_coin_jason" count="1"/>
+		</quest>
+			<quest id="+Quest For Jason's Machete">
+				<property name="name_key" value="quest_toc_jason_name"/>
+				<property name="subtitle_key" value="quest_toc_jason_subtitle"/>
+				<property name="description_key" value="quest_toc_jason_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="offer_key" value="quest_toc_jason_offer"/>
+				<property name="statement_key" value="quest_toc_jason_statement"/>
+				<property name="response_key" value="questdialog_toc_jason"/>
+				<property name="group_name_key" value="quest_toc_jason_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="100" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="questwrit_toc_jason_name" value="1" phase="2" />
+				<reward type="Exp" value="250" />
+			</quest>
+			<quest id="+Reward of Jason's Machete">
+				<property name="name_key" value="questreward_toc_jason_name"/>
+				<property name="subtitle_key" value="questreward_toc_jason_subtitle"/>
+				<property name="description_key" value="questreward_toc_jason_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_jason_offer"/>
+				<property name="statement_key" value="questreward_toc_jason_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_jason"/>
+				<property name="group_name_key" value="quest_toc_jason_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCJason" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+			<quest id="+Quest For Kuva's Red Armor Start">
+				<property name="name_key" value="quest_toc_kuva_name"/>
+				<property name="subtitle_key" value="quest_toc_kuva_subtitle"/>
+				<property name="description_key" value="quest_toc_kuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="offer_key" value="quest_toc_kuva_offer"/>
+				<property name="statement_key" value="quest_toc_kuva_statement"/>
+				<property name="response_key" value="questdialog_toc_kuva"/>
+				<property name="group_name_key" value="quest_toc_kuva_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Quest" id="+Quest For Kuva's Red Armor"/>
+				<reward type="Item" id="questitem_coin_kuva" count="1"/>
+			</quest>
+			<quest id="+Quest For Kuva's Red Armor">
+				<property name="name_key" value="quest_toc_kuva_name"/>
+				<property name="subtitle_key" value="quest_toc_kuva_subtitle"/>
+				<property name="description_key" value="quest_toc_kuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="offer_key" value="quest_toc_kuva_offer"/>
+				<property name="statement_key" value="quest_toc_kuva_statement"/>
+				<property name="response_key" value="questdialog_toc_kuva"/>
+				<property name="group_name_key" value="quest_toc_kuva_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="resourceLeather" value="50" phase="1" />
+				<objective type="FetchKeep" id="apparelCoatLeatherPoncho" value="2" phase="1" />
+        <objective type="FetchKeep" id="modDyeRed" value="1" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="writitem_toc_kuva_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Reward of Kuva's Red Armor">
+				<property name="name_key" value="questreward_toc_kuva_name"/>
+				<property name="subtitle_key" value="questreward_toc_kuva_subtitle"/>
+				<property name="description_key" value="questreward_toc_kuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_kuva_offer"/>
+				<property name="statement_key" value="questreward_toc_kuva_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_kuva"/>
+				<property name="group_name_key" value="quest_toc_kuva_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+        <reward type="Quest" id="+Discover Kuva's Red Armor"/>
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaChest" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaLegs" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupReading1" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="1"/>
+			</quest>
+      <quest id="+Discover Kuva's Red Armor">
+				<property name="name_key" value="quest_toc_disckuva_name"/>
+				<property name="subtitle_key" value="quest_toc_disckuva_subtitle"/>
+				<property name="description_key" value="quest_toc_disckuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_disckuva_offer"/>
+				<property name="statement_key" value="quest_toc_disckuva_statement"/>
+				<property name="response_key" value="questdialog_toc_disckuva"/>
+				<property name="group_name_key" value="quest_toc_disckuva_group"/>
+				<property name="shareable" value="false" />
+        <objective type="Wear" id="item_toc_kuvared_chest_name"/>
+        <objective type="Wear" id="item_toc_kuvared_legs_name"/>
+        <reward type="Item" id="questitem_toc_kuvatruth_name" value="1" />
+				<reward type="Exp" value="100" />
+			</quest>
+      <quest id="+Kuva's Red Armor Secret">
+				<property name="name_key" value="questreward_toc_chalkuva_name"/>
+				<property name="subtitle_key" value="questreward_toc_chalkuva_subtitle"/>
+				<property name="description_key" value="questreward_toc_chalkuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_chalkuva_offer"/>
+				<property name="statement_key" value="questreward_toc_chalkuva_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_chalkuva"/>
+				<property name="group_name_key" value="quest_toc_disckuva_group"/>
+				<property name="shareable" value="false" />
+        <reward type="Exp" value="100" />
+      </quest>
+      <quest id="+Vet. Quest For Kuva's Red Armor">
+				<property name="name_key" value="vetquest_toc_kuva_name"/>
+				<property name="subtitle_key" value="vetquest_toc_kuva_subtitle"/>
+				<property name="description_key" value="vetquest_toc_kuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_kuva_offer"/>
+				<property name="statement_key" value="vetquest_toc_kuva_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_kuva"/>
+				<property name="group_name_key" value="vetquest_toc_kuva_group"/>
+				<property name="shareable" value="false" />
+        <reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+        <reward type="Item" id="vetmap_toc_kuva_name" value="1" />
+      </quest>
+      <quest id="treasure_kuva">
+				<property name="name_key" value="questmap_toc_kuva_name"/>
+				<property name="subtitle_key" value="questmap_toc_kuva_subtitle"/>
+				<property name="description_key" value="questmap_toc_kuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="treasure" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="questmap_toc_kuva_offer"/>
+				<property name="statement_key" value="questmap_toc_kuva_statement"/>
+				<property name="response_key" value="questmapdialog_toc_kuva"/>
+				<property name="group_name_key" value="vetquest_toc_kuva_group"/>
+				<property name="shareable" value="false" />
+    		<objective type="TreasureChest">
+    			<property name="block" value="treasureKuvaChest"/>
+    			<property name="distance" value="1500-2500"/>
+					<property name="default_radius" value="9"/>
+					<property name="nav_object" value="treasure" />
+					<property name="direct_nav_object" value="treasure_direct" />
+					<property name="blocks_per_reduction" value="10" />
+					<property name="radius_reduction_sound" value="ui_radius_shrink" />
+    		</objective>
+        <reward type="Quest" id="+Kuva's Secret Recipe Challenge"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaLiner" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaTwine" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaTallow" value="1"/>
+				<reward type="Exp" value="1000"/>
+    	</quest>
+      <quest id="+Kuva's Secret Recipe Challenge">
+				<property name="name_key" value="quest_toc_kuvasecret_name"/>
+				<property name="subtitle_key" value="quest_toc_kuvasecret_subtitle"/>
+				<property name="description_key" value="quest_toc_kuvasecret_desc"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="quest_toc_kuvasecret_offer"/>
+				<property name="statement_key" value="quest_toc_kuvaecret_statement"/>
+				<property name="response_key" value="questdialog_toc_kuvasecret"/>
+				<property name="group_name_key" value="quest_toc_kuvasecret_group"/>
+				<property name="shareable" value="false" />
+        <action type="SpawnEnemy" id="zombieKuvaAssistant" value="3" phase="1"/>
+        <objective type="ZombieKill" id="zombieKuvaAssistant" value="1" phase="1"/>
+				<action type="SpawnEnemy" id="zombieKuvaAssistant" value="2" phase="2"/>
+        <objective type="ZombieKill" id="zombieKuvaAssistant" value="1" phase="2"/>
+        <reward type="Exp" value="1000"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+        <reward type="Item" id="questitem_toc_kuvablue_name" value="1"/>
+      </quest>
+    </append>
+<!-- END White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Quest For Leon's Modded SMG Start">
+			<property name="name_key" value="quest_toc_leon_name"/>
+			<property name="subtitle_key" value="quest_toc_leon_subtitle"/>
+			<property name="description_key" value="quest_toc_leon_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="quest_toc_leon_offer"/>
+			<property name="statement_key" value="quest_toc_leon_statement"/>
+			<property name="response_key" value="questdialog_toc_leon"/>
+			<property name="group_name_key" value="quest_toc_leon_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Leon's Modded SMG"/>
+			<reward type="Item" id="questitem_coin_leon" count="1"/>
+		</quest>
+			<quest id="+Quest For Leon's Modded SMG">
+				<property name="name_key" value="quest_toc_leon_name"/>
+				<property name="subtitle_key" value="quest_toc_leon_subtitle"/>
+				<property name="description_key" value="quest_toc_leon_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="offer_key" value="quest_toc_leon_offer"/>
+				<property name="statement_key" value="quest_toc_leon_statement"/>
+				<property name="response_key" value="questdialog_toc_leon"/>
+				<property name="group_name_key" value="quest_toc_leon_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="2" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="questwrit_toc_leon_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Reward of Leon's Degraded SMG">
+				<property name="name_key" value="questreward_toc_leon_name"/>
+				<property name="subtitle_key" value="questreward_toc_leon_subtitle"/>
+				<property name="description_key" value="questreward_toc_leon_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_leon_offer"/>
+				<property name="statement_key" value="questreward_toc_leon_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_leon"/>
+				<property name="group_name_key" value="quest_toc_leon_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCLeonDegraded" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCLeonAmmo" value="1" />
+				<reward type="Item" id="questitem_toc_repairleon_name" />
+				<reward type="Item" id="modGunForegrip" value="1" />
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Quest To Repair Leon's SMG">
+				<property name="name_key" value="quest_toc_repairleon_name"/>
+				<property name="subtitle_key" value="quest_toc_repairleon_subtitle"/>
+				<property name="description_key" value="quest_toc_repairleon_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="offer_key" value="quest_toc_repairleon_offer"/>
+				<property name="statement_key" value="quest_toc_repairleon_statement"/>
+				<property name="response_key" value="questdialog_toc_repairleon"/>
+				<property name="group_name_key" value="quest_toc_repairleon_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="questitem_toc_leondegsmg_name" value="1" phase="1" />
+				<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1" />
+				<objective type="FetchKeep" id="resourceSpring" value="5" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="questwrit_toc_repairleon_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Reward of Leon's Modded SMG">
+				<property name="name_key" value="questreward_toc_repairleon_name"/>
+				<property name="subtitle_key" value="questreward_toc_repairleon_subtitle"/>
+				<property name="description_key" value="questreward_toc_repairleon_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_repairleon_offer"/>
+				<property name="statement_key" value="questreward_toc_repairleon_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_repairleon"/>
+				<property name="group_name_key" value="quest_toc_repairleon_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1500" />
+				<reward type="Item" id="casinoCoin" value="360"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCLeon" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCLeonAmmo" value="1" />
+				<reward type="Item" id="modGunSoundSuppressorSilencer" value="1" />
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Vet. Quest For Leon's Modded SMG Start">
+				<property name="name_key" value="vetquest_toc_leon_name"/>
+				<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
+				<property name="description_key" value="vetquest_toc_leon_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_leon_offer"/>
+				<property name="statement_key" value="vetquest_toc_leon_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_leon"/>
+				<property name="group_name_key" value="vetquest_toc_leon_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Quest" id="+Vet. Quest For Leon's Modded SMG"/>
+				<reward type="Item" id="questitem_vetcoin_leon" count="1"/>
+			</quest>
+			<quest id="+Vet. Quest For Leon's Modded SMG">
+				<property name="name_key" value="vetquest_toc_leon_name"/>
+				<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
+				<property name="description_key" value="vetquest_toc_leon_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_leon_offer"/>
+				<property name="statement_key" value="vetquest_toc_leon_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_leon"/>
+				<property name="group_name_key" value="vetquest_toc_leon_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="10" phase="1" />
+				<objective type="FetchKeep" id="gunHandgunT3SMG5" value="5" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="vetquestwrit_toc_leon_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Veteran Reward of Leon's Modded SMG">
+				<property name="name_key" value="vetquestreward_toc_leon_name"/>
+				<property name="subtitle_key" value="vetquestreward_toc_leon_subtitle"/>
+				<property name="description_key" value="vetquestreward_toc_leon_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquestreward_toc_leon_offer"/>
+				<property name="statement_key" value="vetquestreward_toc_leon_statement"/>
+				<property name="response_key" value="vetquestrewarddialog_toc_leon"/>
+				<property name="group_name_key" value="vetquest_toc_leon_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1500" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCLeonVet" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1" />
+				<reward type="Item" id="modGunSoundSuppressorSilencer" value="1" />
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Veteran Quest For Non Fuzzy Bulletproof Glass Recipe Start">
+			<property name="name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+			<property name="subtitle_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle"/>
+			<property name="description_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
+			<property name="statement_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
+			<property name="group_name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Veteran Quest For Non Fuzzy Bulletproof Glass Recipe"/>
+			<reward type="Item" id="questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelper" value="1" />
+		</quest>
+		<quest id="+Veteran Quest For Non Fuzzy Bulletproof Glass Recipe">
+			<property name="name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+			<property name="subtitle_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle"/>
+			<property name="description_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
+			<property name="statement_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
+			<property name="group_name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
+			<property name="shareable" value="false" />
+			<objective type="Fetch" id="glassBulletproofBlockVariantHelper" value="50" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" value="1" phase="2" />
+			<reward type="Exp" value="250" />
+		</quest>
+		<quest id="+Veteran Reward of Non Fuzzy Bulletproof Glass">
+			<property name="name_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
+			<property name="statement_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
+			<property name="response_key" value="vetquestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
+			<property name="group_name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3" />
+			<objective type="Goto" value="5" phase="1"/>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3" />
+				<property name="nav_object" value="go_to_trader" />
+				<property name="use_closest" value="true" />
+			</objective>
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCMolinoVet" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+		<quest id="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe Start">
+			<property name="name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+			<property name="subtitle_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle"/>
+			<property name="description_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
+			<property name="statement_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
+			<property name="response_key" value="elitequestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
+			<property name="group_name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe"/>
+			<reward type="Item" id="questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper" value="1" />	
+		</quest>
+		<quest id="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe">
+			<property name="name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+			<property name="subtitle_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle"/>
+			<property name="description_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
+			<property name="statement_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
+			<property name="response_key" value="elitequestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
+			<property name="group_name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
+			<property name="shareable" value="false" />
+			<objective type="Fetch" id="glassBulletproofBlockVariantHelper" value="150" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" value="1" phase="2" />
+			<reward type="Exp" value="1000" />
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	
+		</quest>
+		<quest id="+Elite Reward of Non Fuzzy Bulletproof Glass Recipe">
+			<property name="name_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+			<property name="subtitle_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle"/>
+			<property name="description_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
+			<property name="statement_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
+			<property name="response_key" value="elitequestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
+			<property name="group_name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="go_to_trader" />
+				<property name="use_closest" value="true" />
+			</objective>
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	
+			<reward type="Item" id="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCMolinoElite" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests">
+		<quest id="+Vet Quest For Pavlichenko Rifle Start">
+			<property name="name_key" value="vetquest_toc_pavlichenko_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pavlichenko_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pavlichenko_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquest_toc_pavlichenko_offer"/>
+			<property name="statement_key" value="vetquest_toc_pavlichenko_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pavlichenko"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Vet Quest For Pavlichenko Rifle"/>
+			<reward type="Item" id="questitem_vetcoin_pav" count="1"/>
+		</quest>
+		<quest id="+Vet Quest For Pavlichenko Rifle">
+			<property name="name_key" value="vetquest_toc_pavlichenko_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pavlichenko_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pavlichenko_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquest_toc_pavlichenko_offer"/>
+			<property name="statement_key" value="vetquest_toc_pavlichenko_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pavlichenko"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false" />
+			<objective type="FetchKeep" id="gunRifleT2LeverActionRifle" value="5" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="vetquestwrit_toc_pav_name" value="1" phase="2" />
+			<reward type="Exp" value="500" />
+		</quest>
+    <quest id="+Reward of Pavlichenko Trigger Group">
+			<property name="name_key" value="vetquestreward_toc_pavlichenko_name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_pavlichenko_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_pavlichenko_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquestreward_toc_pavlichenko_offer"/>
+			<property name="statement_key" value="vetquestreward_toc_pavlichenko_statement"/>
+			<property name="response_key" value="vetquestrewarddialog_toc_pavlichenko"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="2" />
+			<objective type="Goto" value="5" phase="1" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+      <objective type="InteractWithNPC">
+        <property name="phase" value="3" />
+				<property name="nav_object" value="return_to_trader" />
+      </objective>
+			<reward type="Exp" value="1000" />
+			<reward type="Item" id="casinoCoin" value="360"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+			<reward type="Item" id="questitem_toc_pav_trigger_name" value="1" />
+      <reward type="Item" id="vetquestitem_toc_pav_barrel_name" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+    </quest>
+    <quest id="+Quest For Pavlichenko Barrel">
+			<property name="name_key" value="vetquest_toc_pav_barrel_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_barrel_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_barrel_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquest_toc_pav_barrel_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_barrel_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_barrel"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false" />
+      <reward type="Item" id="vetquestmap_toc_pav_barrel_name" value="1" />
+      <reward type="Exp" value="100" />
+    </quest>
+		<quest id="map_Pavlichenko_Barrel">
+			<property name="name_key" value="vetquest_toc_pav_barrelmap_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_barrelmap_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_barrelmap_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_pav_barrelmap_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_barrelmap_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_barrel"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="TreasureChest">
+				<property name="block" value="vetquestmap_toc_pav_map1_name"/>
+				<property name="distance" value="1500-3750"/>
+				<property name="default_radius" value="9"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="10" />
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+			<reward type="Item" id="vetquestitem_toc_pav_stock_name" value="1"/>
+			<reward type="Exp" value="500"/>
+		</quest>
+		<quest id="+Quest For Pavlichenko Stock">
+			<property name="name_key" value="vetquest_toc_pav_stock_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_stock_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_stock_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquest_toc_pav_stock_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_stock_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_stock"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false"/>
+			<reward type="Item" id="vetquestmap_toc_pav_stock_name" value="1" />
+			<reward type="Exp" value="100" />
+		</quest>
+		<quest id="map_Pavlichenko_Stock">
+			<property name="name_key" value="vetquest_toc_pav_stockmap_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_stockmap_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_stockmap_description"/>
+			<property name="icon" value="ui_game_symbol_map" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_pav_stockmap_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_stockmap_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_stock"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="TreasureChest">
+				<property name="block" value="vetquestmap_toc_pav_map2_name"/>
+				<property name="distance" value="1500-2500"/>
+				<property name="default_radius" value="9"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="10" />
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+			<reward type="Item" id="vetquestitem_toc_pav_rifle_name" value="1"/>
+			<reward type="Exp" value="500"/>
+		</quest>
+		<quest id="+Quest For Assembling Pavlichenko Rifle">
+			<property name="name_key" value="vetquest_toc_pav_assemble_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_assemble_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_assemble_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquest_toc_pav_assemble_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_assemble_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_assemble"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false" />
+			<objective type="FetchKeep" id="questitem_toc_pav_trigger_name" value="1" phase="1" />
+			<objective type="FetchKeep" id="questitem_toc_pav_stock_name" value="1" phase="1" />
+			<objective type="FetchKeep" id="questitem_toc_pav_barrel_name" value="1" phase="1" />
+			<objective type="FetchKeep" id="gunRifleT1HuntingRifleParts" value="20" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="vetquestwrit_toc_pav_rifle_name" value="1" phase="2" />
+			<reward type="Exp" value="1000" />
+		</quest>
+		<quest id="+Reward of Pavlichenko Marksman Rifle">
+			<property name="name_key" value="vetquest_toc_pav_reward_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_reward_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_reward_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="vetquest_toc_pav_reward_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_reward_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_reward"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="3" />
+			<objective type="Goto" value="5" phase="1" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<reward type="SkillPoints" value="1" />
+			<reward type="Exp" value="2000" />
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCPavlichenko" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+  </append>
+<!-- END White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Veteran Quest For Rick Danger Auger Start">
+			<property name="name_key" value="vetquest_toc_rickdanger_name"/>
+			<property name="subtitle_key" value="vetquest_toc_rickdanger_subtitle"/>
+			<property name="description_key" value="vetquest_toc_rickdanger_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_rickdanger_offer"/>
+			<property name="statement_key" value="vetquest_toc_rickdanger_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_rickdanger"/>
+			<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Veteran Quest For Rick Danger Auger"/>
+			<reward type="Item" id="questitem_vetcoin_rickdanger" value="1" />
+		</quest>
+			<quest id="+Veteran Quest For Rick Danger Auger">
+				<property name="name_key" value="vetquest_toc_rickdanger_name"/>
+				<property name="subtitle_key" value="vetquest_toc_rickdanger_subtitle"/>
+				<property name="description_key" value="vetquest_toc_rickdanger_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="offer_key" value="vetquest_toc_rickdanger_offer"/>
+				<property name="statement_key" value="vetquest_toc_rickdanger_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_rickdanger"/>
+				<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="resourcePotassiumNitratePowder" value="2000" phase="1" />
+				<objective type="FetchKeep" id="resourceOilShale" value="2000" phase="1" />
+				<objective type="FetchKeep" id="meleeToolAxeT3ChainsawParts" value="25" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="vetquestwrit_toc_rickdanger_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Veteran Reward of Rick Danger Auger">
+				<property name="name_key" value="vetquestreward_toc_rickdanger_name"/>
+				<property name="subtitle_key" value="vetquestreward_toc_rickdanger_subtitle"/>
+				<property name="description_key" value="vetquestreward_toc_rickdanger_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquestreward_toc_rickdanger_offer"/>
+				<property name="statement_key" value="vetquestreward_toc_rickdanger_statement"/>
+				<property name="response_key" value="vetquestrewarddialog_toc_rickdanger"/>
+				<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1500" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCRickDangerVet" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestHelmetLightSchematic" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestForge" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Elite Quest For Rick Danger Improved Auger Start">
+				<property name="name_key" value="elitequest_toc_rickdanger_name"/>
+				<property name="subtitle_key" value="elitequest_toc_rickdanger_subtitle"/>
+				<property name="description_key" value="elitequest_toc_rickdanger_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_rickdanger_offer"/>
+				<property name="statement_key" value="elitequest_toc_rickdanger_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_rickdanger"/>
+				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Item" id="questitem_elitecoin_rickdanger" value="1" />
+				<reward type="Quest" id="+Elite Quest For Rick Danger Improved Auger"/>
+			</quest>
+			<quest id="+Elite Quest For Rick Danger Improved Auger">
+				<property name="name_key" value="elitequest_toc_rickdanger_name"/>
+				<property name="subtitle_key" value="elitequest_toc_rickdanger_subtitle"/>
+				<property name="description_key" value="elitequest_toc_rickdanger_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_rickdanger_offer"/>
+				<property name="statement_key" value="elitequest_toc_rickdanger_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_rickdanger"/>
+				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="vetitemreward_toc_rickdanger_name" value="2" phase="1" />
+				<objective type="FetchKeep" id="meleeToolAxeT3ChainsawParts" value="35" phase="1" />
+				<objective type="FetchKeep" id="meleeToolAllSteelParts" value="35" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="elitequestwrit_toc_rickdanger_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+			</quest>
+			<quest id="+Elite Reward of Rick Danger Improved Auger">
+				<property name="name_key" value="elitequestreward_toc_rickdanger_name"/>
+				<property name="subtitle_key" value="elitequestreward_toc_rickdanger_subtitle"/>
+				<property name="description_key" value="elitequestreward_toc_rickdanger_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="elitequestreward_toc_rickdanger_offer"/>
+				<property name="statement_key" value="elitequestreward_toc_rickdanger_statement"/>
+				<property name="response_key" value="elitequestrewarddialog_toc_rickdanger"/>
+				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				<reward type="SkillPoints" value="1" />
+				<reward type="Exp" value="2000" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	
+				<reward type="LootItem" id="groupWhiteRiverTOCRickDangerElite" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestHelmetLightSchematic" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestForge" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT3" ischosen="true" value="1"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Elite Quest Hell Beast Starter">
+			<property name="name_key" value="quest_spiritstart_name"/>
+			<property name="subtitle_key" value="quest_spiritstart_subtitle"/>
+			<property name="description_key" value="quest_spiritstart_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="insane" />
+			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
+			<property name="statement_key" value="quest_spiritstart_statement"/>
+			<property name="response_key" value="quest_fetch_response"/>
+			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3" />
+			<reward type="Quest" id="+Elite Quest For Spirit of Vengeance Hell Beast"/>
+		</quest>
+		<quest id="+Elite Quest For Spirit of Vengeance Hell Beast">
+			<property name="name_key" value="quest_spirit_vengeance_name"/>
+			<property name="subtitle_key" value="quest_spirit_vengeance_subtitle"/>
+			<property name="description_key" value="quest_spirit_vengeance_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="difficulty" value="insane" />
+			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
+			<property name="statement_key" value="quest_spirit_vengeance_statement"/>
+			<property name="response_key" value="quest_fetch_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
+			<property name="shareable" value="false" />
+			<objective type="RandomGoto" value="500-800" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			<action type="SpawnEnemy" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
+			<action type="SpawnEnemy" id="zombieScreamer" value="2-4" phase="3"/>
+			<action type="SpawnEnemy" id="zombieSpiderFeral" value="2-4" phase="3"/>
+			<action type="SpawnEnemy" id="zombieDemolition" value="1-3" phase="3"/>
+			<action type="SpawnEnemy" id="animalWolf" value="4" phase="3"/>
+			<objective type="ZombieKill" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
+			<reward type="Item" id="questwrit_spirit_vengeance_name" value="1" />
+			<reward type="Exp" value="500" />
+		</quest>
+		<quest id="+Elite Reward of Spirit of Vengeance Hell Beast">
+			<property name="name_key" value="questreward_spirit_vengeance_name"/>
+			<property name="subtitle_key" value="questreward_spirit_vengeance_subtitle"/>
+			<property name="description_key" value="questreward_spirit_vengeance_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="questreward_spirit_vengeance_offer"/>
+			<property name="statement_key" value="questreward_spirit_vengeance_statement"/>
+			<property name="response_key" value="quest_fetch_response"/>
+			<property name="group_name_key" value="questreward_spirit_vengeance_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="3" />
+			<objective type="Goto" value="5" phase="1" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3" />
+			</objective>
+			<reward type="SkillPoints" value="1" />
+			<reward type="Exp" value="1500" />
+			<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	
+			<reward type="Item" id="vehicle_spirit_hell_beast" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT3" ischosen="true" value="1"/>
+		</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/quests" >
+		<quest id="+Quest For Taza's Axe Start">
+			<property name="name_key" value="quest_toc_taza_name"/>
+			<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
+			<property name="description_key" value="quest_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_taza_offer"/>
+			<property name="statement_key" value="quest_toc_taza_statement"/>
+			<property name="response_key" value="questdialog_toc_taza"/>
+			<property name="group_name_key" value="quest_toc_taza_group"/>
+			<property name="shareable" value="false" />
+			<reward type="Quest" id="+Quest For Taza's Axe"/>
+			<reward type="Item" id="questitem_coin_taza" count="1"/>
+		</quest>
+			<quest id="+Quest For Taza's Axe">
+				<property name="name_key" value="quest_toc_taza_name"/>
+				<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
+				<property name="description_key" value="quest_toc_taza_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_taza_offer"/>
+				<property name="statement_key" value="quest_toc_taza_statement"/>
+				<property name="response_key" value="questdialog_toc_taza"/>
+				<property name="group_name_key" value="quest_toc_taza_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="resourceRockSmall" value="400" phase="1" />
+				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="questwrit_toc_taza_name" value="1" phase="2" />
+				<reward type="Exp" value="1500" />
+			</quest>
+			<quest id="+Reward of Taza's Axe">
+				<property name="name_key" value="questreward_toc_taza_name"/>
+				<property name="subtitle_key" value="questreward_toc_taza_subtitle"/>
+				<property name="description_key" value="questreward_toc_taza_description"/>
+				<property name="completion_key" value="quest_toc_taza_completion"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_taza_offer"/>
+				<property name="statement_key" value="questreward_toc_taza_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_taza"/>
+				<property name="group_name_key" value="quest_toc_taza_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn"/>
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+					<property name="use_closest" value="true" />
+				</objective>
+				<reward type="Exp" value="1500"/>
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" isfixed="true"/>
+			  <reward type="LootItem" id="groupWhiteRiverTOCTazaAxe" value="1" isfixed="true"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" isfixed="true" value="2"/>
+				<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+				<reward type="LootItem" id="groupToCQuestT2Food" ischosen="true" value="2"/>
+			</quest>
+			<quest id="+Vet. Quest For Taza's Axe Start">
+				<property name="name_key" value="vetquest_toc_taza_name"/>
+				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
+				<property name="description_key" value="vetquest_toc_taza_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquest_toc_taza_offer"/>
+				<property name="statement_key" value="vetquest_toc_taza_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_taza"/>
+				<property name="group_name_key" value="vetquest_toc_taza_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Quest" id="+Vet. Quest For Taza's Axe"/>
+				<reward type="Item" id="questitem_vetcoin_taza" count="1"/>
+			</quest>
+			<quest id="+Vet. Quest For Taza's Axe">
+				<property name="name_key" value="vetquest_toc_taza_name"/>
+				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
+				<property name="description_key" value="vetquest_toc_taza_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquest_toc_taza_offer"/>
+				<property name="statement_key" value="vetquest_toc_taza_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_taza"/>
+				<property name="group_name_key" value="vetquest_toc_taza_group"/>
+				<property name="shareable" value="false" />
+				<objective type="FetchKeep" id="resourceRockSmall" value="4000" phase="1" />
+				<objective type="FetchKeep" id="resourceYuccaFibers" value="200" phase="1" />
+				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="vetquestwrit_toc_taza_name" value="1" phase="2" />
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Veteran Reward of Taza's Axe">
+				<property name="name_key" value="vetquest_toc_taza_name"/>
+				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
+				<property name="description_key" value="vetquest_toc_taza_description"/>
+				<property name="completion_key" value="quest_toc_taza_completion"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquest_toc_taza_offer"/>
+				<property name="statement_key" value="vetquest_toc_taza_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_taza"/>
+				<property name="group_name_key" value="vetquest_toc_taza_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn"/>
+				<property name="reward_choices_count" value="3" />
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				<reward type="Exp" value="1500"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+			  <reward type="LootItem" id="groupWhiteRiverTOCTazaAxeVeteran" value="1" isfixed="true"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" isfixed="true" value="2"/>
+				<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
+				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="2"/>
+			</quest>
+	</append>
+<!-- END White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen2" stage="aftercomplete"/>
+	</insertAfter>
+	<insertBefore xpath="/quests/quest_list[@id='trader_quests']">
+			<quest id="quest_whiteRiverCitizen2">
+				<property name="name_key" value="quest_tools_of_citizenship_name"/>
+				<property name="subtitle_key" value="quest_tools_of_citizenship_subtitle"/>
+				<property name="description_key" value="quest_tools_of_citizenship_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_tools_of_citizenship_offer"/>
+				<property name="statement_key" value="quest_tools_of_citizenship_statement"/>
+				<property name="response_key" value="questdialog_tools_of_citizenship"/>
+				<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Item" id="questitem_toc_declaration_name" value="1" />
+			</quest>
+			<quest id="quest_whiteRiverCitizen3">
+				<property name="name_key" value="quest_toc_10z_name"/>
+				<property name="subtitle_key" value="quest_toc_10z_subtitle"/>
+				<property name="description_key" value="quest_toc_10z_description"/>
+				<property name="completion_key" value="quest_toc_10z_completion"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="easy" />
+				<property name="difficulty_tier" value="1"/>
+				<property name="offer_key" value="quest_toc_10z_offer"/>
+				<property name="statement_key" value="quest_toc_10z_statement"/>
+				<property name="response_key" value="questdialog_toc_10z"/>
+				<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="5" />
+				<objective type="ZombieKill" value="10" phase="1" />
+				<objective type="Goto" value="5" phase="2" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
+				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Kill 100 Zombies">
+				<property name="name_key" value="quest_toc_100z_name"/>
+				<property name="subtitle_key" value="quest_toc_100z_subtitle"/>
+				<property name="description_key" value="quest_toc_100z_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="medium" />
+				<property name="difficulty_tier" value="3"/>
+				<property name="offer_key" value="quest_toc_100z_offer"/>
+				<property name="statement_key" value="quest_toc_100z_statement"/>
+				<property name="response_key" value="questdialog_toc_100z"/>
+				<property name="group_name_key" value="quest_toc_100z_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="5" />
+				<objective type="ZombieKill" value="100" phase="1" />
+				<objective type="Goto" value="5" phase="2" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1500" />
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
+				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Kill 1000 Zombies">
+				<property name="name_key" value="quest_toc_1000z_name"/>
+				<property name="subtitle_key" value="quest_toc_1000z_subtitle"/>
+				<property name="description_key" value="quest_toc_1000z_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="difficulty_tier" value="5"/>
+				<property name="offer_key" value="quest_toc_1000z_offer"/>
+				<property name="statement_key" value="quest_toc_1000z_statement"/>
+				<property name="response_key" value="questdialog_toc_1000z"/>
+				<property name="group_name_key" value="quest_toc_1000z_group"/>
+				<property name="shareable" value="false" />
+				<objective type="ZombieKill" value="250" phase="1" />
+				<objective type="ZombieKill" value="250" phase="2" />
+				<objective type="ZombieKill" value="250" phase="3" />
+				<objective type="ZombieKill" value="250" phase="4" />
+				<reward type="Quest" id="quest_reward_1000z"/>
+			</quest>
+			<quest id="quest_reward_1000z">
+				<property name="name_key" value="quest_toc_1000zreward_name"/>
+				<property name="subtitle_key" value="quest_toc_1000zreward_subtitle"/>
+				<property name="description_key" value="quest_toc_1000zreward_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="quest_toc_1000zreward_offer"/>
+				<property name="statement_key" value="quest_toc_1000zreward_statement"/>
+				<property name="response_key" value="questdialog_toc_1000zreward"/>
+				<property name="group_name_key" value="quest_toc_1000z_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn"/>
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="go_to_trader" />
+					<property name="use_closest" value="true" />
+				</objective>
+				<reward type="Exp" value="2000" />
+				<reward type="SkillPoints" value="1" />
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
+				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
+			</quest>
+			<quest id="+Obtain a Random Elite Quest">
+				<property name="name_key" value="quest_toc_randomelite_name"/>
+				<property name="subtitle_key" value="quest_toc_randomelite_subtitle"/>
+				<property name="description_key" value="quest_toc_randomelite_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="quest_toc_randomelite_offer"/>
+				<property name="statement_key" value="quest_toc_randomelite_statement"/>
+				<property name="response_key" value="questdialog_toc_randomelite"/>
+				<property name="group_name_key" value="quest_toc_randomelite_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn"/>
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="go_to_trader" />
+					<property name="use_closest" value="true" />
+				</objective>
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questblock_toc_randomcrate_name" value="1" />
+			</quest>
+	</insertBefore>
+	<append xpath="/quests/quest_list[@id='trader_quests']">
+		<quest id='quest_whiteRiverCitizen3' />
+		<quest id='+Kill 100 Zombies' />
+		<quest id='+Kill 1000 Zombies' />
+	</append>
+<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+</configs>

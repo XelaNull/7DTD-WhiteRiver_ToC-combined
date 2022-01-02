@@ -1,0 +1,189 @@
+<configs>
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+  <append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="AmeliaVehicleChecker">
+			<requirement name="NotHasBuff" buff="AmeliaVehicleChecker"/>
+		</triggered_effect>
+	</append>
+  <append xpath="/buffs">
+    <buff name="AmeliaVehicleChecker" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="500"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="AmeliaCheck">
+					<requirement name="EntityTagCompare" target="other" tags="vehicleAmelia"/>
+					<requirement name="NotHasBuff" target="other" buff="AmeliaCheck"/>
+				</triggered_effect>
+      </effect_group>
+    </buff>
+    <buff name="AmeliaCheck" hidden="true">
+      <stack_type value="ignore"/>		
+      <effect_group>                                                                                                                                 
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_seat_uprightPrefab.prefab" local_offset="0.15,.99,.49" local_rotation="-14,0,0" parent_transform="GameObject"/>
+      </effect_group>
+    </buff>
+    <buff name="ToCWendigoDeco" hidden="true">
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="-.3,0,-.1" local_rotation="0,-45,90" parent_transform="Head"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Spear/spear_stone_Prefab.prefab" local_offset="-.1,-.2,0" local_rotation="0,90,0" parent_transform="Head"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Misc/crossbow_bolt_dropped_stonePrefab.prefab" local_offset="-.1,0,0" local_rotation="0,0,-90" parent_transform="RightHand"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Misc/crossbow_bolt_dropped_stonePrefab.prefab" local_offset="-.1,0,0" local_rotation="0,0,-90" parent_transform="LeftHand"/>
+      </effect_group>
+    </buff>
+  </append>
+<!-- END White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/buffs">
+		<buff name="buffGreekFlamingArrow" hidden="false" description_key="buffGreekFlamingArrowDesc" tooltip_key="buffGreekFlamingArrowTooltip">
+			<damage_type value="heat"/>
+			<stack_type value="replace"/><duration value="0"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="2" buff="buffBurningMolotov"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="0"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$buffGreekFlamingArrowDuration" operation="LT" value="14"/>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="14"/>
+					<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="14"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffGreekFlamingArrow"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffGreekFlamingArrow">
+					<requirement name="CVarCompare" cvar="$buffGreekFlamingArrowDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="0"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffIsOnFire"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="4,12.3,15">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value="1.5"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="35"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="-15"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="!EntityTagCompare" tags="player"/>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="8,26.9,30">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="6,18.4,22.5">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="4,12.3,15">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="3.32,10.2,12.5">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="2.64,8.1,9.9">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="2,6.1,7.5">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect>
+			</effect_group>
+		</buff>
+	</append>
+<!-- END White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="VehicleSpiritChecker">
+			<requirement name="NotHasBuff" buff="VehicleSpiritChecker"/>
+		</triggered_effect>
+	</append>
+	<append xpath="/buffs">
+		<buff name="VehicleSpiritChecker" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="500"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleSpiritHellBeastBikeCheck">
+					<requirement name="EntityTagCompare" target="other" tags="vehiclespirithellbeast"/>
+					<requirement name="NotHasBuff" target="other" buff="vehicleSpiritHellBeastBikeCheck"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="vehicleSpiritHellBeastBikeCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".15,.1,-.2" local_rotation="0,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/p_torch_wall" local_offset="-.15,.1,-.2" local_rotation="0,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,.1,.5" local_rotation="45,0,0" parent_transform="Origin/handlebar_joint"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?weapon_bags_smallPrefab.prefab" local_offset="0,.85,-0.8" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset=".24,.58,0.9" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="-.24,.58,0.9" local_rotation="90,0,0" parent_transform="Origin"/>
+			</effect_group>
+		</buff>
+	</append>
+	<append xpath="/buffs">
+		<buff name="SpiritJuggernautDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Tools/augerPrefab.prefab" local_offset="-.1,0,0" local_rotation="0,-90,0" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfRangedBurstShot" action="AddBuff" target="self" buff="SpiritJuggernautMuzzle"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffInjuryKnockdown01Cooldown"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="Auger_Idle" />
+			</effect_group>
+		</buff>
+		<buff name="SpiritJuggernautMuzzle" hidden="true">
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="p_rocketLauncherFire" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self"  particle="p_nozzlesmoke_m136" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_nozzlesmoke_m136" />
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_rocketLauncherFire" />
+			</effect_group>
+		</buff>
+		<buff name="buffSpiritJuggernaut" hidden="false">
+			<update_rate value="12"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="60" buff="buffSpiritJuggernautSpeedDelay"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffSpiritJuggernautSpeedDelay"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="bansheebuff0" play_in_head="true">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="bansheebuff1" play_in_head="true">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffSpiritJuggernautSpeedDelay" hidden="false">
+			<duration value=".4"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffSpiritJuggernautSpeed"/>
+			</effect_group>
+		</buff>
+		<buff name="buffSpiritJuggernautSpeed" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Demon Fright"/> <display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2.5"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="40" shake_amplitude="60" shake_time=".4"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="-1"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="EntityTagCompare" tags="player"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="1.1"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="1.5"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="2.2"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.5" tags="jumping"/>
+			</effect_group>
+		</buff>
+	</append>
+<!-- END White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+
+
+</configs>

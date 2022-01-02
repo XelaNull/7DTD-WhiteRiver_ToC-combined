@@ -1,0 +1,490 @@
+<configs>
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="ameliaCoffin" count="all">
+			<item name="casinoCoin" count="1000,5000"/>
+			<item name="questitem_toc_amelia_journal_name"/>
+		</lootgroup>
+		<lootcontainer id="375" name="WhiteRiverToCAmelia01" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="ameliaCoffin" count="1" />
+		</lootcontainer>
+	</append>
+<!-- END White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
+		<item name="elitequestitem_toc_bambi_name" count="1"/>
+	</append>
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupQuestToCArrows">
+			<item name="ammoArrowIron" count="20,50"/>
+			<item name="ammoArrowFlaming" count="20,30"/>
+			<item name="ammoArrowStone" count="50,100"/>
+		</lootgroup>
+		<lootgroup name="groupQuestToCArrowsVet">
+			<item name="ammoArrowIron" count="50,150"/>
+			<item name="ammoArrowSteelAP" count="50,75"/>
+			<item name="ammoArrowFlaming" count="50,100"/>
+		</lootgroup>
+		<lootgroup name="groupQuestToCBowMods">
+			<item name="modGunBowPolymerString"/>
+			<item name="modGunMeleeTheHunter"/>
+			<item name="modGunForegrip"/>
+			<item name="modGunBowArrowRest"/>
+			<item name="modGunCrippleEm"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCBambi" loot_quality_template="questT2QualTemplate">
+			<item name="item_toc_bambi_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCBambiVet" loot_quality_template="questT3QualTemplate">
+			<item name="item_toc_bambi_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCBlackBartShovel" loot_quality_template="questT3QualTemplate">
+			<item name="questitem_toc_shovel_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCBlackBartPickaxe" loot_quality_template="questT3QualTemplate">
+			<item name="questitem_toc_pickaxe_name"/>
+		</lootgroup>
+		<lootgroup name="blackbartTreasure" count="all">
+			<item name="resourceGoldNugget" count="15,45"/>
+			<item name="resourceSilverNugget" count="25,50"/>
+		</lootgroup>
+		<lootcontainer id="356" name="WhiteRiverToCBlackBart01" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="blackbartTreasure" count="1" />
+		</lootcontainer>
+	</append>
+<!-- END White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCBunyan" loot_quality_template="questT3QualTemplate">
+			<item name="item_toc_bunyanaxe_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
+    <lootgroup name="groupBooksGreekFire">
+      <item name="item_toc_greekfire_name"/>
+    </lootgroup>
+  </insertAfter>
+  <append xpath="/lootcontainers/lootgroup[@name='ToCBooks']">
+    <item group="groupBooksGreekFire" count="1" prob=".2"/>
+  </append>
+<!-- END White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
+		<item name="elitequestitem_toc_daryl_name" />
+	</append>
+	<append xpath="lootcontainers">
+		<lootgroup name="groupQuestToCDarylArrowsVet">
+			<item name="ammoCrossbowBoltIron" count="20,50"/>
+			<item name="ammoCrossbowBoltFlaming" count="20,30"/>
+			<item name="ammoCrossbowBoltStone" count="50,100"/>
+		</lootgroup>
+		<lootgroup name="groupQuestToCDarylArrowsElite">
+			<item name="ammoCrossbowBoltIron" count="50,150"/>
+			<item name="ammoCrossbowBoltSteelAP" count="50,75"/>
+			<item name="ammoCrossbowBoltFlaming" count="50,100"/>
+		</lootgroup>
+		<lootgroup name="groupQuestToCDarylBowMods">
+			<item name="modGunBowPolymerString"/>
+			<item name="modGunMeleeTheHunter"/>
+			<item name="modGunForegrip"/>
+			<item name="modGunBowArrowRest"/>
+			<item name="modGunCrippleEm"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCDarylVet" loot_quality_template="questT2QualTemplate">
+			<item name="vetitem_toc_daryl_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCDarylElite" loot_quality_template="questT3QualTemplate">
+			<item name="eliteitem_toc_daryl_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCDeschain" loot_quality_template="questT3QualTemplate">
+			<item name="itemreward_toc_desch_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCDeschainAmmo" loot_quality_template="questT3QualTemplate">
+			<item name="crafteditem_toc_45lcsilver_name" count="12,96"/>
+			<item name="crafteditem_toc_45lcgold_name" count="6,48"/>
+		</lootgroup>
+	</append>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
+		<lootgroup name="groupBooksDarkTower">
+			<item name="item_toc_desc_book1_name" prob=".2"/>
+			<item name="item_toc_desc_book2_name" prob=".15"/>
+			<item name="item_toc_desc_book3_name" prob=".15"/>
+			<item name="item_toc_desc_book4_name" prob=".15"/>
+			<item name="item_toc_desc_book5_name" prob=".15"/>
+			<item name="item_toc_desc_book6_name" prob=".15"/>
+			<item name="item_toc_desc_book7_name" prob=".15"/>
+			<item name="item_toc_desc_book8_name" prob=".1" />
+		</lootgroup>
+	</insertAfter>
+	<append xpath="/lootcontainers/lootgroup[@name='ToCBooks']">
+		<item group="groupBooksDarkTower" count="1" prob=".75"/>
+	</append>
+<!-- END White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCDundee" loot_quality_template="questT2QualTemplate">
+			<item name="item_toc_dundeeknife_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCEverdeenArrows" loot_quality_template="questT3QualTemplate">
+			<item name="item_toc_earrows_name" count="50,150"/>
+		</lootgroup>
+    <lootgroup name="groupWhiteRiverTOCEverdeenBolts" loot_quality_template="questT3QualTemplate">
+			<item name="item_toc_ebolts_name" count="50,150"/>
+		</lootgroup>
+    <lootgroup name="groupWhiteRiverTOCEverdeenStew" loot_quality_template="questT3QualTemplate">
+      <item name="foodVegetableStew" count="1,4"/>
+    </lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCGuptas" loot_quality_template="questT3QualTemplate">
+			<item name="medicalGuptaFirstAidBandage" count="2,5"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCJason" loot_quality_template="questT3QualTemplate">
+			<item name="item_toc_jason_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCKuvaChest" loot_quality_template="questT1QualTemplate">
+			<item name="item_toc_kuvared_chest_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCKuvaLegs" loot_quality_template="questT1QualTemplate">
+			<item name="item_toc_kuvared_legs_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCKuvaLiner" loot_quality_template="questT1QualTemplate">
+			<item name="item_toc_kuvaliner_name" count="1,3"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCKuvaTwine" loot_quality_template="questT1QualTemplate">
+			<item name="item_toc_kuvatwine_name" count="1,2"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCKuvaTallow" loot_quality_template="questT1QualTemplate">
+			<item name="item_toc_kuvatallow_name" count="0,1"/>
+		</lootgroup>
+		<lootgroup name="kuvaSchematics" count="all">
+			<item name="schem_toc_kuvatallow_name" />
+			<item name="schem_toc_kuvaliner_name" />
+			<item name="schem_toc_kuvatwine_name" />
+			<item name="schem_toc_kuvasoles_name" />
+		</lootgroup>
+		<lootcontainer id="361" name="WhiteRiverToCKuva01" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="kuvaSchematics" count="1" />
+		</lootcontainer>
+	</append>
+<!-- END White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCLeonDegraded" loot_quality_template="questT1QualTemplate">
+			<item name="questitem_toc_leondegsmg_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCLeon" loot_quality_template="questT2QualTemplate">
+			<item name="questitem_toc_leonsmg_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCLeonAmmo" loot_quality_template="questT2QualTemplate">
+			<item name="ammo9mmBulletBall" count="50,100"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCLeonVet" loot_quality_template="questT3QualTemplate">
+			<item name="questitem_toc_leonsmg_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
+		<item name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" />
+	</append>
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCMolinoVet" loot_quality_template="questT3QualTemplate">
+			<item name="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" count="50,100"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCMolinoElite" loot_quality_template="questT3QualTemplate">
+			<item name="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" count="100,200"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers">
+		<lootcontainer id="363" name="WhiteRiverToCPav01" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="questitem_toc_pav_barrel_name" count="1" />
+		</lootcontainer>
+    <lootcontainer id="364" name="WhiteRiverToCPav02" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+      <item name="questitem_toc_pav_stock_name" count="1" />
+    </lootcontainer>
+		<lootgroup name="groupWhiteRiverTOCPavlichenko" loot_quality_template="questT3QualTemplate">
+			<item name="questitem_toc_pav_rifle_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
+		<item name="elitequestitem_toc_rickdanger_name" count="1"/>
+	</append>
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCRickDangerVet" loot_quality_template="questT3QualTemplate">
+			<item name="vetitemreward_toc_rickdanger_name"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCRickDangerElite" loot_quality_template="questT3QualTemplate">
+			<item name="eliteitemreward_toc_rickdanger_name"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
+		<item name="questitem_spirit_vengeance_name" count="1"/>
+	</append>
+	<append xpath="/lootcontainers">
+		<lootcontainer id="831" name="WhiteRiverToCSpirit01" count="0" size="9,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupWhiteRiverTOCDeschain']">
+		<item name="questitem_spirit_vengeance_name"/>
+	</append>
+	<setattribute xpath="/lootcontainers/lootgroup[@name='groupWhiteRiverTOCDeschain']" name="count">2</setattribute>
+<!-- END White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCTazaAxe" loot_quality_template="questT2QualTemplate">
+			<item name="meleeToolRepairT0TazasStoneAxe"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCTazaAxeVeteran" loot_quality_template="questT3QualTemplate">
+			<item name="meleeToolRepairT0TazasStoneAxe"/>
+		</lootgroup>
+		<lootgroup name="groupToCQuestT2Food" count="all">
+			<item name="questToCRewardT2FoodBundle"/>
+		</lootgroup>
+		<lootgroup name="groupToCQuestT3Food" count="all">
+			<item name="questToCRewardT3FoodBundle"/>
+		</lootgroup>
+		<lootgroup name="groupToCQuestT4Food" count="all">
+			<item name="questToCRewardT4FoodBundle"/>
+		</lootgroup>
+	</append>
+<!-- END White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupQuestToCVehicleParts">
+			<item group="bicycleParts" count="1,2" loot_prob_template="QuestT1Prob"/>
+			<item group="minibikeParts" count="1,2" loot_prob_template="QuestT2Prob"/>
+			<item group="motorcycleParts" count="1,2" loot_prob_template="QuestT3Prob"/>
+			<item group="4x4Parts" count="1,2" loot_prob_template="QuestT3Prob"/>
+		</lootgroup>
+		<lootgroup name="groupQuestToCSeeds">
+			<item name="plantedPotato1" count="2,4"/>
+			<item name="plantedCoffee1" count="1,3"/>
+			<item name="plantedCorn1" count="2,4"/>
+			<item name="plantedBlueberry1" count="2,4"/>
+			<item name="plantedCotton1" count="1,3"/>
+			<item name="plantedGoldenrod1" count="1,3"/>
+			<item name="plantedAloe1" count="1,3"/>
+			<item name="plantedMushroom1" count="2,4"/>
+			<item name="plantedYucca1" count="1,3"/>
+			<item name="plantedHop1" count="1,3"/>
+			<item name="plantedChrysanthemum1" count="1,3"/>
+			<item name="plantedPumpkin1" count="1,3"/>
+		</lootgroup>
+		<lootgroup name="groupQuestToCDrinks">
+			<item name="drinkJarYuccaJuice" count="1,2"/>
+			<item name="drinkJarBoiledWater" count="1,2"/>
+			<item name="drinkJarGoldenRodTea" count="1,2"/>
+			<item name="drinkJarRedTea" count="1,2"/>
+			<item name="drinkJarCoffee" count="1,2"/>
+			<item name="drinkJarBeer" count="1,2"/>
+			<item name="drinkYuccaJuiceSmoothie" count="1"/>
+		</lootgroup>
+		<lootgroup name="groupWhiteRiverTOCConcreteBlocks" count="all">
+			<item name="concreteShapes:VariantHelper" count="15,50"/>
+		</lootgroup>
+		<lootgroup name="ToCgroupArmorT0" loot_quality_template="QLTemplateT0">
+			<item name="armorClothPants"/>
+			<item name="armorClothJacket"/>
+			<item name="armorClothBoots"/>
+			<item name="armorClothGloves"/>
+			<item name="armorClothHat"/>
+			<item name="armorScrapHelmet"/>
+			<item name="armorScrapChest"/>
+			<item name="armorScrapGloves"/>
+			<item name="armorScrapLegs"/>
+			<item name="armorScrapBoots"/>
+		</lootgroup>
+		<lootgroup name="ToCgroupWeaponsT2_Ranged">
+			<item group="groupWeaponsT2_DeadEye"/>
+			<item group="groupWeaponsT2_Demolitionist"/>
+			<item group="groupWeaponsT2_Boomstick"/>
+			<item group="groupWeaponsT2_Machinegunner"/>
+			<item group="groupWeaponsT3_Archery"/>
+			<item group="groupWeaponsT2_Gunslinger"/>
+			<item group="groupWeaponsT2_TurretsSyndrome"/>
+		</lootgroup>
+		<lootgroup name="ToCgroupArmorT1" loot_quality_template="QLTemplateT1">
+			<item name="armorLeatherBoots"/>
+			<item name="armorLeatherPants"/>
+			<item name="armorLeatherChest"/>
+			<item name="armorLeatherGloves"/>
+			<item name="armorLeatherHood"/>
+			<item name="armorIronGloves"/>
+			<item name="armorIronHelmet"/>
+			<item name="armorIronBoots"/>
+			<item name="armorIronLegs"/>
+			<item name="armorIronChest"/>
+		</lootgroup>
+		<lootgroup name="ToCgroupArmorT2" loot_quality_template="QLTemplateT2">
+			<item name="armorMilitaryGloves"/>
+			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
+			<item name="armorMilitaryBoots"/>
+			<item name="armorMilitaryLegs"/>
+			<item name="armorMilitaryVest"/>
+			<item name="armorSteelBoots"/>
+			<item name="armorSteelLegs"/>
+			<item name="armorSteelChest"/>
+			<item name="armorSteelGloves"/>
+			<item name="armorSteelHelmet"/>
+			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+		</lootgroup>
+		<lootcontainer id="365" name="WhiteRiverToCRequired01" count="5,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="groupWeaponsT2_Gunslinger" prob=".75" count="1"/>
+			<item group="bicycleParts" count="0,1"/>
+			<item group="ToCgroupArmorT0" count="0,1"/>
+			<item group="seeds" count="0,1"/>
+			<item group="drinks"/>
+			<item group="groupAmmoRegular" prob=".3"/>
+		</lootcontainer>
+		<lootcontainer id="366" name="WhiteRiverToCRequired02" count="8,10" size="6,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
+			<item group="seeds" count="1,2"/>
+			<item group="ToCgroupArmorT2" count="0,2"/>
+			<item group="ToCgroupWeaponsT2_Ranged" count="0,1"/>
+			<item group="drinks"/>
+			<item group="groupAmmoRegular" prob=".6"/>
+		</lootcontainer>
+		<lootgroup name="randomEliteQuests">
+		</lootgroup>
+		<lootcontainer id="390" name="WhiteRiverToCRequired03" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="randomEliteQuests" count="1" />
+		</lootcontainer>
+	</append>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+		<lootgroup name="ToCBooks">
+		</lootgroup>
+	</insertAfter>
+	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
+		<item group="ToCBooks"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupJunk03']">
+		<item group="ToCBooks"/>
+	</append>
+<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+</configs>

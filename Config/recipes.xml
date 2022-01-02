@@ -1,0 +1,603 @@
+<configs>
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="resourceRefinedLead" count="100" craft_time="900" craft_area="chemistryStation" tags="learnable,perkGreaseMonkey,chemStationCrafting">
+			<ingredient name="resourceScrapLead" count="2000"/>
+		</recipe>
+		<recipe name="carAmeliaBattery" count="1" craft_area="chemistryStation" tags="learnable,perkGreaseMonkey,chemStationCrafting">
+			<ingredient name="resourceRefinedLead" count="1000"/>
+			<ingredient name="resourceAcid" count="15"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+		</recipe>
+    <recipe name="vehicleAmeliaGyroCopterAccessories" count="1" craft_time="270" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+    	<ingredient name="resourceElectricParts" count="33"/>
+    	<ingredient name="resourceHeadlight" count="8"/>
+    	<ingredient name="resourceMetalPipe" count="50"/>
+    	<ingredient name="resourceMechanicalParts" count="10"/>
+    	<ingredient name="resourceSpring" count="4"/>
+    	<effect_group>
+    		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,4" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+    	</effect_group>
+    </recipe>
+    <recipe name="vehicleAmeliaGyroCopterChassis" count="1" craft_time="270" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+    	<ingredient name="resourceForgedSteel" count="125"/>
+    	<ingredient name="resourceMechanicalParts" count="40"/>
+    	<ingredient name="resourceDuctTape" count="25"/>
+    	<ingredient name="resourceLeather" count="40"/>
+    	<ingredient name="resourceElectricParts" count="20"/>
+    	<effect_group>
+    		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,4" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+    	</effect_group>
+    </recipe>
+    <recipe name="vehicleAmeliaGyrocopterPlaceable" count="1" craft_time="900" craft_area="workbench" tags="workbenchCrafting">
+    	<ingredient name="vehicleWheels" count="3"/>
+    	<ingredient name="vehicleAmeliaGyroCopterChassis" count="1"/>
+    	<ingredient name="vehicleAmeliaGyroCopterAccessories" count="1"/>
+    	<ingredient name="smallAmeliaEngine" count="1"/>
+    	<ingredient name="carAmeliaBattery" count="1"/>
+    </recipe>
+		<recipe name="questitem_toc_amelia1_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="writitem_toc_amelia1_name" count="1" craft_time = "30" craft_exp_gain="1000" >
+			<ingredient name="casinoCoin" count="5000"/>
+			<ingredient name="questitem_vetcoin_amelia" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>	
+  </append>
+<!-- END White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_bambi_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="questwrit_toc_bambi_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="gunBowT1WoodenBowParts" count="2"/>
+			<ingredient name="gunBowT0PrimitiveBow" count="20"/>			
+			<ingredient name="resourceWood" count="400"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_bambi" count="1"/>
+		</recipe>	
+		<recipe name="vetquestitem_toc_bambi_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_bambi_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="gunBowT3CompoundBow" count="15"/>
+			<ingredient name="resourceWood" count="4000"/>
+			<ingredient name="resourceAnimalFat" count="50"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_bambi" count="1"/>
+		</recipe>			
+		<recipe name="elitequestitem_toc_bambi_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="elitequestwrit_toc_bambi_name" count="1" craft_time = "500" craft_exp_gain="30000" >
+			<ingredient name="gunBowT3CompoundBow" count="25"/>
+			<ingredient name="resourceWood" count="12000"/>
+			<ingredient name="resourceAnimalFat" count="100"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_elitecoin_bambi" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_claws_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="item_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
+			<ingredient name="resourceForgedIron" count="12"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceLeather" count="2"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+			</effect_group>
+		</recipe>
+    <recipe name="vetquestitem_toc_claws_name" count="1" craft_time = "1" craft_exp_gain="0" >
+      <ingredient name="questitem_toc_veterancard_name" count="1"/>
+    </recipe>
+		<recipe name="vetitem_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
+			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="5"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnKnucklesT3SteelKnucklesParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+			</effect_group>
+		</recipe>
+  </append>
+<!-- END White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="vetquestitem_toc_blackb_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_blackb_name" count="1" craft_time = "120" craft_exp_gain="10000" >
+			<ingredient name="resourceScrapIron" count="600"/>
+			<ingredient name="meleeToolShovelT1IronShovel" count="1"/>
+			<ingredient name="meleeToolPickT1IronPickaxe" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_blackb" count="1"/>
+		</recipe>	
+	</append>
+<!-- END White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Brass for Lead by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_brass_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship - Brass for Lead by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_bunyan_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="questwrit_toc_bunyan_name" count="1" craft_time = "90" craft_exp_gain="5000" >
+			<ingredient name="drinkJarBoiledWater" count="50"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_bunyan" count="1"/>
+		</recipe>	
+	</append>
+<!-- END White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+    <recipe name="ammoArrowGreekFire" count="10" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+    	<ingredient name="ammoArrowFlaming" count="10"/>
+    	<ingredient name="resourceOil" count="20"/>
+    	<ingredient name="resourcePotassiumNitratePowder" count="100"/>
+    </recipe>
+  </append>
+<!-- END White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="vetquestitem_toc_daryl_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="vetwrititem_toc_daryl_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="gunBowT1WoodenBowParts" count="2"/>
+			<ingredient name="gunBowT0PrimitiveBow" count="20"/>			
+			<ingredient name="resourceWood" count="400"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_daryl" count="1"/>
+		</recipe>	
+		<recipe name="elitequestitem_toc_daryl_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="elitewrititem_toc_daryl_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="gunBowT3CompoundBow" count="20"/>
+			<ingredient name="resourceWood" count="4000"/>
+			<ingredient name="resourceAnimalFat" count="50"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_elitecoin_daryl" count="1"/>
+		</recipe>			
+	</append>
+<!-- END White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+			<recipe name="questitem_toc_desch_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="item_toc_desc_book14_name" count="1" craft_time = "60" craft_exp_gain="5000" >
+			<ingredient name="item_toc_desc_book1_name" count="1"/>
+			<ingredient name="item_toc_desc_book2_name" count="1"/>
+			<ingredient name="item_toc_desc_book3_name" count="1"/>
+			<ingredient name="item_toc_desc_book4_name" count="1"/>
+		</recipe>	
+		<recipe name="item_toc_desc_book58_name" count="1" craft_time = "60" craft_exp_gain="5000" >
+			<ingredient name="item_toc_desc_book5_name" count="1"/>
+			<ingredient name="item_toc_desc_book6_name" count="1"/>
+			<ingredient name="item_toc_desc_book7_name" count="1"/>
+			<ingredient name="item_toc_desc_book8_name" count="1"/>
+		</recipe>	
+		<recipe name="questwrit_toc_desch_name" count="1" craft_time = "300" craft_exp_gain="10000" >
+			<ingredient name="secureDoorWooden" count="18"/>
+			<ingredient name="vaultDoor01" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="item_toc_desc_book14_name" count="1"/>
+			<ingredient name="item_toc_desc_book58_name" count="1"/>
+		</recipe>	
+		<recipe name="crafteditem_toc_45lcsilver_name" count="6" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="6"/>
+			<ingredient name="resourceGunPowder" count="60"/>
+			<ingredient name="resourceBulletCasing" count="6"/>
+			<ingredient name="resourceSilverNugget" count="1"/>
+		</recipe>
+		<recipe name="crafteditem_toc_45lcgold_name" count="3" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="3"/>
+			<ingredient name="resourceGunPowder" count="30"/>
+			<ingredient name="resourceBulletCasing" count="3"/>
+			<ingredient name="resourceGoldNugget" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_dundee_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="questwrit_toc_dundee_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="meleeWpnBladeT0BoneKnife" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_dundee" count="1"/>
+		</recipe>	
+	</append>
+<!-- END White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_earrows_name" count="1" craft_time="1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="writitem_toc_earrows_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="foodCropCorn" count="3"/>
+			<ingredient name="foodCropBlueberries" count="3"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_everdeen" count="1"/>
+		</recipe>
+		<recipe name="questitem_toc_ebolts_name" count="1" craft_time="1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="writitem_toc_ebolts_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="foodCropPotato" count="3"/>
+			<ingredient name="foodCropMushrooms" count="3"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_everdeen" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_gupta_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>		
+	</append>
+<!-- END White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+			<recipe name="questitem_toc_jason_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="questwrit_toc_jason_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="resourceCropChrysanthemumPlant" count="100"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_jason" count="1"/>
+		</recipe>	
+	</append>
+<!-- END White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_kuva_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="writitem_toc_kuva_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="resourceLeather" count="50"/>
+			<ingredient name="apparelCoatLeatherPoncho" count="2"/>
+      <ingredient name="modDyeRed" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_kuva" count="1"/>
+		</recipe>
+    <recipe name="vetquestitem_toc_kuva_name" count="1" craft_time = "1" craft_exp_gain="0" >
+      <ingredient name="questitem_toc_veterancard_name" count="1"/>
+    </recipe>
+		<recipe name="item_toc_kuvatallow_name" count="1" craft_area="chemistryStation" tags="learnable">
+	    <ingredient name="foodCropBlueberries" count="5"/>
+      <ingredient name="foodCropYuccaFruit" count="1"/>
+      <ingredient name="drugPainkillers" count="1"/>
+      <ingredient name="drinkCanMegaCrush" count="1"/>
+      <ingredient name="resourceAnimalFat" count="3"/>
+    </recipe>
+    <recipe name="item_toc_kuvaliner_name" count="1" tags="learnable">
+      <ingredient name="item_toc_kuvatallow_name" count="1"/>
+      <ingredient name="resourceCropCottonPlant" count="3"/>
+      <ingredient name="resourceMilitaryFiber" count="1"/>
+    </recipe>
+    <recipe name="item_toc_kuvatwine_name" count="1" tags="learnable">
+      <ingredient name="modGunBowPolymerString" count="1"/>
+      <ingredient name="foodCropBlueberries" count="4"/>
+      <ingredient name="resourceOil" count="2"/>
+      <ingredient name="drugHerbalAntibiotics" count="1"/>
+    </recipe>
+    <recipe name="item_toc_kuvasoles_name" count="1" craft_area="workbench" tags="learnable">
+      <ingredient name="vehicleWheels" count="2"/>
+      <ingredient name="resourceFeather" count="20"/>
+      <ingredient name="resourceScrapPolymers" count="4"/>
+      <ingredient name="resourceGlue" count="2"/>
+      <ingredient name="armorMilitaryBoots" count="1"/>
+    </recipe>
+    <recipe name="item_toc_kuvablue_hood_name" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+      <ingredient name="item_toc_kuvaliner_name" count="1"/>
+      <ingredient name="item_toc_kuvatwine_name" count="1"/>
+      <ingredient name="resourceLeather" count="2"/>
+      <ingredient name="resourceGlue" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue"/>
+			</effect_group>
+    </recipe>
+    <recipe name="item_toc_kuvablue_chest_name" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+      <ingredient name="item_toc_kuvaliner_name" count="3"/>
+      <ingredient name="item_toc_kuvatwine_name" count="1"/>
+      <ingredient name="resourceLeather" count="4"/>
+      <ingredient name="resourceGlue" count="2"/>
+      <ingredient name="resourceScrapPolymers" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue,resourceScrapPolymers"/>
+			</effect_group>
+    </recipe>
+    <recipe name="item_toc_kuvablue_gloves_name" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+      <ingredient name="item_toc_kuvaliner_name" count="1"/>
+      <ingredient name="item_toc_kuvatwine_name" count="1"/>
+      <ingredient name="resourceGlue" count="1"/>
+      <ingredient name="armorLeatherGloves" count="1"/>
+      <ingredient name="meleeWpnKnucklesT3SteelKnuckles" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceGlue"/>
+			</effect_group>
+    </recipe>
+    <recipe name="item_toc_kuvablue_pants_name" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+      <ingredient name="item_toc_kuvaliner_name" count="2"/>
+      <ingredient name="item_toc_kuvatwine_name" count="1"/>
+      <ingredient name="resourceGlue" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>
+      <ingredient name="resourceScrapPolymers" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue,resourceScrapPolymers"/>
+			</effect_group>
+    </recipe>
+    <recipe name="item_toc_kuvablue_boots_name" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+      <ingredient name="item_toc_kuvaliner_name" count="1"/>
+      <ingredient name="item_toc_kuvatwine_name" count="2"/>
+      <ingredient name="item_toc_kuvasoles_name" count="1"/>
+      <ingredient name="resourceGlue" count="1"/>
+      <ingredient name="resourceLeather" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue"/>
+			</effect_group>
+    </recipe>
+  </append>
+<!-- END White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_leon_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="questwrit_toc_leon_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="gunHandgunT1Pistol" count="2"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_leon" count="1"/>			
+		</recipe>	
+		<recipe name="questwrit_toc_repairleon_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="questitem_toc_leondegsmg_name" count="1"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>	
+		<recipe name="vetquestitem_toc_leon_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+			<ingredient name="questitem_toc_leondegsmg_name" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_leon_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="gunHandgunT1Pistol" count="10"/>
+			<ingredient name="gunHandgunT3SMG5" count="5"/>		
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_leon" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="unit_glass" count="110"/>
+			<ingredient name="unit_stone" count="10"/>
+			<ingredient name="unit_lead" count="40"/>
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_stone,unit_glass,unit_iron,unit_lead"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" count="1" craft_time = "90" craft_exp_gain="5000" >
+			<ingredient name="glassBulletproofBlockVariantHelper" count="50"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelper" count="1"/>
+		</recipe>	
+		<recipe name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" count="1" craft_time = "90" craft_exp_gain="5000" >
+			<ingredient name="glassBulletproofBlockVariantHelper" count="100"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="vetquestitem_toc_pav_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_pav_name" count="1" craft_time = "90" craft_exp_gain="5000" >
+			<ingredient name="gunRifleT2LeverActionRifle" count="5"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_pav" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_pav_rifle_name" count="1" craft_time = "300" craft_exp_gain="10000" >
+			<ingredient name="questitem_toc_pav_trigger_name" count="1"/>
+			<ingredient name="questitem_toc_pav_barrel_name" count="1"/>
+			<ingredient name="questitem_toc_pav_stock_name" count="1"/>
+			<ingredient name="gunRifleT1HuntingRifleParts" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="vetquestitem_toc_rickdanger_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_rickdanger_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="resourcePotassiumNitratePowder" count="2000"/>
+			<ingredient name="resourceOilShale" count="2000"/>
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="25"/>			
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_rickdanger" count="1"/>
+		</recipe>	
+		<recipe name="elitequestitem_toc_rickdanger_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="elitequestwrit_toc_rickdanger_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="vetitemreward_toc_rickdanger_name" count="2"/>
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="35"/>
+			<ingredient name="meleeToolAllSteelParts" count="35"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_elitecoin_rickdanger" count="1"/>
+		</recipe>			
+	</append>
+<!-- END White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="vehicleSpiritHellBeastPlaceable" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+  </append>
+<!-- END White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_taza_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="questwrit_toc_taza_name" count="1" craft_time = "90" craft_exp_gain="10000" >
+			<ingredient name="resourceRockSmall" count="400"/>
+			<ingredient name="meleeToolRepairT0StoneAxe" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_taza" count="1"/>
+		</recipe>	
+		<recipe name="vetquestitem_toc_taza_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="vetquestwrit_toc_taza_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="resourceRockSmall" count="4000"/>
+			<ingredient name="resourceYuccaFibers" count="200"/>
+			<ingredient name="meleeToolRepairT0StoneAxe" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_taza" count="1"/>
+		</recipe>	
+	</append>
+<!-- END White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
+<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_randomelite_name" count="1" craft_time="600" craft_exp_gain="8000" >
+			<ingredient name="questitem_toc_veterancard_name" count="4"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+</configs>

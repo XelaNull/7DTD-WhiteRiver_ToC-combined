@@ -490,7 +490,7 @@
 				<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
 				<property name="description_key" value="vetquest_toc_blackb_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="false" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
 				<property name="offer_key" value="vetquest_toc_blackb_offer"/>
@@ -510,7 +510,7 @@
 				<property name="subtitle_key" value="vetquestreward_toc_blackb_subtitle"/>
 				<property name="description_key" value="vetquestreward_toc_blackb_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="false" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="vetquestreward_toc_blackb_offer"/>
@@ -545,7 +545,7 @@
 				<property name="subtitle_key" value="vetquest_toc_blackb_map_subtitle"/>
 				<property name="description_key" value="vetquest_toc_blackb_map_description"/>
 				<property name="icon" value="ui_game_symbol_map" />
-				<property name="repeatable" value="false" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="treasure" />
 				<property name="difficulty" value="hard" />
 				<property name="offer_key" value="vetquest_toc_blackb_map_offer"/>
@@ -570,7 +570,7 @@
 				<property name="subtitle_key" value="vetquest_toc_blackb_chlng_subtitle"/>
 				<property name="description_key" value="vetquest_toc_blackb_chlng_desc"/>
 				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="false" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="challenge" />
 				<property name="difficulty" value="hard" />
 				<property name="offer_key" value="vetquest_toc_blackb_chlng_offer"/>
@@ -2462,7 +2462,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a196-with-df-multiple-languages -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
 		<reward type="Quest" id="quest_whiteRiverCitizen2" stage="aftercomplete"/>

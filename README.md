@@ -120,7 +120,7 @@
 
 - White River Tools of Citizenship by **ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet**
 
-  - Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/
+  - Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a196-with-df-multiple-languages
   - Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git
   - Description: Extend White River quest line to allow player to craft fabled equipment through collecting a lot of resources.
 

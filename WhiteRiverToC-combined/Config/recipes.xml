@@ -1,7 +1,20 @@
 <configs>
 <!-- #################################### -->
+<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_randomelite_name" count="1" craft_time="600" craft_exp_gain="8000" >
+			<ingredient name="questitem_toc_veterancard_name" count="4"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>
+	</append>
+<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
 <!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="resourceRefinedLead" count="100" craft_time="900" craft_area="chemistryStation" tags="learnable,perkGreaseMonkey,chemStationCrafting">
@@ -53,7 +66,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_bambi_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -92,7 +105,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_claws_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -125,7 +138,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="vetquestitem_toc_blackb_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -144,7 +157,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Brass for Lead by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_brass_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -156,7 +169,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_bunyan_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -173,7 +186,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
     <recipe name="ammoArrowGreekFire" count="10" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
@@ -187,7 +200,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="vetquestitem_toc_daryl_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -216,7 +229,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 			<recipe name="questitem_toc_desch_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -259,7 +272,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_dundee_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -276,7 +289,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_earrows_name" count="1" craft_time="1" craft_exp_gain="0" >
@@ -303,7 +316,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_gupta_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -315,7 +328,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 			<recipe name="questitem_toc_jason_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -332,7 +345,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_kuva_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -428,7 +441,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_leon_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -461,7 +474,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering,learnable">
@@ -496,7 +509,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="vetquestitem_toc_pav_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -520,7 +533,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="vetquestitem_toc_rickdanger_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -549,7 +562,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="vehicleSpiritHellBeastPlaceable" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -561,7 +574,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_taza_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -585,19 +598,6 @@
 		</recipe>	
 	</append>
 <!-- END White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a196-with-df-multiple-languages -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/recipes">
-		<recipe name="questitem_toc_randomelite_name" count="1" craft_time="600" craft_exp_gain="8000" >
-			<ingredient name="questitem_toc_veterancard_name" count="4"/>
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-	</append>
-<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
 
 
 </configs>

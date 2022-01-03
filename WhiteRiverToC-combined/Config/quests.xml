@@ -1,7 +1,187 @@
 <configs>
 <!-- #################################### -->
+<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen2" stage="aftercomplete"/>
+	</insertAfter>
+	<insertBefore xpath="/quests/quest_list[@id='trader_quests']">
+			<quest id="quest_whiteRiverCitizen2">
+				<property name="name_key" value="quest_tools_of_citizenship_name"/>
+				<property name="subtitle_key" value="quest_tools_of_citizenship_subtitle"/>
+				<property name="description_key" value="quest_tools_of_citizenship_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_tools_of_citizenship_offer"/>
+				<property name="statement_key" value="quest_tools_of_citizenship_statement"/>
+				<property name="response_key" value="questdialog_tools_of_citizenship"/>
+				<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
+				<property name="shareable" value="false" />
+				<reward type="Item" id="questitem_toc_declaration_name" value="1" />
+			</quest>
+			<quest id="quest_whiteRiverCitizen3">
+				<property name="name_key" value="quest_toc_10z_name"/>
+				<property name="subtitle_key" value="quest_toc_10z_subtitle"/>
+				<property name="description_key" value="quest_toc_10z_description"/>
+				<property name="completion_key" value="quest_toc_10z_completion"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="easy" />
+				<property name="difficulty_tier" value="1"/>
+				<property name="offer_key" value="quest_toc_10z_offer"/>
+				<property name="statement_key" value="quest_toc_10z_statement"/>
+				<property name="response_key" value="questdialog_toc_10z"/>
+				<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="5" />
+				<objective type="ZombieKill" value="10" phase="1" />
+				<objective type="Goto" value="5" phase="2" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
+				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Kill 100 Zombies">
+				<property name="name_key" value="quest_toc_100z_name"/>
+				<property name="subtitle_key" value="quest_toc_100z_subtitle"/>
+				<property name="description_key" value="quest_toc_100z_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="medium" />
+				<property name="difficulty_tier" value="3"/>
+				<property name="offer_key" value="quest_toc_100z_offer"/>
+				<property name="statement_key" value="quest_toc_100z_statement"/>
+				<property name="response_key" value="questdialog_toc_100z"/>
+				<property name="group_name_key" value="quest_toc_100z_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="5" />
+				<objective type="ZombieKill" value="100" phase="1" />
+				<objective type="Goto" value="5" phase="2" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<reward type="Exp" value="1500" />
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
+				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
+			</quest>
+			<quest id="+Kill 1000 Zombies">
+				<property name="name_key" value="quest_toc_1000z_name"/>
+				<property name="subtitle_key" value="quest_toc_1000z_subtitle"/>
+				<property name="description_key" value="quest_toc_1000z_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="difficulty_tier" value="5"/>
+				<property name="offer_key" value="quest_toc_1000z_offer"/>
+				<property name="statement_key" value="quest_toc_1000z_statement"/>
+				<property name="response_key" value="questdialog_toc_1000z"/>
+				<property name="group_name_key" value="quest_toc_1000z_group"/>
+				<property name="shareable" value="false" />
+				<objective type="ZombieKill" value="250" phase="1" />
+				<objective type="ZombieKill" value="250" phase="2" />
+				<objective type="ZombieKill" value="250" phase="3" />
+				<objective type="ZombieKill" value="250" phase="4" />
+				<reward type="Quest" id="quest_reward_1000z"/>
+			</quest>
+			<quest id="quest_reward_1000z">
+				<property name="name_key" value="quest_toc_1000zreward_name"/>
+				<property name="subtitle_key" value="quest_toc_1000zreward_subtitle"/>
+				<property name="description_key" value="quest_toc_1000zreward_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="quest_toc_1000zreward_offer"/>
+				<property name="statement_key" value="quest_toc_1000zreward_statement"/>
+				<property name="response_key" value="questdialog_toc_1000zreward"/>
+				<property name="group_name_key" value="quest_toc_1000z_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn"/>
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="go_to_trader" />
+					<property name="use_closest" value="true" />
+				</objective>
+				<reward type="Exp" value="2000" />
+				<reward type="SkillPoints" value="1" />
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
+				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
+			</quest>
+			<quest id="+Obtain a Random Elite Quest">
+				<property name="name_key" value="quest_toc_randomelite_name"/>
+				<property name="subtitle_key" value="quest_toc_randomelite_subtitle"/>
+				<property name="description_key" value="quest_toc_randomelite_description"/>
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="quest_toc_randomelite_offer"/>
+				<property name="statement_key" value="quest_toc_randomelite_statement"/>
+				<property name="response_key" value="questdialog_toc_randomelite"/>
+				<property name="group_name_key" value="quest_toc_randomelite_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn"/>
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="go_to_trader" />
+					<property name="use_closest" value="true" />
+				</objective>
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questblock_toc_randomcrate_name" value="1" />
+			</quest>
+	</insertBefore>
+	<append xpath="/quests/quest_list[@id='trader_quests']">
+		<quest id='quest_whiteRiverCitizen3' />
+		<quest id='+Kill 100 Zombies' />
+		<quest id='+Kill 1000 Zombies' />
+	</append>
+<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
 <!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests">
 		<quest id="+Quest For Amelia Earhart's Gyrocopter Start"> 
@@ -167,7 +347,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Quest For Bambi's Killer Bow Start">
@@ -390,7 +570,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests">
 		<quest id="+Quest For Bear Grylls Iron Knuckles">
@@ -466,7 +646,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests">
 		<quest id="+Quest For Black Bart's Flaming Dig Tools Start">
@@ -598,7 +778,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Brass for Lead by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 			<quest id="+Quest For White River Brass">
@@ -642,7 +822,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Quest For Bunyan's FireAxe Start">
@@ -720,7 +900,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 			<quest id="+Callinicus Greek Fire">
@@ -745,7 +925,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow Start">
@@ -896,7 +1076,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 			<quest id="+Quest For Deschain's Revolver">
@@ -962,7 +1142,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Quest For Dundee's Knife Start">
@@ -1040,7 +1220,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests">
 		<quest id="+Quest For Everdeen's Arrows Start">
@@ -1191,7 +1371,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 			<quest id="+Quest For Gupta's Bandages">
@@ -1239,7 +1419,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Quest For Jason's Machete Start">
@@ -1317,7 +1497,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 			<quest id="+Quest For Kuva's Red Armor Start">
@@ -1496,7 +1676,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Quest For Leon's Modded SMG Start">
@@ -1702,7 +1882,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Veteran Quest For Non Fuzzy Bulletproof Glass Recipe Start">
@@ -1851,7 +2031,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests">
 		<quest id="+Vet Quest For Pavlichenko Rifle Start">
@@ -2068,7 +2248,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Veteran Quest For Rick Danger Auger Start">
@@ -2221,7 +2401,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Elite Quest Hell Beast Starter">
@@ -2315,7 +2495,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/quests" >
 		<quest id="+Quest For Taza's Axe Start">
@@ -2458,186 +2638,6 @@
 			</quest>
 	</append>
 <!-- END White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a196-with-df-multiple-languages -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
-		<reward type="Quest" id="quest_whiteRiverCitizen2" stage="aftercomplete"/>
-	</insertAfter>
-	<insertBefore xpath="/quests/quest_list[@id='trader_quests']">
-			<quest id="quest_whiteRiverCitizen2">
-				<property name="name_key" value="quest_tools_of_citizenship_name"/>
-				<property name="subtitle_key" value="quest_tools_of_citizenship_subtitle"/>
-				<property name="description_key" value="quest_tools_of_citizenship_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="false" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="quest_tools_of_citizenship_offer"/>
-				<property name="statement_key" value="quest_tools_of_citizenship_statement"/>
-				<property name="response_key" value="questdialog_tools_of_citizenship"/>
-				<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
-				<property name="shareable" value="false" />
-				<reward type="Item" id="questitem_toc_declaration_name" value="1" />
-			</quest>
-			<quest id="quest_whiteRiverCitizen3">
-				<property name="name_key" value="quest_toc_10z_name"/>
-				<property name="subtitle_key" value="quest_toc_10z_subtitle"/>
-				<property name="description_key" value="quest_toc_10z_description"/>
-				<property name="completion_key" value="quest_toc_10z_completion"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="false" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="easy" />
-				<property name="difficulty_tier" value="1"/>
-				<property name="offer_key" value="quest_toc_10z_offer"/>
-				<property name="statement_key" value="quest_toc_10z_statement"/>
-				<property name="response_key" value="questdialog_toc_10z"/>
-				<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="5" />
-				<objective type="ZombieKill" value="10" phase="1" />
-				<objective type="Goto" value="5" phase="2" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="3"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<reward type="Exp" value="1000" />
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
-				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
-			</quest>
-			<quest id="+Kill 100 Zombies">
-				<property name="name_key" value="quest_toc_100z_name"/>
-				<property name="subtitle_key" value="quest_toc_100z_subtitle"/>
-				<property name="description_key" value="quest_toc_100z_description"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="medium" />
-				<property name="difficulty_tier" value="3"/>
-				<property name="offer_key" value="quest_toc_100z_offer"/>
-				<property name="statement_key" value="quest_toc_100z_statement"/>
-				<property name="response_key" value="questdialog_toc_100z"/>
-				<property name="group_name_key" value="quest_toc_100z_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="5" />
-				<objective type="ZombieKill" value="100" phase="1" />
-				<objective type="Goto" value="5" phase="2" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="3"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<reward type="Exp" value="1500" />
-				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
-				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
-			</quest>
-			<quest id="+Kill 1000 Zombies">
-				<property name="name_key" value="quest_toc_1000z_name"/>
-				<property name="subtitle_key" value="quest_toc_1000z_subtitle"/>
-				<property name="description_key" value="quest_toc_1000z_description"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="hard" />
-				<property name="difficulty_tier" value="5"/>
-				<property name="offer_key" value="quest_toc_1000z_offer"/>
-				<property name="statement_key" value="quest_toc_1000z_statement"/>
-				<property name="response_key" value="questdialog_toc_1000z"/>
-				<property name="group_name_key" value="quest_toc_1000z_group"/>
-				<property name="shareable" value="false" />
-				<objective type="ZombieKill" value="250" phase="1" />
-				<objective type="ZombieKill" value="250" phase="2" />
-				<objective type="ZombieKill" value="250" phase="3" />
-				<objective type="ZombieKill" value="250" phase="4" />
-				<reward type="Quest" id="quest_reward_1000z"/>
-			</quest>
-			<quest id="quest_reward_1000z">
-				<property name="name_key" value="quest_toc_1000zreward_name"/>
-				<property name="subtitle_key" value="quest_toc_1000zreward_subtitle"/>
-				<property name="description_key" value="quest_toc_1000zreward_description"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="quest_toc_1000zreward_offer"/>
-				<property name="statement_key" value="quest_toc_1000zreward_statement"/>
-				<property name="response_key" value="questdialog_toc_1000zreward"/>
-				<property name="group_name_key" value="quest_toc_1000z_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn"/>
-				<objective type="Goto" value="5" phase="1"/>
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="go_to_trader" />
-					<property name="use_closest" value="true" />
-				</objective>
-				<reward type="Exp" value="2000" />
-				<reward type="SkillPoints" value="1" />
-				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
-				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
-			</quest>
-			<quest id="+Obtain a Random Elite Quest">
-				<property name="name_key" value="quest_toc_randomelite_name"/>
-				<property name="subtitle_key" value="quest_toc_randomelite_subtitle"/>
-				<property name="description_key" value="quest_toc_randomelite_description"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="quest_toc_randomelite_offer"/>
-				<property name="statement_key" value="quest_toc_randomelite_statement"/>
-				<property name="response_key" value="questdialog_toc_randomelite"/>
-				<property name="group_name_key" value="quest_toc_randomelite_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn"/>
-				<objective type="Goto" value="5" phase="1"/>
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="go_to_trader" />
-					<property name="use_closest" value="true" />
-				</objective>
-				<reward type="Exp" value="1000" />
-				<reward type="Item" id="questblock_toc_randomcrate_name" value="1" />
-			</quest>
-	</insertBefore>
-	<append xpath="/quests/quest_list[@id='trader_quests']">
-		<quest id='quest_whiteRiverCitizen3' />
-		<quest id='+Kill 100 Zombies' />
-		<quest id='+Kill 1000 Zombies' />
-	</append>
-<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
 
 
 </configs>

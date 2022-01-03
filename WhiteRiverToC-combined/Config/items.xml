@@ -1,7 +1,104 @@
 <configs>
 <!-- #################################### -->
+<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/items">
+		<item name="questitem_toc_declaration_name">
+			<property name="DescriptionKey" value="questitem_toc_declaration_description"/>						
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="a4ff84"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="quest_whiteRiverCitizen3"/>
+				<property name="Delay" value="0"/>
+			</property>	
+		</item>		
+		<item name="questitem_toc_citizencard_name">
+			<property name="DescriptionKey" value="questitem_toc_citizencard_description"/>						
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="questitem_toc_veteranquest_name">
+			<property name="DescriptionKey" value="questitem_toc_veteranquest_description"/>						
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="660000"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Kill 100 Zombies"/>
+				<property name="Delay" value="0"/>
+			</property>	
+		</item>		
+		<item name="questitem_toc_veterancard_name">
+			<property name="DescriptionKey" value="questitem_toc_veterancard_description"/>						
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="7fa6ff"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="questitem_toc_elitequest_name">
+			<property name="DescriptionKey" value="questitem_toc_elitequest_description"/>						
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="660000"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+			<property name="Description" value=""/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Kill 1000 Zombies"/>
+				<property name="Delay" value="0"/>
+			</property>	
+		</item>
+		<item name="questitem_toc_elitecard_name">
+			<property name="DescriptionKey" value="questitem_toc_elitecard_description"/>						
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="5f40c4"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="questitem_toc_randomelite_name">
+			<property name="DescriptionKey" value="questitem_toc_randomelite_desc"/>						
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="660000"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Obtain a Random Elite Quest"/>
+				<property name="Delay" value="0"/>
+			</property>	
+		</item>
+	</append>
+<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
 <!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_vetcoin_amelia">
@@ -164,7 +261,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bambi's Bow by Shouden Kalferas, and morggin -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_coin_bambi">
@@ -445,7 +542,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
     <item name="item_toc_claws_name">
@@ -654,7 +751,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_vetcoin_blackb">
@@ -810,7 +907,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Brass for Lead by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_toc_brass_name"> 
@@ -832,7 +929,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_coin_bunyan">
@@ -954,7 +1051,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Callinicus Greek Fire by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
   <append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
   <append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
@@ -1024,7 +1121,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_vetcoin_daryl">
@@ -1268,7 +1365,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_toc_desch_name"> 
@@ -1641,7 +1738,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Dundee's Hunting Knife by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_coin_dundee">
@@ -1784,7 +1881,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Everdeen's Arrows by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_coin_everdeen">
@@ -1956,7 +2053,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Gupta's First Aid Bandages by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_toc_gupta_name"> 
@@ -2118,7 +2215,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_coin_jason">
@@ -2255,7 +2352,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_coin_kuva">
@@ -2662,7 +2759,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_coin_leon">
@@ -2936,7 +3033,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelper">
@@ -3026,7 +3123,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_vetcoin_pav">
@@ -3248,7 +3345,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Rick Danger Auger by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_vetcoin_rickdanger">
@@ -3469,7 +3566,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questitem_spirit_vengeance_name">
@@ -3668,7 +3765,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
 		<item name="questToCRewardT2FoodBundle">
@@ -3793,103 +3890,6 @@
 	</append>
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockRange']/@value">4</set>
 <!-- END White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a196-with-df-multiple-languages -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/items">
-		<item name="questitem_toc_declaration_name">
-			<property name="DescriptionKey" value="questitem_toc_declaration_description"/>						
-			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="a4ff84"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="NoScrapping" value="true"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="quest_whiteRiverCitizen3"/>
-				<property name="Delay" value="0"/>
-			</property>	
-		</item>		
-		<item name="questitem_toc_citizencard_name">
-			<property name="DescriptionKey" value="questitem_toc_citizencard_description"/>						
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="2eb200"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="NoScrapping" value="true"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-		</item>
-		<item name="questitem_toc_veteranquest_name">
-			<property name="DescriptionKey" value="questitem_toc_veteranquest_description"/>						
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="660000"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 100 Zombies"/>
-				<property name="Delay" value="0"/>
-			</property>	
-		</item>		
-		<item name="questitem_toc_veterancard_name">
-			<property name="DescriptionKey" value="questitem_toc_veterancard_description"/>						
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="7fa6ff"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="NoScrapping" value="true"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-		</item>
-		<item name="questitem_toc_elitequest_name">
-			<property name="DescriptionKey" value="questitem_toc_elitequest_description"/>						
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="660000"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-			<property name="Description" value=""/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 1000 Zombies"/>
-				<property name="Delay" value="0"/>
-			</property>	
-		</item>
-		<item name="questitem_toc_elitecard_name">
-			<property name="DescriptionKey" value="questitem_toc_elitecard_description"/>						
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="5f40c4"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="NoScrapping" value="true"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-		</item>
-		<item name="questitem_toc_randomelite_name">
-			<property name="DescriptionKey" value="questitem_toc_randomelite_desc"/>						
-			<property name="CustomIcon" value="challengeQuestMaster"/>
-			<property name="CustomIconTint" value="660000"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Obtain a Random Elite Quest"/>
-				<property name="Delay" value="0"/>
-			</property>	
-		</item>
-	</append>
-<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
 
 
 </configs>

@@ -1,7 +1,58 @@
 <configs>
 <!-- #################################### -->
+<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
+<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+	<append xpath="/blocks">
+		<block name="questblock_toc_citizencrate_name">
+			<property name="DescriptionKey" value="questblock_toc_citizencrate_desc"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="ffffb3"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
+			<property name="DowngradeBlock" value="+Citizen Crate"/>
+			<property name="FilterTags" value="floot"/>
+		</block>
+		<block name="+Citizen Crate">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="333333"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="WhiteRiverToCRequired01"/>
+		</block>
+		<block name="questblock_toc_elitecrate_name">
+			<property name="DescriptionKey" value="questblock_toc_elitecrate_desc"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="ffffb3"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
+			<property name="DowngradeBlock" value="+Elite Citizen Crate"/>
+			<property name="FilterTags" value="floot"/>
+		</block>
+		<block name="+Elite Citizen Crate">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="333333"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="WhiteRiverToCRequired02"/>
+		</block>
+		<block name="questblock_toc_randomcrate_name">
+			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="ffffb3"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
+			<property name="DowngradeBlock" value="+Random Elite Citizen Crate"/>
+			<property name="FilterTags" value="floot"/>
+		</block>
+		<block name="+Random Elite Citizen Crate">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="333333"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="WhiteRiverToCRequired03"/>
+		</block>
+	</append>
+<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
+
+
+<!-- #################################### -->
 <!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/blocks/block[@name='cntCar03SedanDamage1Master']">
 		<drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.02" tag="salvageHarvest"/>
@@ -37,7 +88,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/blocks">
 		<block name="questblock_toc_blackb_coffin">
@@ -64,7 +115,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/blocks">
     <block name="treasureKuvaChest"> 
@@ -89,7 +140,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/blocks">
 <block name="questblock_toc_glassNonFuzzyBulletproofMaster">
@@ -162,7 +213,7 @@
 
 <!-- #################################### -->
 <!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
+<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/blocks">
     <block name="vetquestmap_toc_pav_map1_name">
@@ -201,57 +252,6 @@
     </block>
   </append>
 <!-- END White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a196-with-df-multiple-languages -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/blocks">
-		<block name="questblock_toc_citizencrate_name">
-			<property name="DescriptionKey" value="questblock_toc_citizencrate_desc"/>
-			<property name="CustomIcon" value="cntShippingCrateHero"/>
-			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="+Citizen Crate"/>
-			<property name="FilterTags" value="floot"/>
-		</block>
-		<block name="+Citizen Crate">
-			<property name="CustomIcon" value="cntCardboardBox"/>
-			<property name="CustomIconTint" value="333333"/>
-			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="WhiteRiverToCRequired01"/>
-		</block>
-		<block name="questblock_toc_elitecrate_name">
-			<property name="DescriptionKey" value="questblock_toc_elitecrate_desc"/>
-			<property name="CustomIcon" value="cntShippingCrateHero"/>
-			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="+Elite Citizen Crate"/>
-			<property name="FilterTags" value="floot"/>
-		</block>
-		<block name="+Elite Citizen Crate">
-			<property name="CustomIcon" value="cntCardboardBox"/>
-			<property name="CustomIconTint" value="333333"/>
-			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="WhiteRiverToCRequired02"/>
-		</block>
-		<block name="questblock_toc_randomcrate_name">
-			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
-			<property name="CustomIcon" value="cntShippingCrateHero"/>
-			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="+Random Elite Citizen Crate"/>
-			<property name="FilterTags" value="floot"/>
-		</block>
-		<block name="+Random Elite Citizen Crate">
-			<property name="CustomIcon" value="cntCardboardBox"/>
-			<property name="CustomIconTint" value="333333"/>
-			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="WhiteRiverToCRequired03"/>
-		</block>
-	</append>
-<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
 
 
 </configs>

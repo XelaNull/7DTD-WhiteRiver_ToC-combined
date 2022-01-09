@@ -106,6 +106,12 @@
   - Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git
   - Description: Gather the pieces to the famed Pavlichenko Rifle.
 
+- White River Tools of Citizenship - Remington's Steel Ammo by **Shouden Kalferas, Based on Khaine's Steel Ammo**
+
+  - Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/
+  - Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git
+  - Description: Help the community stock up on 7.62 and 9mm ammo and learn the secret to creating steel ammo.
+
 - White River Tools of Citizenship - Rick Danger Auger by **Shouden Kalferas**
 
   - Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/

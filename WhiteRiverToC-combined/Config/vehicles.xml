@@ -156,7 +156,7 @@
 <!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/vehicles">
-	<vehicle name="vehicleSpiritHellBeast"> 
+	<vehicle name="vehicleSpiritHellBeastToC"> 
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="6000"/>
@@ -173,7 +173,7 @@
 			<property name="tiltUpForce" value="5"/>
 			<property name="hopForce" value="8, .1"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 25"/>
+			<property name="velocityMax" value="12, 22"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
 			<property name="hornSound" value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
@@ -199,7 +199,7 @@
 				<property name="transform" value="engine_small"/>
 				<property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
 				<property name="fuelKmPerL" value=".1"/>
-				<property name="foodDrain" value=".002,.0101"/>
+				<property name="foodDrain" value=".004,.0202"/>
 				<property name="gear1" value="
 									500,2500, -1400,800,0, 700,2000,900,
 									Vehicles/Motorbike/motorbike_accel_1,

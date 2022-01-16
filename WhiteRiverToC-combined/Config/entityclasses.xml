@@ -108,7 +108,7 @@
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,motorcycle</append>
 	<append xpath="/entity_classes">
-		<entity_class name="vehicleSpiritHellBeast"> 
+		<entity_class name="vehicleSpiritHellBeastToC"> 
 			<property name="Tags" value="vehicle,vehiclespirithellbeast"/>
 			<property name="Class" value="EntityMotorcycle"/>
 			<property name="Parent" value="Cars"/>

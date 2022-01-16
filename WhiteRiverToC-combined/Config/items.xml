@@ -268,23 +268,23 @@
 		<item name="questitem_coin_bambi">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
 		<item name="questitem_vetcoin_bambi">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="7fa6ff"/> 
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
 		<item name="questitem_elitecoin_bambi">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="5f40c4"/> 
+			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		<item name="questitem_toc_bambi_name"> 
-			<property name="DescriptionKey" value="questitem_toc_bambi_desc"/>									
+		<item name="questitem_toc_bambi_name">
+			<property name="DescriptionKey" value="questitem_toc_bambi_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -293,11 +293,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bambi's Killer Bow Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_bambi_name">
-			<property name="DescriptionKey" value="questwrit_toc_bambi_desc"/>									
+			<property name="DescriptionKey" value="questwrit_toc_bambi_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -305,16 +305,16 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Bambi's Killer Bow"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>			
-		<item name="vetquestitem_toc_bambi_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_bambi_desc"/>									
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="vetquestitem_toc_bambi_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_bambi_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -322,12 +322,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Bambi's Killer Compound Bow Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetquestwrit_toc_bambi_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_bambi_desc"/>									
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="vetquestwrit_toc_bambi_desc"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -339,10 +339,10 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Bambi's Killer Compound Bow"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
+			</property>
+		</item>
 		<item name="item_toc_bambi_name"> 
-			<property name="DescriptionKey" value="item_toc_bambi_desc"/>									
+			<property name="DescriptionKey" value="item_toc_bambi_desc"/>
 			<property name="Tags" value="weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedBow"/>
 			<property name="CustomIcon" value="gunBowT3CompoundBow"/>
@@ -386,47 +386,47 @@
 			</property>
 			<effect_group name="item_toc_bambi_name">
 				<passive_effect name="ProjectileVelocity" operation="perc_add" value=".3" tags="perkArchery"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="50" tags="perkArchery"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.15" tags="perkArchery"/> 
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.25" tags="perkArchery"/> 
 				<passive_effect name="MaxRange" operation="base_set" value="120" tags="perkArchery"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkArchery"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkArchery"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.1" tags="perkArchery"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2" tags="perkArchery"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkArchery"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkArchery"/> 
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.2" tags="perkArchery"/> 
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.05,.1" tags="perkArchery"/> 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.67" tags="perkArchery"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.67" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".12" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".7" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.4" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".99" tags="perkArchery"/>
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".99" tags="perkArchery"/> 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="90" tags="perkArchery"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.05" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.03" tags="perkArchery"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".05" tags="perkArchery"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" tags="perkArchery"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,600" tier="1,6" tags="perkArchery"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="320" tags="EconomicValue"/>
 			</effect_group>
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
-					<passive_effect name="DamageBonus" operation="base_add" value="2.5"/>
-					<passive_effect name="EntityDamage" operation="perc_add" value="2.5" tags="perkArchery"/>
-					<display_value name="dEntityDamageSneak" value="2.5"/>
+					<passive_effect name="DamageBonus" operation="base_add" value="2.2"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="2.2" tags="perkArchery"/>
+					<display_value name="dEntityDamageSneak" value="2.2"/>
 			</effect_group>
 		</item>
-		<item name="elitequestitem_toc_bambi_name"> 
-			<property name="DescriptionKey" value="elitequestitem_toc_bambi_desc"/>									
+		<item name="elitequestitem_toc_bambi_name">
+			<property name="DescriptionKey" value="elitequestitem_toc_bambi_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -435,12 +435,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Forest Prince Bow Elite Quest Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="elitequestwrit_toc_bambi_name">
-			<property name="DescriptionKey" value="elitequestwrit_toc_bambi_desc"/>									
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="elitequestwrit_toc_bambi_desc"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -451,10 +451,10 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Forest Prince Compound Bow"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
+			</property>
+		</item>
 		<item name="eliteitem_toc_bambi_name"> 
-			<property name="DescriptionKey" value="eliteitem_toc_bambi_desc"/>									
+			<property name="DescriptionKey" value="eliteitem_toc_bambi_desc"/>
 			<property name="Tags" value="weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,longShaft"/>
 			<property name="DisplayType" value="rangedBow"/>
 			<property name="CustomIcon" value="gunBowT3CompoundBow"/>
@@ -498,22 +498,22 @@
 			</property>
 			<effect_group name="eliteitem_toc_bambi_name">
 				<passive_effect name="ProjectileVelocity" operation="perc_add" value=".35" tags="perkArchery"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="65" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="55" tags="perkArchery"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.15" tags="perkArchery"/> 
-				<passive_effect name="MaxRange" operation="base_set" value="140" tags="perkArchery"/>
+				<passive_effect name="MaxRange" operation="base_set" value="130" tags="perkArchery"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.3" tags="perkArchery"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".3,.99" tier="2,6" tags="perkArchery"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.1" tags="perkArchery"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3,.9" tier="2,6" tags="perkArchery"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.15" tags="perkArchery"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkArchery"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkArchery"/> 
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.2" tags="perkArchery"/> 
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.05,.1" tags="perkArchery"/> 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.67" tags="perkArchery"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.67" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".11" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".5" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.1" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1.8" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".99" tags="perkArchery"/>
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".99" tags="perkArchery"/> 
@@ -523,18 +523,18 @@
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".5" tags="perkArchery"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.02" tags="perkArchery"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".02" tags="perkArchery"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" tags="perkArchery"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,700" tier="1,6" tags="perkArchery"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkArchery"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="340" tags="EconomicValue"/>
 			</effect_group>
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
-					<passive_effect name="DamageBonus" operation="base_add" value="3"/>
-					<passive_effect name="EntityDamage" operation="perc_add" value="3" tags="perkArchery"/>
-					<display_value name="dEntityDamageSneak" value="3"/>
+					<passive_effect name="DamageBonus" operation="base_add" value="2.4"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="2.4" tags="perkArchery"/>
+					<display_value name="dEntityDamageSneak" value="2.4"/>
 			</effect_group>
 		</item>
 	</append>
@@ -547,7 +547,7 @@
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
     <item name="item_toc_claws_name">
-      <property name="DescriptionKey" value="item_toc_claws_description"/>									
+      <property name="DescriptionKey" value="item_toc_claws_description"/>
       <property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
       <property name="CustomIconTint" value="ff0000"/>
     	<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attFortitude,perkBrawler,canHaveCosmetic,longShaft"/>
@@ -599,17 +599,17 @@
     		</property>
     	</property>
     	<effect_group name="item_toc_claws_name">
-    		<passive_effect name="EntityDamage" operation="base_set" value="11.1" tags="perkBrawler"/>
-    		<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkBrawler"/>
+    		<passive_effect name="EntityDamage" operation="base_set" value="10.6" tags="perkBrawler"/>
+    		<passive_effect name="BlockDamage" operation="base_set" value="3.2" tags="perkBrawler"/>
     		<passive_effect name="AttacksPerMinute" operation="base_set" value="110" tags="perkBrawler"/>
     		<passive_effect name="StaminaLoss" operation="base_set" value="8.6" tags="primary"/>
-    		<passive_effect name="DegradationMax" operation="base_set" value="400,1200" tier="1,6" tags="perkBrawler"/>
-    		<passive_effect name="DegradationPerUse" operation="base_set" value=".8" tags="perkBrawler"/>
+    		<passive_effect name="DegradationMax" operation="base_set" value="400,1100" tier="1,6" tags="perkBrawler"/>
+    		<passive_effect name="DegradationPerUse" operation="base_set" value="1.1" tags="perkBrawler"/>
     		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
     		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkBrawler"/>
     		<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
-    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
-    		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
+    		<passive_effect name="ModPowerBonus" operation="base_add" value="310" tags="EconomicValue"/>
     		<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.18" tags="perkBrawler"/> 
     		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.7" tier="2,6" tags="perkBrawler"/> 
     		<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.18" tags="perkBrawler"/> 
@@ -632,8 +632,8 @@
     		<passive_effect name="StaminaLoss" operation="base_set" value="14.3" tags="secondary"/>
     	</effect_group>
     </item>
-		<item name="questitem_toc_claws_name"> 
-			<property name="DescriptionKey" value="questitem_toc_claws_desc"/>									
+		<item name="questitem_toc_claws_name">
+			<property name="DescriptionKey" value="questitem_toc_claws_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -642,15 +642,15 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bear Grylls Iron Knuckles"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="schemitem_toc_claws_name">
-			<property name="DescriptionKey" value="schemitem_toc_claws_description"/>						
+			<property name="DescriptionKey" value="schemitem_toc_claws_description"/>
     	<property name="Extends" value="schematicMaster"/>
     	<property name="CreativeMode" value="Player"/>
     	<property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
-      <property name="CustomIconTint" value="cc3300"/> 
+      <property name="CustomIconTint" value="cc3300"/>
     	<property name="Unlocks" value="item_toc_claws_name"/>
     	<effect_group tiered="false">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_claws_name" operation="set" value="1"/>
@@ -659,7 +659,7 @@
     </item>
     <item name="vetitem_toc_claws_name">
       <property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attFortitude,perkBrawler,canHaveCosmetic,longShaft"/>
-      <property name="DescriptionKey" value="vetitem_toc_claws_description"/>									
+      <property name="DescriptionKey" value="vetitem_toc_claws_description"/>
       <property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
       <property name="CustomIconTint" value="0000ff"/>
     	<property name="Extends" value="meleeWpnKnucklesT1IronKnuckles"/>
@@ -695,12 +695,12 @@
     		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
     		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkBrawler"/>
     		<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
-    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".13" tags="EntityDamage,BlockDamage"/>
-    		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-    		<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/> 
-    		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/> 
-    		<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/> 
-    		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/> 
+    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+    		<passive_effect name="ModPowerBonus" operation="base_add" value="320" tags="EconomicValue"/>
+    		<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/>
+    		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/>
+    		<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/>
+    		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/>
     		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
     		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
     		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
@@ -715,14 +715,14 @@
     		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
     	</effect_group>
     	<effect_group name="Power Attack">
-    		<passive_effect name="EntityDamage" operation="perc_add" value="1.4" tags="secondary"/>
-    		<passive_effect name="BlockDamage" operation="perc_add" value="1.4" tags="secondary"/>
+    		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+    		<passive_effect name="BlockDamage" operation="perc_add" value="1.3" tags="secondary"/>
     		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
     		<passive_effect name="StaminaLoss" operation="base_set" value="15.3" tags="secondary"/>
     	</effect_group>
     </item>
-		<item name="vetquestitem_toc_claws_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_claws_desc"/>									
+		<item name="vetquestitem_toc_claws_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_claws_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -731,15 +731,15 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bear Grylls Steel Knuckles"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetschemitem_toc_claws_name">
-			<property name="DescriptionKey" value="vetschemitem_toc_claws_desc"/>						
+			<property name="DescriptionKey" value="vetschemitem_toc_claws_desc"/>
 			<property name="Extends" value="schematicMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
-			<property name="CustomIconTint" value="5C5CFF"/> 
+			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="Unlocks" value="vetitem_toc_claws_name"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vetitem_toc_claws_name" operation="set" value="1"/>
@@ -759,10 +759,10 @@
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
-			<property name="Stacknumber" value="1"/> 
+			<property name="Stacknumber" value="1"/>
 		</item>
-		<item name="vetquestitem_toc_blackb_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_blackb_desc"/>			
+		<item name="vetquestitem_toc_blackb_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_blackb_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -771,11 +771,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Black Bart's Flaming Dig Tools Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetquestwrit_toc_blackb_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_blackb_desc"/>			
+			<property name="DescriptionKey" value="vetquestwrit_toc_blackb_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -783,14 +783,14 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Black Bart's Treasure Map"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetquestmap_toc_blackb_name">
 			<property name="DescriptionKey" value="vetquestmap_toc_blackb_desc"/>
 			<property name="Extends" value="treasureQuestMaster"/>
@@ -799,11 +799,11 @@
 			<property class="Action0">
 				<property name="QuestGiven" value="map_Black_Bart"/>
 			</property>
-		</item>		
+		</item>
 		<item name="questitem_toc_shovel_name"> 
 			<property name="DescriptionKey" value="questitem_toc_shovel_desc"/>
 			<property name="Extends" value="meleeToolShovelT1IronShovel"/>
-			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/> 
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="Tags" value="melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
@@ -815,38 +815,38 @@
 				<passive_effect name="EntityDamage" operation="base_set" value="19" tags="perkMiner69r"/> 
 				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkMiner69r"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkMiner69r"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="18.7" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
-				<passive_effect name="MaxRange" operation="base_set" value="3.4" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.1" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="3.1" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkMiner69r"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="340" tags="EconomicValue"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkMiner69r"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkMiner69r"/> 
 				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.25" tags="perkMiner69r"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkMiner69r"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2" tags="perkMiner69r"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.65" tier="2,6" tags="perkMiner69r"/> 
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> 
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.03,.1" tags="perkMiner69r"/> 
-				<passive_effect name="StaminaLoss" operation="perc_add" value="-.03,.03" tags="perkMiner69r"/> 
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.03" tags="perkMiner69r"/> 
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
 			</effect_group>
 			<effect_group name="Power Attack">
-				<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="25" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="29.3" tags="secondary"/>
 			</effect_group>
 		</item>
 		<item name="questitem_toc_pickaxe_name"> 
 			<property name="DescriptionKey" value="questitem_toc_pickaxe_desc"/>
-			<property name="Tags" value="melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>			
+			<property name="Tags" value="melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
 			<property name="Extends" value="meleeToolPickT1IronPickaxe"/>
-			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/> 
+			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="DisplayType" value="melee"/>
@@ -872,25 +872,25 @@
 			</property>
 			<property name="Group" value="Tools/Traps"/>
 			<effect_group name="questitem_toc_pickaxe_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="28" tags="perkMiner69r"/> 
-				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkMiner69r"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="27.2" tags="perkMiner69r"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="78.8" tags="perkMiner69r"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkMiner69r"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="16.4" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.9" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.9" tags="perkMiner69r"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="340" tags="EconomicValue"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.10,.22" tags="perkMiner69r"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.8" tier="2,6" tags="perkMiner69r"/> 
 				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.05" tags="Harvesting"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.10,.25" tags="perkMiner69r"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.9" tier="2,6"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.10,.2" tags="perkMiner69r"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6"/> 
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> 
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.02,.1" tags="perkMiner69r"/> 
-				<passive_effect name="StaminaLoss" operation="perc_add" value="-.02,.1" tags="perkMiner69r"/> 
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.02,.05" tags="perkMiner69r"/> 
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
@@ -899,7 +899,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value="1.35" tags="secondary"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="1.35" tags="secondary"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.2" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="24.1" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="29.7" tags="secondary"/>
 			</effect_group>
 		</item>
 	</append>
@@ -936,11 +936,11 @@
 		<item name="questitem_coin_bunyan">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		<item name="questitem_toc_bunyan_name"> 
-			<property name="DescriptionKey" value="questitem_toc_bunyan_description"/>						
+		<item name="questitem_toc_bunyan_name">
+			<property name="DescriptionKey" value="questitem_toc_bunyan_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -949,11 +949,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bunyan's FireAxe Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_bunyan_name">
-			<property name="DescriptionKey" value="questwrit_toc_bunyan_description"/>									
+			<property name="DescriptionKey" value="questwrit_toc_bunyan_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -961,16 +961,16 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Bunyan's FireAxe"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>			
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="item_toc_bunyanaxe_name"> 
-			<property name="DescriptionKey" value="item_toc_bunyanaxe_desc"/>									
+			<property name="DescriptionKey" value="item_toc_bunyanaxe_desc"/>
 			<property name="Tags" value="axe,melee,grunting,medium,longShaft,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
@@ -1015,21 +1015,21 @@
 			</property>
 			<effect_group name="item_toc_bunyanaxe_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="20.1" tags="perkMiner69r"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="65.0" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="55.0" tags="perkMiner69r"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r"/> 
-				<passive_effect name="StaminaLoss" operation="base_set" value="10.6" tags="primary"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="388,941" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
-				<passive_effect name="MaxRange" operation="base_set" value="3.4" tags="perkMiner69r"/>
-				<passive_effect name="BlockRange" operation="base_set" value="4.8" tags="perkMiner69r"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12.6" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="288,841" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.1" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="3.1" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkMiner69r"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.20,.20" tags="perkMiner69r"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkMiner69r"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkMiner69r"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.18,.18" tags="perkMiner69r"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkMiner69r"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.18,.18" tags="perkMiner69r"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkMiner69r"/> 
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.15" tags="perkMiner69r"/> 
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> 
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> 
 				<passive_effect name="HarvestCount" operation="base_set" value=".8" tags="butcherHarvest"/>
@@ -1038,10 +1038,10 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
 			</effect_group>
 			<effect_group name="Power Attack">
-				<passive_effect name="EntityDamage" operation="perc_add" value="1.75" tags="secondary"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="1.75" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.55" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.55" tags="secondary"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="26.3" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="32.9" tags="secondary"/>
 			</effect_group>
 			<property name="Group" value="Tools/Traps"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
@@ -1128,17 +1128,17 @@
 		<item name="questitem_vetcoin_daryl">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="7fa6ff"/> 
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
 		<item name="questitem_elitecoin_daryl">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="5f40c4"/> 
+			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		<item name="vetquestitem_toc_daryl_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_daryl_desc"/>						
+		<item name="vetquestitem_toc_daryl_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_daryl_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -1147,11 +1147,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Quest For Daryl's Zombiekiller Crossbow Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetwrititem_toc_daryl_name">
-			<property name="DescriptionKey" value="vetwrititem_toc_daryl_desc"/>						
+			<property name="DescriptionKey" value="vetwrititem_toc_daryl_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -1159,16 +1159,16 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Daryl's Zombiekiller Crossbow"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>			
-		<item name="vetitem_toc_daryl_name"> 
-			<property name="DescriptionKey" value="vetitem_toc_daryl_desc"/>						
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="vetitem_toc_daryl_name">
+			<property name="DescriptionKey" value="vetitem_toc_daryl_desc"/>
 			<property name="CustomIcon" value="gunBowT1IronCrossbow"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic"/>
@@ -1201,6 +1201,7 @@
 				<property name="Sound_end" value=""/>
 				<property name="Sound_empty" value="dryfire"/>
 				<property name="Sound_reload" value="crossbow_reload"/>
+				<property name="AutoReload" value="false"/>
 			</property>
 			<property class="Action1"> 
 				<property name="Class" value="Zoom"/>
@@ -1208,17 +1209,16 @@
 				<property name="Zoom_max_in" value="55"/>
 			</property>
 			<effect_group name="vetitem_toc_daryl_name">
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="25" tags="perkArchery"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkArchery"/> 
-				<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="27" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.18,.21" tags="perkArchery"/> 
+				<passive_effect name="MaxRange" operation="base_set" value="110" tags="perkArchery"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5" tags="perkArchery"/> 
 				<passive_effect name="ProjectileVelocity" operation="perc_add" value="-.1" tags="perkArchery"/>
-				<passive_effect name="EntityDamage" operation="base_add" value="-6" tags="perkArchery"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.17" tags="perkArchery"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.6" tier="2,6" tags="perkArchery"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.17" tags="perkArchery"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.6" tier="2,6" tags="perkArchery"/> 
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkArchery"/> 
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkArchery"/> 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35" tags="perkArchery"/>
@@ -1228,18 +1228,18 @@
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".5" tags="perkArchery"/> 
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".65" tags="perkArchery"/> 
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="80" tags="perkArchery"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2" tags="perkArchery"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2" tags="perkArchery"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1.5" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.5" tags="perkArchery"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="100,200" tier="1,6" tags="perkArchery"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6" tags="perkArchery"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkArchery"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="320" tags="EconomicValue"/>
 			</effect_group>
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
@@ -1248,9 +1248,9 @@
 					<passive_effect name="EntityDamage" operation="perc_add" value="2.5" tags="perkArchery"/>
 					<display_value name="dEntityDamageSneak" value="2.5"/>
 			</effect_group>
-		</item>				
-		<item name="elitequestitem_toc_daryl_name"> 
-			<property name="DescriptionKey" value="elitequestitem_toc_daryl_desc"/>						
+		</item>
+		<item name="elitequestitem_toc_daryl_name">
+			<property name="DescriptionKey" value="elitequestitem_toc_daryl_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -1258,12 +1258,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Quest For Daryl's Zombiekiller Compound Crossbow Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="elitewrititem_toc_daryl_name">
-			<property name="DescriptionKey" value="elitewrititem_toc_daryl_desc"/>						
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="elitewrititem_toc_daryl_desc"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -1275,10 +1275,10 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Daryl's Zombiekiller Compound Crossbow"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
-		<item name="eliteitem_toc_daryl_name"> 
-			<property name="DescriptionKey" value="eliteitem_toc_daryl_desc"/>						
+			</property>
+		</item>
+		<item name="eliteitem_toc_daryl_name">
+			<property name="DescriptionKey" value="eliteitem_toc_daryl_desc"/>
 			<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic,longShaft"/>
@@ -1320,16 +1320,17 @@
 				<property name="Zoom_max_out" value="55"/>
 				<property name="Zoom_max_in" value="55"/>
 			</property>
-			<effect_group name="eliteitem_toc_daryl_name">
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="25" tags="perkArchery"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkArchery"/> 
-				<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
+			<effect_group name="vetitem_toc_daryl_name">
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="30" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.15" tags="perkArchery"/> 
+				<passive_effect name="MaxRange" operation="base_set" value="120" tags="perkArchery"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5" tags="perkArchery"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> 
+				<passive_effect name="ProjectileVelocity" operation="perc_add" value="-.1" tags="perkArchery"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkArchery"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.7" tier="2,6" tags="perkArchery"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2" tags="perkArchery"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.7" tier="2,6" tags="perkArchery"/> 
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkArchery"/> 
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkArchery"/> 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35" tags="perkArchery"/>
@@ -1339,25 +1340,25 @@
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".5" tags="perkArchery"/> 
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".7" tags="perkArchery"/> 
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="85" tags="perkArchery"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2" tags="perkArchery"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2" tags="perkArchery"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".8" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1.2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.5" tags="perkArchery"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6" tags="perkArchery"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
-				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6" tags="perkArchery"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.1" tags="perkArchery"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="340" tags="EconomicValue"/>
 			</effect_group>
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
-					<passive_effect name="DamageBonus" operation="base_add" value="3"/>
-					<passive_effect name="EntityDamage" operation="perc_add" value="3" tags="perkArchery"/>
-					<display_value name="dEntityDamageSneak" value="3"/>
+					<passive_effect name="DamageBonus" operation="base_add" value="2.7"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="2.7" tags="perkArchery"/>
+					<display_value name="dEntityDamageSneak" value="2.7"/>
 			</effect_group>
 		</item>
 	</append>
@@ -1369,8 +1370,8 @@
 <!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/items">
-		<item name="questitem_toc_desch_name"> 
-			<property name="DescriptionKey" value="questitem_toc_desch_description"/>						
+		<item name="questitem_toc_desch_name">
+			<property name="DescriptionKey" value="questitem_toc_desch_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -1380,11 +1381,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_desch_name">
-			<property name="DescriptionKey" value="questwrit_toc_desch_description"/>						
+			<property name="DescriptionKey" value="questwrit_toc_desch_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -1393,16 +1394,16 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Deschain's Revolver"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="itemreward_toc_desch_name"> 
-			<property name="DescriptionKey" value="itemreward_toc_desch_description"/>						
+			<property name="DescriptionKey" value="itemreward_toc_desch_description"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="CustomIcon" value="gunHandgunT2Magnum44"/>
@@ -1421,7 +1422,7 @@
 			<property name="LightSource" value="lightSource"/> 
 			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
 			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> 
-			<property name="Group" value="Ammo/Weapons"/>
+			<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
 			<property name="SellableToTrader" value="false"/>
@@ -1451,31 +1452,31 @@
 			</property>
 			<effect_group name="itemreward_toc_desch_name">
 				<passive_effect name="MaxRange" operation="base_set" value="80" tags="perkGunslinger"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="40" tags="perkGunslinger"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="35" tags="perkGunslinger"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> 
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="1000" tags="perkGunslinger"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1200" tags="perkGunslinger"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="6" tags="perkGunslinger"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/> 
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.1" tags="perkGunslinger"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkGunslinger"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.6" tier="2,6" tags="perkGunslinger"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> 
-				<passive_effect name="DegradationMax" operation="base_set" value="1"  tags="perkGunslinger"/> 
+				<passive_effect name="DegradationMax" operation="base_set" value="1"  tags="perkGunslinger"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> 
 				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkGunslinger"/> 
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.02,.12" tags="perkGunslinger"/> 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.3" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.3" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".25" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value=".7" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1.2" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".25" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".5" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value=".6" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value=".9" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".5" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.3" tags="perkGunslinger"/>
@@ -1487,7 +1488,7 @@
 			</effect_group>
 		</item>
 		<item name="crafteditem_toc_45lcsilver_name">
-			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>									
+			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
@@ -1505,7 +1506,7 @@
 			</effect_group>
 		</item>
 		<item name="crafteditem_toc_45lcgold_name">
-			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>									
+			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
@@ -1524,7 +1525,7 @@
 			</effect_group>
 		</item>
 		<item name="crafteditem_toc_45lcsilver_schem_name">
-			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>									
+			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
@@ -1542,7 +1543,7 @@
 			</effect_group>
 		</item>
 		<item name="crafteditem_toc_45lcgold_schem_name">
-			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>									
+			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
@@ -1561,7 +1562,7 @@
 			</effect_group>
 		</item>
 		<item name="itemreward_toc_deschhat_schem_name"> 
-			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>									
+			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>
 			<property name="Tags" value="head,clothing,canHaveCosmetic"/>
 			<property name="CustomIcon" value="apparelCowboyHat"/>
 			<property name="CustomIconTint" value="624a2e"/>
@@ -1612,7 +1613,7 @@
 			<property name="RepairAmount" value="32000"/>
 		</item>
 		<item name="itemreward_toc_deschhat_name"> 
-			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>									
+			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>
 			<property name="Tags" value="head,clothing,canHaveCosmetic"/>
 			<property name="CustomIcon" value="apparelCowboyHat"/>
 			<property name="CustomIconTint" value="624a2e"/>
@@ -1651,24 +1652,24 @@
 			</effect_group>
 		</item>
 		<item name="item_toc_desc_book14_name">
-			<property name="DescriptionKey" value="item_toc_desc_book14_desc"/>									
+			<property name="DescriptionKey" value="item_toc_desc_book14_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>		
-			<property name="CustomIconTint" value="cc3300"/>	
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="cc3300"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
-		</item>	
+		</item>
 		<item name="item_toc_desc_book1_name">
-			<property name="DescriptionKey" value="item_toc_desc_book1_desc"/>									
+			<property name="DescriptionKey" value="item_toc_desc_book1_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>			
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="item_toc_desc_book2_name">
-			<property name="DescriptionKey" value="item_toc_desc_book2_desc"/>												
+			<property name="DescriptionKey" value="item_toc_desc_book2_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
@@ -1692,14 +1693,14 @@
 			</property>
 		</item>
 		<item name="item_toc_desc_book58_name">
-			<property name="DescriptionKey" value="item_toc_desc_book58_desc"/>									
+			<property name="DescriptionKey" value="item_toc_desc_book58_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>		
-			<property name="CustomIconTint" value="cc3300"/>	
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="cc3300"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
-		</item>	
+		</item>
 		<item name="item_toc_desc_book5_name">
 			<property name="DescriptionKey" value="item_toc_desc_book5_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
@@ -1731,7 +1732,7 @@
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
-		</item>	
+		</item>
 	</append>
 	<append xpath="/items/item[@name='itemreward_toc_desch_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,crafteditem_toc_45lcsilver_schem_name,crafteditem_toc_45lcgold_schem_name</append>
 <!-- END White River Tools of Citizenship - Deschain's Revolver by Shouden Kalferas and Aeyvi Kalferas -->
@@ -1745,11 +1746,11 @@
 		<item name="questitem_coin_dundee">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		<item name="questitem_toc_dundee_name"> 
-			<property name="DescriptionKey" value="questitem_toc_dundee_description"/>						
+		<item name="questitem_toc_dundee_name">
+			<property name="DescriptionKey" value="questitem_toc_dundee_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -1758,11 +1759,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Dundee's Knife Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_dundee_name">
-			<property name="DescriptionKey" value="questwrit_toc_dundee_description"/>						
+			<property name="DescriptionKey" value="questwrit_toc_dundee_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -1770,16 +1771,17 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Dundee's Knife"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="item_toc_dundeeknife_name"> 
-			<property name="DescriptionKey" value="item_toc_dundeeknife_desc"/>						
+			<property name="Extends" value="meleeWpnBladeT1HuntingKnife"/>
+			<property name="DescriptionKey" value="item_toc_dundeeknife_desc"/>
 			<property name="Tags" value="knife,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
@@ -1796,66 +1798,26 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="UnlockedBy" value="perkDeepCuts,meleeWpnBladeT1HuntingKnifeSchematic"/>
 			<property name="ShowQuality" value="true"/>
-			<property class="Action0">
-				<property name="Class" value="DynamicMelee"/>
-				<property name="Damage_type" value="Slashing"/>
-				<property name="Sphere" value=".1"/>
-				<property name="Sound_start" value="swoosh"/>
-				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
-				<property name="ToolCategory.Butcher" value="0" param1="5"/>
-				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
-				<property name="UseGrazingHits" value="true"/>
-				<property name="GrazeStart" value=".25"/>
-				<property name="GrazeEnd" value=".35"/>
-				<property name="SwingDegrees" value="90"/>
-				<property name="SwingAngle" value="90"/>
-				<property class="HitSounds">
-					<property name="Override0" value="organic" param1="metalstaborganic"/>
-				</property>
-				<property class="GrazeSounds">
-					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-				</property>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="DynamicMelee"/>
-				<property name="Damage_type" value="Slashing"/>
-				<property name="Sphere" value=".1"/>
-				<property name="Sound_start" value="swoosh"/>
-				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
-				<property name="ToolCategory.Butcher" value="0" param1="5"/>
-				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
-				<property name="UsePowerAttackAnimation" value="true"/>
-				<property name="UseGrazingHits" value="true"/>
-				<property name="GrazeStart" value=".2"/>
-				<property name="GrazeEnd" value=".3"/>
-				<property name="SwingDegrees" value="80"/>
-				<property name="SwingAngle" value="140"/>
-				<property class="HitSounds">
-					<property name="Override0" value="organic" param1="metalstaborganic"/>
-				</property>
-				<property class="GrazeSounds">
-					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-				</property>
-			</property>
 			<effect_group name="item_toc_dundeeknife_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="7" tags="perkDeepCuts,knife"/> 
-				<passive_effect name="BlockDamage" operation="base_set" value="6.5" tags="perkDeepCuts"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="150" tags="perkDeepCuts,perkFlurryOfBlows"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="6.7" tags="primary"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="380,1000" tier="1,6" tags="perkDeepCuts"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="7.1" tags="perkDeepCuts,knife"/> 
+				<passive_effect name="BlockDamage" operation="base_set" value="6.3" tags="perkDeepCuts"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkDeepCuts,perkFlurryOfBlows"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="7.2" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="550,1300" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkDeepCuts"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.3" tags="perkDeepCuts"/>
 				<passive_effect name="BlockRange" operation="base_set" value="2.7" tags="perkDeepCuts"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkDeepCuts"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkDeepCuts"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2" tags="perkDeepCuts"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkDeepCuts"/> 
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".6" tags="organic"/>
 				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 				<display_value name="dBleeding" value="1"/> 
 			</effect_group>
@@ -1864,7 +1826,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="17.3" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="12.3" tags="secondary"/>
 			</effect_group>
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
@@ -1873,7 +1835,7 @@
 					<passive_effect name="EntityDamage" operation="perc_add" value="4.2" tags="perkDeepCuts"/>
 					<display_value name="dEntityDamageSneak" value="4.2"/>
 			</effect_group>
-			<property name="Group" value="Ammo/Weapons"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
 	</append>
@@ -2222,11 +2184,11 @@
 		<item name="questitem_coin_jason">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		<item name="questitem_toc_jason_name"> 
-			<property name="DescriptionKey" value="questitem_toc_jason_description"/>									
+		<item name="questitem_toc_jason_name">
+			<property name="DescriptionKey" value="questitem_toc_jason_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -2235,11 +2197,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Jason's Machete Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_jason_name">
-			<property name="DescriptionKey" value="questwrit_toc_jason_description"/>												
+			<property name="DescriptionKey" value="questwrit_toc_jason_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -2247,19 +2209,20 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Jason's Machete"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="item_toc_jason_name"> 
-			<property name="DescriptionKey" value="item_toc_jason_description"/>															
+			<property name="Extends" value="meleeWpnBladeT3Machete"/>
+			<property name="DescriptionKey" value="item_toc_jason_description"/>
 			<property name="Tags" value="machete,melee,grunting,longShaft,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
-			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/> 
+			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="HoldType" value="47"/>
@@ -2272,58 +2235,18 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="6.5"/>
 			<property name="ShowQuality" value="true"/>
-			<property class="Action0">
-				<property name="Class" value="DynamicMelee"/>
-				<property name="Damage_type" value="Slashing"/>
-				<property name="Sphere" value=".15"/>   
-				<property name="Sound_start" value="machete_swinglight"/>
-				<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
-				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
-				<property name="UseGrazingHits" value="true"/>
-				<property name="GrazeStart" value=".28"/>
-				<property name="GrazeEnd" value=".4"/>
-				<property name="SwingDegrees" value="80"/>
-				<property name="SwingAngle" value="130"/>
-				<property class="HitSounds">
-					<property name="Override0" value="organic" param1="metalslashorganic"/>
-				</property>
-				<property class="GrazeSounds">
-					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-				</property>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="DynamicMelee"/>
-				<property name="Damage_type" value="Slashing"/>
-				<property name="Sphere" value=".15"/>   
-				<property name="Sound_start" value="machete_swingheavy"/>
-				<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
-				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
-				<property name="UsePowerAttackAnimation" value="true"/>
-				<property name="UseGrazingHits" value="true"/>
-				<property name="IsHorizontalSwing" value="true"/>
-				<property name="GrazeStart" value=".3"/>
-				<property name="GrazeEnd" value=".4"/>
-				<property name="SwingDegrees" value="-80"/>
-				<property name="SwingAngle" value="-60"/>
-				<property class="HitSounds">
-					<property name="Override0" value="organic" param1="metalslashorganic"/>
-				</property>
-				<property class="GrazeSounds">
-					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-				</property>
-			</property>
 			<effect_group name="item_toc_jason_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="25" tags="perkDeepCuts"/> 
 				<passive_effect name="BlockDamage" operation="base_set" value="23" tags="perkDeepCuts"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkDeepCuts"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkDeepCuts"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="300,900" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
 				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkDeepCuts"/>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/> 
@@ -2337,7 +2260,7 @@
 			<effect_group name="Power Attack">
 				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="18.8" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="27.7" tags="secondary"/>
 			</effect_group>
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
@@ -2405,15 +2328,16 @@
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.1,11"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4.27,6.47"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4.27,6.47" tags="heat,electrical"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="100,200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".109,.135" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".03" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".01" tags="buffInjuryBleeding"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 			</effect_group>
 			<property class="UMA">
 				<property name="Overlay0Tint" value="100,0,0"/>
@@ -2430,15 +2354,16 @@
 				<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.1,11"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4.27,6.47"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4.27,6.47" tags="heat,electrical"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="100,200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".109,.135" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".03" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".01" tags="buffInjuryBleeding"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 			</effect_group>
 			<property class="UMA">
 				<property name="Overlay0Tint" value="100,0,0"/>
@@ -2592,18 +2517,20 @@
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.28"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.28"/> 
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".109,.135" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".03" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".01" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
 				<property name="Mesh" value="armor_leather_hood"/>
@@ -2627,18 +2554,20 @@
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
-				<passive_effect name="Mobility" operation="perc_add" value="-.02"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
+				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.28"/>
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".109,.135" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".03" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".01" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
 				<property name="Mesh" value="armor_leather_chest"/>
@@ -2660,18 +2589,20 @@
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
-			  <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.28"/>
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".109,.135" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".03" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".01" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
 				<property name="Mesh" value="armor_leather_gloves"/>
@@ -2693,18 +2624,20 @@
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,coldelectrical"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.28"/>
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".109,.135" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".03" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".01" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
 				<property name="Mesh" value="armor_leather_pants"/>
@@ -2726,18 +2659,20 @@
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>				
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.28"/>
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".109,.135" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".03" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".01" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
 				<property name="Mesh" value="armor_leather_feet"/>
@@ -2867,165 +2802,81 @@
 			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="questitem_toc_leondegsmg_name">
+			<property name="Extends" value="gunHandgunT3SMG5"/>
 			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
 			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
-			<property name="DisplayType" value="rangedGun"/>
-			<property name="HoldType" value="6"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
-			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="SoundJammed" value="weapon_jam"/>
-			<property name="Attachments" value="meleeToolFlashlight02"/>
-			<property name="TintColor" value="255,255,255"/>
-			<property name="CrosshairOnAim" value="true"/> 
-			<property name="CrosshairUpAfterShot" value="true"/> 
-			<property name="Sound_Sight_In" value="smg_sight_in"/>
-			<property name="Sound_Sight_Out" value="smg_sight_out"/>
-			<property name="Group" value="Ammo/Weapons"/>
-			<property name="RepairExpMultiplier" value="10.8"/>
-			<property name="LightValue" value=".45"/>
 			<property name="EconomicValue" value="1100"/>
-			<property name="ShowQuality" value="true"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="true"/>
 			<property class="Action0">
-				<property name="Class" value="Ranged"/>
-				<property name="Delay" value=".150"/> 
 				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
 				<property name="Reload_time" value="5.1"/>
-				<property name="Sound_start" value="smg_fire"/>
-				<property name="Sound_loop" value="smg_fire"/>
-				<property name="Sound_end" value="smg_fire_end"/>
-				<property name="Sound_empty" value="dryfire"/>
 				<property name="Sound_reload" value="mp5_reload"/>
-				<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
-				<property name="Particles_muzzle_fire_fpv" value="gunfire_SMG_fpv"/>
-				<property name="ScopeOffset" value="-.000525,.1449,-.2"/>
-				<property name="SideOffset" value="0,0,0"/>
-				<property name="BarrelOffset" value="-.062,.062,.16"/>
-				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="Zoom"/>
-				<property name="Zoom_max_out" value="55"/>
-				<property name="Zoom_max_in" value="55"/>
-				<property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
 			</property>
 			<effect_group name="questitem_toc_leondegsmg_name">
 				<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="140" tags="perkGunslinger"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="300" tags="perkGunslinger"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="15" tags="perkGunslinger"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/> 
 				<passive_effect name="ModSlots" operation="base_set" value="1,2" tier="1,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="150" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> 
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> 
-				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> 
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.55" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.55" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.7" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.5" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".6" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2.5" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.8" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".8" tags="perkGunslinger"/>
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".1" tags="perkGunslinger"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="250,400" tier="1,6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
 		</item>
 		<item name="questitem_toc_leonsmg_name">
-			<property name="DescriptionKey" value="questitem_toc_leonsmg_desc"/>
+			<property name="Extends" value="gunHandgunT3SMG5"/>
+			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
 			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="TintColor" value="91,0,0"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
-			<property name="DisplayType" value="rangedGun"/>
-			<property name="HoldType" value="6"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
-			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="SoundJammed" value="weapon_jam"/>
-			<property name="Attachments" value="meleeToolFlashlight02"/>
-			<property name="CrosshairOnAim" value="true"/> 
-			<property name="CrosshairUpAfterShot" value="true"/> 
-			<property name="Sound_Sight_In" value="smg_sight_in"/>
-			<property name="Sound_Sight_Out" value="smg_sight_out"/>
-			<property name="Group" value="Ammo/Weapons"/>
-			<property name="RepairExpMultiplier" value="10.8"/>
-			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="2500"/>
-			<property name="ShowQuality" value="true"/>
+			<property name="EconomicValue" value="1700"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="true"/>
 			<property class="Action0">
-				<property name="Class" value="Ranged"/>
-				<property name="Delay" value=".150"/> 
 				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
-				<property name="Reload_time" value="3.1"/>
-				<property name="Sound_start" value="smg_fire"/>
-				<property name="Sound_loop" value="smg_fire"/>
-				<property name="Sound_end" value="smg_fire_end"/>
-				<property name="Sound_empty" value="dryfire"/>
+				<property name="Reload_time" value="3.6"/>
 				<property name="Sound_reload" value="mp5_reload"/>
-				<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
-				<property name="Particles_muzzle_fire_fpv" value="gunfire_SMG_fpv"/>
-				<property name="ScopeOffset" value="-.000525,.1449,-.2"/>
-				<property name="SideOffset" value="0,0,0"/>
-				<property name="BarrelOffset" value="-.062,.062,.16"/>
-				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="Zoom"/>
-				<property name="Zoom_max_out" value="55"/>
-				<property name="Zoom_max_in" value="55"/>
-				<property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
 			</property>
 			<effect_group name="questitem_toc_leonsmg_name">
-				<passive_effect name="MaxRange" operation="base_set" value="75" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> 
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="550" tags="perkGunslinger"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1200" tags="perkGunslinger"/>
-				<passive_effect name="MagazineSize" operation="base_set" value="40" tags="perkGunslinger"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/> 
-				<passive_effect name="ModSlots" operation="base_set" value="1,2,2,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="MaxRange" operation="base_set" value="70" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="35" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="3.1" tags="perkGunslinger"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="520" tags="perkGunslinger"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1050" tags="perkGunslinger"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="35" tags="perkGunslinger"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.19,.19" tags="perkGunslinger"/> 
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> 
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> 
-				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> 
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/> 
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.15" tags="perkGunslinger"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.15" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".3" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".7" tags="perkGunslinger"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.17" tags="perkGunslinger"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.25" tags="perkGunslinger"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.25" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.4" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".3" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".6" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.2" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".2" tags="perkGunslinger"/>
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkGunslinger"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="350,1100" tier="1,6" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value=".8" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".4" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".8" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.25" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25" tags="perkGunslinger"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".9" tags="perkGunslinger"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="500,800" tier="1,6" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
 		</item>
 	</append>
@@ -3279,7 +3130,7 @@
 			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
 			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> 
 			<property name="Group" value="Ammo/Weapons"/>
-			<property name="RepairExpMultiplier" value="12.8"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
 			<property name="EconomicValue" value="6000"/>
 			<property name="ShowQuality" value="true"/>
@@ -3305,39 +3156,40 @@
 				<property name="ScopeCameraOffset" value="0,.0262,-.05"/>
 			</property>
 			<effect_group name="questitem_toc_pav_rifle_name">
-				<passive_effect name="MaxRange" operation="base_set" value="200" tags="perkDeadEye"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="90" tags="perkDeadEye"/>
+				<passive_effect name="MaxRange" operation="base_set" value="180" tags="perkDeadEye"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="80" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> 
-				<passive_effect name="EntityDamage" operation="base_add" value="10" tags="perkDeadEye"/>
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="180" tags="perkDeadEye"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="14" tags="perkDeadEye"/> 
+				<passive_effect name="BlockDamage" operation="base_add" value="-1" tags="perkDeadEye"/> 
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="120" tags="perkDeadEye"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkDeadEye"/>
-				<passive_effect name="MagazineSize" operation="base_set" value="8" tags="perkDeadEye"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="10" tags="perkDeadEye"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkDeadEye"/> 
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".20" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkDeadEye"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkDeadEye"/> 
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> 
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.25,.25" tags="perkDeadEye"/> 
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkDeadEye"/> 
-				<passive_effect name="MagazineSize" operation="base_add" value="-1.5,2.6"/> 
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.04" tags="perkDeadEye"/> 
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4" tags="perkDeadEye"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4" tags="perkDeadEye"/>
+				<passive_effect name="MagazineSize" operation="base_add" value="-.5,2.2"/> 
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.1" tags="perkDeadEye"/> 
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkDeadEye"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkDeadEye"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".066" tags="perkDeadEye"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkDeadEye"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1" tags="perkDeadEye"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1.5" tags="perkDeadEye"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.2" tags="perkDeadEye"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1.8" tags="perkDeadEye"/>
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".75" tags="perkDeadEye"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1.5" tags="perkDeadEye"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2" tags="perkDeadEye"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.1" tags="perkDeadEye"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".1" tags="perkDeadEye"/>
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="8" tags="perkDeadEye"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".9" tags="perkDeadEye"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11" tags="perkDeadEye"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkDeadEye"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6" tags="perkDeadEye"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value=".75" tags="perkDeadEye"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.3" tags="perkDeadEye"/>
 			</effect_group>
 		</item>
   </append>
@@ -3425,17 +3277,29 @@
 			<property name="Extends" value="ammo9mmBulletBall"/>
 			<property name="CustomIcon" value="ammo9mmBulletBall"/>
 			<property name="CustomIconTint" value="a0a0ff"/>
-			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="Material" value="Msteel"/>
 			<property name="EconomicValue" value="8"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="39"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="9.5"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger,9mmGun"/>
+			<effect_group name="ammo9mmBulletSteelRemington" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="39" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="9.5" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.3"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".55" tags="perkGunslinger"/><display_value name="dTargetPenetration" value=".55"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger,9mmGun"/><display_value name="dDegradationPerUse" value="1.6"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="perkPenetrator" tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
 			</effect_group>
 		</item>
 		<item name="ammoBundle9mmBulletSteelRemington">
@@ -3459,15 +3323,29 @@
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
 			<property name="CustomIconTint" value="a0a0ff"/>
-			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="Material" value="Msteel"/>
 			<property name="EconomicValue" value="9"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="86"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="12"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger"/>
+			<effect_group name="ammo44MagnumBulletSteelRemington" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="86" tags="perkGunslinger,revolver"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="16" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.4" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.4"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".7" tags="perkGunslinger"/><display_value name="dTargetPenetration" value=".7"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.7" tags="perkGunslinger"/><display_value name="dDegradationPerUse" value="1.7"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="perkPenetrator" tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
 			</effect_group>
 		</item>
 		<item name="ammoBundle44MagnumBulletSteelRemington">
@@ -3491,19 +3369,32 @@
 			<property name="Extends" value="ammo762mmBulletBall"/>
 			<property name="CustomIcon" value="ammo762mmBulletBall"/>
 			<property name="CustomIconTint" value="a0a0ff"/>
-			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="Material" value="Msteel"/>
 			<property name="EconomicValue" value="10"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="60"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkDeadEye,perkMachineGunner"/>
+			<effect_group name="ammo762mmBulletFMJSteelRemington" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="60" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="-3">
+					<requirement name="ItemHasTags" tags="perkMachineGunner"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.45" tags="perkDeadEye,perkMachineGunner"/><display_value name="dTargetArmor" value="-.45"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".8"/><display_value name="dTargetPenetration" value=".8"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.8" tags="perkDeadEye,perkMachineGunner"/><display_value name="dDegradationPerUse" value="1.8"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="perkPenetrator" tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye,perkMachineGunner">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkDeadEye,perkMachineGunner">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye,perkMachineGunner">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
 			</effect_group>
 		</item>
 		<item name="ammoBundle762mmBulletSteelRemington">
@@ -3548,17 +3439,17 @@
 		<item name="questitem_vetcoin_rickdanger">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="7fa6ff"/> 
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
 		<item name="questitem_elitecoin_rickdanger">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="5f40c4"/> 
+			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		<item name="vetquestitem_toc_rickdanger_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_rickdanger_description"/>						
+		<item name="vetquestitem_toc_rickdanger_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_rickdanger_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -3567,11 +3458,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Quest For Rick Danger Auger Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetquestwrit_toc_rickdanger_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_rickdanger_description"/>						
+			<property name="DescriptionKey" value="vetquestwrit_toc_rickdanger_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -3579,87 +3470,50 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Rick Danger Auger"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>			
-		<item name="vetitemreward_toc_rickdanger_name"> 
-		  <property name="DescriptionKey" value="vetitemreward_toc_rickdanger_desc"/>									
-		  <property name="CustomIcon" value="meleeToolPickT3Auger"/>
-		  <property name="CustomIconTint" value="cc3300"/>
-			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
-			<property name="DisplayType" value="motorTool"/>
-			<property name="HoldType" value="20"/>
-			<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
-			<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
-			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="SoundIdle" value="Auger_Idle"/>
-			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
-			<property name="Group" value="Tools/Traps"/>
-			<property name="RepairExpMultiplier" value="10.8"/>
-			<property name="EconomicValue" value="2500"/>
-			<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolAugerSchematic"/>
-			<property name="ShowQuality" value="true"/>
-			<property class="Action0">
-				<property name="Class" value="Ranged"/>
-				<property name="Hitmask_override" value="Melee"/>
-				<property name="UseMeleeCrosshair" value="true"/>
-				<property name="Single_magazine_usage" value="false"/>
-				<property name="Magazine_items" value="ammoGasCan"/>
-				<property name="Bullet_material" value="metal"/>
-				<property name="Reload_time" value="3.6"/>
-				<property name="Sound_start" value="Auger_Fire_Start"/>
-				<property name="Sound_repeat" value="Weapons/Motorized/Auger/auger_fire_lp"/>
-				<property name="Sound_end" value="Weapons/Motorized/Auger/auger_fire_end"/>
-				<property name="Sound_empty" value="auger_empty"/>
-				<property name="Sound_reload" value="Auger_Reload"/>
-				<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
-				<property name="SupportHarvesting" value="true"/>
-				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="vetitemreward_toc_rickdanger_name"> 
+			<property name="Extends" value="meleeToolPickT3Auger"/>
+			<property name="DescriptionKey" value="vetitemreward_toc_rickdanger_desc"/>
+			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="2500"/>
+			<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolAugerSchematic"/>
 			<effect_group name="vetitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="24.7" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="22.7" tags="perkMiner69r,miningTool"/>
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="325" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1.3" tags="perkMiner69r"/>
-				<passive_effect name="MaxRange" operation="base_set" value="2.35" tags="perkMiner69r"/>
-				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="SphereCastRadius" operation="base_set" value=".1" tags="perkMiner69r"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="perkMiner69r"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> 
-				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.3" tags="Harvesting"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2" tags="perkMiner69r"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.75" tier="2,6" tags="perkMiner69r"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> 
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.15" tags="perkMiner69r"/> 
-				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkMiner69r"/> 
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.08" tags="perkMiner69r"/> 
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.55" tier="2,6" tags="perkMiner69r"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.06" tags="perkMiner69r"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="400" tags="perkMiner69r"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkMiner69r"/> 
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".5" tags="perkMiner69r"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".5" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.3" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".3" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.3" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".3" tags="perkMiner69r"/>
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value="6" tags="perkMiner69r"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> 
+				<passive_effect name="WeaponHandling" operation="base_set" value="5.5" tags="perkMiner69r"/>
 			</effect_group>
 		</item>
-		<item name="elitequestitem_toc_rickdanger_name"> 
-			<property name="DescriptionKey" value="elitequestitem_toc_rickdanger_description"/>						
+		<item name="elitequestitem_toc_rickdanger_name">
+			<property name="DescriptionKey" value="elitequestitem_toc_rickdanger_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -3667,12 +3521,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Quest For Rick Danger Improved Auger Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="elitequestwrit_toc_rickdanger_name">
-			<property name="DescriptionKey" value="elitequestwrit_toc_rickdanger_description"/>						
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="elitequestwrit_toc_rickdanger_description"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -3684,77 +3538,40 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Rick Danger Improved Auger"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
-		<item name="eliteitemreward_toc_rickdanger_name"> 
-		  <property name="DescriptionKey" value="eliteitemreward_toc_rickdanger_desc"/>									
-		  <property name="CustomIcon" value="meleeToolPickT3Auger"/>
-		  <property name="CustomIconTint" value="cc3300"/>
-			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
-			<property name="DisplayType" value="motorTool"/>
-			<property name="HoldType" value="20"/>
-			<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
-			<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
-			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="SoundIdle" value="Auger_Idle"/>
-			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
-			<property name="Group" value="Tools/Traps"/>
-			<property name="RepairExpMultiplier" value="10.8"/>
-			<property name="EconomicValue" value="3500"/>
-			<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolAugerSchematic"/>
-			<property name="ShowQuality" value="true"/>
-			<property class="Action0">
-				<property name="Class" value="Ranged"/>
-				<property name="Hitmask_override" value="Melee"/>
-				<property name="UseMeleeCrosshair" value="true"/>
-				<property name="Single_magazine_usage" value="false"/>
-				<property name="Magazine_items" value="ammoGasCan"/>
-				<property name="Bullet_material" value="metal"/>
-				<property name="Reload_time" value="2.6"/>
-				<property name="Sound_start" value="Auger_Fire_Start"/>
-				<property name="Sound_repeat" value="Weapons/Motorized/Auger/auger_fire_lp"/>
-				<property name="Sound_end" value="Weapons/Motorized/Auger/auger_fire_end"/>
-				<property name="Sound_empty" value="auger_empty"/>
-				<property name="Sound_reload" value="Auger_Reload"/>
-				<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
-				<property name="SupportHarvesting" value="true"/>
-				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 			</property>
+		</item>
+		<item name="eliteitemreward_toc_rickdanger_name">
+			<property name="Extends" value="meleeToolPickT3Auger"/>
+			<property name="DescriptionKey" value="eliteitemreward_toc_rickdanger_desc"/>
+			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="5f40c4"/> 
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="3500"/>
+			<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolAugerSchematic"/>
 			<effect_group name="eliteitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="26.7" tags="perkMiner69r"/>
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="2600,5000" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1.5" tags="perkMiner69r"/>
-				<passive_effect name="MaxRange" operation="base_set" value="2.55" tags="perkMiner69r"/>
-				<passive_effect name="BlockRange" operation="base_set" value="3.9" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="24.7" tags="perkMiner69r,miningTool"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="340" tags="perkMiner69r"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="2000,5000" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.35" tags="perkMiner69r"/>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="SphereCastRadius" operation="base_set" value=".1" tags="perkMiner69r"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="perkMiner69r"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> 
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> 
-				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.3" tags="Harvesting"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.3" tags="perkMiner69r"/> 
-				<passive_effect name="BlockDamage" operation="perc_add" value=".05,.9" tier="2,6" tags="perkMiner69r"/> 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> 
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.2" tags="perkMiner69r"/> 
-				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkMiner69r"/> 
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.02,.1" tags="perkMiner69r"/> 
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1100" tags="perkMiner69r"/>
-				<passive_effect name="MagazineSize" operation="base_set" value="500" tags="perkMiner69r"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkMiner69r"/> 
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".5" tags="perkMiner69r"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".5" tags="perkMiner69r"/>
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.2" tags="perkMiner69r"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".2" tags="perkMiner69r"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.2" tags="perkMiner69r"/>
-				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".2" tags="perkMiner69r"/>
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value="8" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.08,.22" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.65" tier="2,6" tags="perkMiner69r"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.12,.12" tags="perkMiner69r"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.06" tags="perkMiner69r"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="400" tags="perkMiner69r"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.25" tags="perkMiner69r"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".25" tags="perkMiner69r"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.25" tags="perkMiner69r"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25" tags="perkMiner69r"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> 
+				<passive_effect name="WeaponHandling" operation="base_set" value="6" tags="perkMiner69r"/>
 			</effect_group>
 		</item>
 	</append>
@@ -3796,7 +3613,7 @@
 		</item>
 	</append>
 	<append xpath="/items">
-		<item name="vehicleSpiritHellBeastPlaceable"> 
+		<item name="vehicleSpiritHellBeastToCPlaceable"> 
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
 			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
 			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
@@ -3804,7 +3621,7 @@
 			<property name="Meshfile" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 			<property name="EconomicValue" value="10000"/>
 			<property class="Action1">
-				<property name="Vehicle" value="vehicleSpiritHellBeast"/>
+				<property name="Vehicle" value="vehicleSpiritHellBeastToC"/>
 				<property name="VehicleSize" value="1.3, 1.9, 3"/>
 			</property>
 			<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
@@ -4085,6 +3902,12 @@
 			</property>
 		</item>
 	</append>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">23</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage' and @operation='perc_add' and @tier='2,6']/@value">.15,.55</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss' and @operation='base_set']/@value">7</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss' and @operation='perc_add']/@value">-.15,.15</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">120</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockRange']/@value">4</set>
 <!-- END White River Tools of Citizenship - Taza's Axe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
 

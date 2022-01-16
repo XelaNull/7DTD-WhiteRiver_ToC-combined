@@ -108,40 +108,23 @@
 				<property name="response_key" value="questdialog_toc_1000z"/>
 				<property name="group_name_key" value="quest_toc_1000z_group"/>
 				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
 				<objective type="ZombieKill" value="250" phase="1" />
 				<objective type="ZombieKill" value="250" phase="2" />
 				<objective type="ZombieKill" value="250" phase="3" />
 				<objective type="ZombieKill" value="250" phase="4" />
-				<reward type="Quest" id="quest_reward_1000z"/>
-			</quest>
-			<quest id="quest_reward_1000z">
-				<property name="name_key" value="quest_toc_1000zreward_name"/>
-				<property name="subtitle_key" value="quest_toc_1000zreward_subtitle"/>
-				<property name="description_key" value="quest_toc_1000zreward_description"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="quest_toc_1000zreward_offer"/>
-				<property name="statement_key" value="quest_toc_1000zreward_statement"/>
-				<property name="response_key" value="questdialog_toc_1000zreward"/>
-				<property name="group_name_key" value="quest_toc_1000z_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn"/>
-				<objective type="Goto" value="5" phase="1"/>
+				<objective type="Goto" value="5" phase="5" />
 				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
+					<property name="phase" value="6"/>
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="go_to_trader" />
-					<property name="use_closest" value="true" />
+					<property name="phase" value="7" />
+					<property name="nav_object" value="return_to_trader" />
 				</objective>
 				<reward type="Exp" value="2000" />
 				<reward type="SkillPoints" value="1" />
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
-				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
 			</quest>
 			<quest id="+Obtain a Random Elite Quest">
 				<property name="name_key" value="quest_toc_randomelite_name"/>
@@ -242,7 +225,14 @@
 				<property name="phase" value="3" />
 				<property name="nav_object" value="return_to_trader" />
 			</objective>
-			<reward type="Item" id="questitem_toc_amelia1map_name" ischosen="true" value="1" />
+			<reward type="Item" id="questitem_toc_amelia1map_name" value="1" />
+			<reward type="LootItem" id="groupTreasureMaps" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
 			<reward type="Exp" value="1000" />
 		</quest>
 		<quest id="+Quest to find Amelia Earhart's Coffin">
@@ -1128,8 +1118,8 @@
 				<reward type="Exp" value="1500" />
 				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
-				<reward type="LootItem" id="groupWhiteRiverTOCDeschain" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCDeschainAmmo" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCDeschain" value="1" isfixed="true" />
+				<reward type="LootItem" id="groupWhiteRiverTOCDeschainAmmo" value="1" isfixed="true" />
 				<reward type="Item" id="itemreward_toc_deschhat_name" value="1" />
 				<reward type="LootItem" id="groupTreasureMaps" ischosen="true" isfixed="true" value="1"/>
 				<reward type="LootItem" id="groupQuestT3RangedMods" ischosen="true" value="1"/>
@@ -2496,7 +2486,6 @@
 			<property name="response_key" value="quest_fetch_response"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
 			<property name="shareable" value="false" />
-			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
 			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3" />
 			<reward type="Quest" id="+Elite Quest For Spirit of Vengeance Hell Beast"/>
 		</quest>
@@ -2559,7 +2548,7 @@
 			<reward type="Exp" value="1500" />
 			<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
 			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	
-			<reward type="Item" id="vehicle_spirit_hell_beast" value="1" />
+			<reward type="Item" id="vehicleSpiritHellBeastToCPlaceable" value="1" />
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
@@ -2568,6 +2557,9 @@
 			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestcasinoCoinT3" ischosen="true" value="1"/>
 		</quest>
+	</append>
+	<append xpath="/quests/quest[contains(@id,'Reward of Deschain')]">
+		<reward type="Item" id="questitem_spirit_vengeance_name" value="1" />
 	</append>
 <!-- END White River Tools of Citizenship - Spirit of Vengeance by Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa -->
 

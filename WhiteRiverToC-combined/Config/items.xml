@@ -106,6 +106,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			 <property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="item_toc_amelia_schem_name">
 			<property name="DescriptionKey" value="item_toc_amelia_schem_desc"/>
@@ -174,7 +175,7 @@
 			<property name="UnlockedBy" value="item_toc_amelia_schem_name"/>
 		</item>
     <item name="vehicleAmeliaGyrocopterPlaceable">
-			<property name="Tags" value="vehicle,vengine,vfuel,canHaveCosmetic"/>						
+			<property name="Tags" value="vehicle,vengine,vfuel,canHaveCosmetic"/>
       <property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>
       <property name="CustomIconTint" value="cc3300"/>
     	<property name="Extends" value="vehicleMinibikePlaceable"/>
@@ -270,18 +271,21 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_vetcoin_bambi">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_elitecoin_bambi">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="questitem_toc_bambi_name">
 			<property name="DescriptionKey" value="questitem_toc_bambi_desc"/>
@@ -760,6 +764,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="vetquestitem_toc_blackb_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_blackb_desc"/>
@@ -938,6 +943,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="questitem_toc_bunyan_name">
 			<property name="DescriptionKey" value="questitem_toc_bunyan_description"/>
@@ -1130,12 +1136,14 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_elitecoin_daryl">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="vetquestitem_toc_daryl_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_daryl_desc"/>
@@ -1748,6 +1756,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="questitem_toc_dundee_name">
 			<property name="DescriptionKey" value="questitem_toc_dundee_description"/>
@@ -1850,8 +1859,9 @@
 		<item name="questitem_coin_everdeen">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 	</append>
 	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_earrows_name</append>
@@ -1864,8 +1874,8 @@
 	<append xpath="/items/item[@name='vetitem_toc_daryl_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_ebolts_name</append>
 	<append xpath="/items/item[@name='eliteitem_toc_daryl_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_ebolts_name</append>
 	<append xpath="/items">
-		<item name="questitem_toc_earrows_name"> 
-			<property name="DescriptionKey" value="questitem_toc_earrows_desc"/>						
+		<item name="questitem_toc_earrows_name">
+			<property name="DescriptionKey" value="questitem_toc_earrows_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -1874,11 +1884,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Everdeen's Arrows Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="writitem_toc_earrows_name">
-			<property name="DescriptionKey" value="writitem_toc_earrows_desc"/>						
+			<property name="DescriptionKey" value="writitem_toc_earrows_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -1886,16 +1896,16 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Everdeen's Arrows"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>	
-		<item name="questitem_toc_ebolts_name"> 
-			<property name="DescriptionKey" value="questitem_toc_ebolts_desc"/>						
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="questitem_toc_ebolts_name">
+			<property name="DescriptionKey" value="questitem_toc_ebolts_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -1904,11 +1914,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Everdeen's Bolts Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>			
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="writitem_toc_ebolts_name">
-			<property name="DescriptionKey" value="writitem_toc_ebolts_desc"/>						
+			<property name="DescriptionKey" value="writitem_toc_ebolts_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -1916,16 +1926,16 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Everdeen's Bolts"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="item_toc_earrows_name">
-			<property name="DescriptionKey" value="item_toc_earrows_desc"/>						
+			<property name="DescriptionKey" value="item_toc_earrows_desc"/>
 			<property name="Extends" value="ammoArrowIron"/>
 			<property name="CustomIcon" value="ammoArrowSteelAP"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
@@ -1967,7 +1977,7 @@
 			</effect_group>
 		</item>
 		<item name="item_toc_ebolts_name">
-			<property name="DescriptionKey" value="item_toc_ebolts_desc"/>						
+			<property name="DescriptionKey" value="item_toc_ebolts_desc"/>
 			<property name="Extends" value="ammoCrossbowBoltIron"/>
 			<property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab.prefab"/>
@@ -2186,6 +2196,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="questitem_toc_jason_name">
 			<property name="DescriptionKey" value="questitem_toc_jason_description"/>
@@ -2284,6 +2295,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="questitem_toc_kuva_name">
 			<property name="DescriptionKey" value="questitem_toc_kuva_desc"/>
@@ -2664,7 +2676,7 @@
 				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
 				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>				
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
@@ -2703,12 +2715,14 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_vetcoin_leon">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="questitem_toc_leon_name">
 			<property name="DescriptionKey" value="questitem_toc_leon_description"/>
@@ -2891,17 +2905,19 @@
 		<item name="questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelper">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="7fa6ff"/> 
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="5f40c4"/> 
+			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
-		<item name="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>												
+		<item name="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -2910,12 +2926,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Quest For Non Fuzzy Bulletproof Glass Recipe Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>									
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -2927,10 +2943,10 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Non Fuzzy Bulletproof Glass"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
-		<item name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"> 
-			<property name="DescriptionKey" value="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>									
+			</property>
+		</item>
+		<item name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
+			<property name="DescriptionKey" value="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -2939,12 +2955,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
-			<property name="DescriptionKey" value="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>						
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -2956,13 +2972,13 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Non Fuzzy Bulletproof Glass Recipe"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
+			</property>
+		</item>
 		<item name="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name">
-			<property name="DescriptionKey" value="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>						
+			<property name="DescriptionKey" value="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
 			<property name="Extends" value="schematicMaster"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="glassBulletproofCTRPlate"/> 
+			<property name="CustomIcon" value="glassBulletproofCTRPlate"/>
 			<property name="Unlocks" value="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" operation="set" value="1"/>
@@ -2983,6 +2999,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="vetquestitem_toc_pav_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_pav_description"/>
@@ -3206,6 +3223,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="elitequestitem_toc_remington_name">
 			<property name="DescriptionKey" value="elitequestitem_toc_remington_description"/>
@@ -3441,12 +3459,14 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_elitecoin_rickdanger">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="vetquestitem_toc_rickdanger_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_rickdanger_description"/>
@@ -3909,12 +3929,14 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_vetcoin_taza">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 		<item name="questitem_toc_taza_name">
 			<property name="DescriptionKey" value="questitem_toc_taza_description"/>

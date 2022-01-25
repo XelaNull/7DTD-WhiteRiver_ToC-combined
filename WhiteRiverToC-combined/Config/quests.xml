@@ -140,6 +140,7 @@
 				<property name="group_name_key" value="quest_toc_randomelite_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn"/>
+				<property name="reward_choices_count" value="1" />
 				<objective type="Goto" value="5" phase="1"/>
 				<objective type="ReturnToNPC">
 					<property name="phase" value="2"/>
@@ -152,6 +153,10 @@
 				</objective>
 				<reward type="Exp" value="1000" />
 				<reward type="Item" id="questblock_toc_randomcrate_name" value="1" />
+				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
 			</quest>
 	</insertBefore>
 	<append xpath="/quests/quest_list[@id='trader_quests']">

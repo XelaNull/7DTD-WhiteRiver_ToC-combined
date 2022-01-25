@@ -115,16 +115,16 @@
 <!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
 	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
-      <property name="Sound_start" value="mp5_s_fire"/>
+      <property name="Sound_start" value="smg_s_fire"/>
       <property name="Sound_end" value="silencefiller"/>
-      <property name="Sound_loop" value="mp5_s_fire"/>
+      <property name="Sound_loop" value="smg_s_fire"/>
       <property name="BarrelOffset" value="0,0,0"/>
       <property name="BarrelScale" value="1,1,1"/>
     </item_property_overrides>
     <item_property_overrides name="questitem_toc_leonsmg_name">
-      <property name="Sound_start" value="mp5_s_fire"/>
+      <property name="Sound_start" value="smg_s_fire"/>
       <property name="Sound_end" value="silencefiller"/>
-      <property name="Sound_loop" value="mp5_s_fire"/>
+      <property name="Sound_loop" value="smg_s_fire"/>
       <property name="BarrelOffset" value="0,0,0"/>
       <property name="BarrelScale" value="1,1,1"/>
     </item_property_overrides>

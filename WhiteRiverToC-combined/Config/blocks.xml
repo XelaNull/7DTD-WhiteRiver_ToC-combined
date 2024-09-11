@@ -1,301 +1,275 @@
-<configs>
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/blocks">
-		<block name="questblock_toc_randomcrate_name">
-			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
-			<property name="CustomIcon" value="cntShippingCrateHero"/>
-			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="+Random Elite Citizen Crate"/>
-			<property name="FilterTags" value="floot"/>
-		</block>
-		<block name="+Random Elite Citizen Crate">
-			<property name="CustomIcon" value="cntCardboardBox"/>
-			<property name="CustomIconTint" value="333333"/>
-			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="WhiteRiverToCRequiredRandom"/>
-		</block>
-	</append>
-<!-- END White River Tools of Citizenship by ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/blocks/block[@name='cntCar03SedanDamage1Master']">
-		<drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.02" tag="salvageHarvest"/>
-  </append>
-	<append xpath="/blocks/block[@name='cntBusSchool']">
-		<drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.01" tag="salvageHarvest"/>
-  </append>
-	<append xpath="/blocks/block[@name='decoCarMotorFlat']">
-		<drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.15" tag="salvageHarvest"/>
-  </append>
-	<append xpath="/blocks">
-		<block name="questblock_toc_amelia_coffin">
-			<property name="Class" value="Loot"/>
-			<property name="CustomIcon" value="cntChest01"/>
-			<property name="Material" value="MwoodReinforced"/>
-			<property name="StabilitySupport" value="false"/> 
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Texture" value="293"/>
-			<property name="Mesh" value="models"/>
-			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
-			<property name="HandleFace" value="Bottom"/>
-			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
-			<property name="IsTerrainDecoration" value="true"/>
-			<property name="LootList" value="WhiteRiverToCAmelia01"/>
-			<property name="CreativeMode" value="None"/>
-			<drop event="Destroy" name="resourceWood" count="1,3"/>
-			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-			<property name="FilterTags" value="floot"/>
-		</block>
-	</append>
-<!-- END White River Tools of Citizenship - Amelia Earhart's Gyrocopter by Shouden Kalferas and Aeyvi Kalferas -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/blocks">
-		<block name="questblock_toc_blackb_coffin">
-			<property name="Class" value="Loot"/>
-			<property name="CustomIcon" value="cntChest01"/>
-			<property name="Material" value="MwoodReinforced"/>
-			<property name="StabilitySupport" value="false"/> 
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Texture" value="293"/>
-			<property name="Mesh" value="models"/>
-			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
-			<property name="HandleFace" value="Bottom"/>
-			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
-			<property name="IsTerrainDecoration" value="true"/>
-			<property name="LootList" value="WhiteRiverToCBlackBart01"/>
-			<property name="CreativeMode" value="None"/>
-			<drop event="Destroy" name="resourceWood" count="1,3"/>
-			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-			<property name="FilterTags" value="floot"/>
-		</block>
-	</append>
-<!-- END White River Tools of Citizenship - Black Bart's Flaming Dig Tools by Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem)  -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/blocks">
-    <block name="treasureKuvaChest"> 
-    	<property name="Class" value="Loot"/>
-    	<property name="CustomIcon" value="cntChest01"/>
-    	<property name="Material" value="MwoodReinforced"/>
-    	<property name="StabilitySupport" value="false"/> 
-    	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-    	<property name="Mesh" value="models"/>
-    	<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
-    	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
-    	<property name="IsTerrainDecoration" value="true"/>
-    	<property name="LootList" value="WhiteRiverToCKuva01"/>
-    	<property name="CreativeMode" value="None"/>
-    	<drop event="Destroy" name="resourceWood" count="1,3"/>
-    	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-    	<property name="FilterTags" value="floot"/>
+  <config>
+  <!-- Start XML_Block: WhiteRiverToC__REQUIRED -->
+  <append xpath="/blocks">
+    <block name="questblock_toc_randomcrate_name">
+      <property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
+      <property name="CustomIcon" value="cntShippingCrateHero"/>
+      <property name="CustomIconTint" value="ffffb3"/>
+      <property name="Extends" value="cntShippingCrateHero"/>
+      <property name="DowngradeBlock" value="Random_Elite_Citizen_Crate"/>
+      <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+    <block name="Random_Elite_Citizen_Crate">
+      <property name="CustomIcon" value="cntCardboardBox"/>
+      <property name="CustomIconTint" value="333333"/>
+      <property name="Extends" value="cntGarageStorage"/>
+      <property name="LootList" value="WhiteRiverToCRequiredRandom"/>
     </block>
   </append>
-<!-- END White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/blocks">
-<block name="questblock_toc_glassNonFuzzyBulletproofMaster">
-		<property name="DescriptionKey" value="questblock_toc_bulletproofGlassGroup_desc"/>
-	<property name="Group" value="Building,advBuilding"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="Material" value="MglassBulletproof"/>
-	<property name="Shape" value="New"/>
-	<property name="LightOpacity" value="2"/>
-	<property name="Model" value="cube_glass"/>
-	<property name="Mesh" value="transparent"/>
-	<property name="Texture" value="285"/> 
-	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<property class="RepairItems"> <property name="resourceBrokenGlass" value="50"/> </property>	
-	<drop event="Harvest" name="resourceBrokenGlass" count="21" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<property name="EconomicValue" value="150"/>
-	<property name="FilterTags" value="fbuilding,fdecor,fwindows"/>
-	<property name="SortOrder1" value="7080"/>
-	<property name="SortOrder2" value="0002"/>
-</block>
-<block name="questblock_toc_glassNonFuzzyBulletproofCTRPlate">
-	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property name="SortOrder2" value="0160"/> 
-	<property name="ImposterExchange" value="imposterBlock" param1="170"/> 
-	<property name="Group" value="Building,advBuilding"/>
-	<property name="CustomIcon" value="glassBulletproofCTRPlate"/>
-</block>
-<block name="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper">
-	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofCTRPlate"/>
-	<property name="UnlockedBy" value="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name"/>
-	<property name="CustomIcon" value="glassBulletproofCTRPlate"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
-	<property name="ItemTypeIcon" value="all_blocks"/>
-	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="questblock_toc_glassNonFuzzyBulletproofCTRPlate,questblock_toc_glassNonFuzzyBulletproofPlate,questblock_toc_glassNonFuzzyBulletproofBlock,questblock_toc_glassNonFuzzyBulletproofRamp,questblock_toc_glassNonFuzzyBulletproofPlateCurved"/>
-	<property name="Stacknumber" value="200"/>	
-</block>
-<block name="questblock_toc_glassNonFuzzyBulletproofPlate">
-	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-	<property name="Model" value="plate_glass"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="ImposterExchange" value="imposterPlate" param1="170"/> 
-	<property name="Group" value="Building,advBuilding"/>
-    <property name="CustomIcon" value="glassBulletproofPlate"/>
-</block>
-<block name="questblock_toc_glassNonFuzzyBulletproofBlock">
-	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-	<property name="SortOrder2" value="0050"/> 
-	<property name="CustomIcon" value="glassBulletproofMaster"/>
-	<property name="ImposterExchange" value="imposterBlock" param1="170"/> 
-</block>
-<block name="questblock_toc_glassNonFuzzyBulletproofRamp">
-	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-	<property name="Model" value="ramp_glass"/>
-	<property name="CustomIcon" value="glassBulletproofRamp"/>
-	<property name="ImposterExchange" value="imposterRamp" param1="170"/> 
-</block>
-<block name="questblock_toc_glassNonFuzzyBulletproofPlateCurved">
-	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-	<property name="Model" value="plate_corner_round_1m"/>
-	<property name="CustomIcon" value="glassBulletproofPlateCurved"/>
-	<property name="ImposterExchange" value="imposterBlock" param1="170"/> 
-</block>
-	</append>
-<!-- END White River Tools of Citizenship - Molino Bulletproof Glass by arramus, with full credit to those who laid template foundations (Requested by Fuzzy Pug) -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/blocks">
+  <!-- End XML_Block: WhiteRiverToC__REQUIRED -->
+  <!-- Start XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <append xpath="/blocks/block[@name='cntCar03SedanDamage1Master']">
+    <drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.02" tag="salvageHarvest"/>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <!-- Start XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <append xpath="/blocks/block[@name='cntBusSchool']">
+    <drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.01" tag="salvageHarvest"/>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <!-- Start XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <append xpath="/blocks/block[@name='decoCarMotorFlat']">
+    <drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.15" tag="salvageHarvest"/>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <!-- Start XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <append xpath="/blocks">
+    <block name="questblock_toc_amelia_coffin">
+      <property name="Class" value="Loot"/>
+      <property name="CustomIcon" value="cntCoffinWildWestClosed"/>
+      <property name="Material" value="MwoodReinforced"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+      <property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
+      <property name="HandleFace" value="Bottom"/>
+      <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="LootList" value="WhiteRiverToCAmelia01"/>
+      <property name="CreativeMode" value="None"/>
+      <drop event="Destroy" name="resourceWood" count="1,3"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <!-- Start XML_Block: WhiteRiverToC_BlackBarts_Dig_Tools -->
+  <append xpath="/blocks">
+    <block name="questblock_toc_blackb_coffin">
+      <property name="Class" value="Loot"/>
+      <property name="CustomIcon" value="cntCoffinWildWestClosed"/>
+      <property name="Material" value="MwoodReinforced"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+      <property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
+      <property name="HandleFace" value="Bottom"/>
+      <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="LootList" value="WhiteRiverToCBlackBart01"/>
+      <property name="CreativeMode" value="None"/>
+      <drop event="Destroy" name="resourceWood" count="1,3"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="FilterTags" value="MC_helpers,SC_loot"/>
+    </block>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_BlackBarts_Dig_Tools -->
+  <!-- Start XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <append xpath="/blocks">
+    <block name="treasureKuvaChest">
+      <property name="Class" value="Loot"/>
+      <property name="CustomIcon" value="cntCoffinWildWestClosed"/>
+      <property name="Material" value="MwoodReinforced"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+      <property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
+      <property name="HandleFace" value="Bottom"/>
+      <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="LootList" value="WhiteRiverToCKuva01"/>
+      <property name="CreativeMode" value="None"/>
+      <drop event="Destroy" name="resourceWood" count="1,3"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="FilterTags" value="MC_helpers,SC_loot"/>
+    </block>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <!-- Start XML_Block: WhiteRiverToC_Molino_Glass -->
+  <append xpath="/blocks">
+    <block name="questblock_toc_glassNonFuzzyBulletproofMaster">
+      <property name="DescriptionKey" value="questblock_toc_bulletproofGlassGroup_desc"/>
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="CreativeMode" value="None"/>
+      <property name="Material" value="MglassBulletproof"/>
+      <property name="Shape" value="New"/>
+      <property name="LightOpacity" value="2"/>
+      <property name="Model" value="cube_glass"/>
+      <property name="Mesh" value="transparent"/>
+      <property name="Texture" value="285"/>
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+      <property class="RepairItems">
+        <property name="resourceBrokenGlass" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceBrokenGlass" count="21" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <property name="EconomicValue" value="150"/>
+      <property name="FilterTags" value="MC_building,SC_decor,SC_windows"/>
+      <property name="SortOrder1" value="7080"/>
+      <property name="SortOrder2" value="0002"/>
+    </block>
+    <block name="questblock_toc_glassNonFuzzyBulletproofCTRPlate">
+      <property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+      <property name="Model" value="plate_centered"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="SortOrder2" value="0160"/>
+      <property name="ImposterExchange" value="imposterBlock" param1="170"/>
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="CustomIcon" value="glassBulletproofCTRPlate"/>
+    </block>
+    <block name="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper">
+      <property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofCTRPlate"/>
+      <property name="UnlockedBy" value="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name"/>
+      <property name="CustomIcon" value="glassBulletproofCTRPlate"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+      <property name="ItemTypeIcon" value="all_blocks"/>
+      <property name="SelectAlternates" value="true"/>
+      <property name="PlaceAltBlockValue" value="questblock_toc_glassNonFuzzyBulletproofCTRPlate,questblock_toc_glassNonFuzzyBulletproofPlate,questblock_toc_glassNonFuzzyBulletproofBlock,questblock_toc_glassNonFuzzyBulletproofRamp,questblock_toc_glassNonFuzzyBulletproofPlateCurved"/>
+      <property name="Stacknumber" value="200"/>
+    </block>
+    <block name="questblock_toc_glassNonFuzzyBulletproofPlate">
+      <property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+      <property name="Model" value="plate_glass"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="ImposterExchange" value="imposterPlate" param1="170"/>
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="CustomIcon" value="glassBulletproofPlate"/>
+    </block>
+    <block name="questblock_toc_glassNonFuzzyBulletproofBlock">
+      <property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="CustomIcon" value="glassBulletproofMaster"/>
+      <property name="ImposterExchange" value="imposterBlock" param1="170"/>
+    </block>
+    <block name="questblock_toc_glassNonFuzzyBulletproofRamp">
+      <property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+      <property name="Model" value="ramp_glass"/>
+      <property name="CustomIcon" value="glassBulletproofRamp"/>
+      <property name="ImposterExchange" value="imposterRamp" param1="170"/>
+    </block>
+    <block name="questblock_toc_glassNonFuzzyBulletproofPlateCurved">
+      <property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+      <property name="Model" value="plate_corner_round_1m"/>
+      <property name="CustomIcon" value="glassBulletproofPlateCurved"/>
+      <property name="ImposterExchange" value="imposterBlock" param1="170"/>
+    </block>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Molino_Glass -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <append xpath="/blocks">
     <block name="vetquestmap_toc_pav_map1_name">
-			<property name="DescriptionKey" value="vetquestmap_toc_pav_map1_desc"/>
-    	<property name="Class" value="Loot"/>
-    	<property name="CustomIcon" value="cntChest01"/>
-    	<property name="Material" value="MwoodReinforced"/>
-    	<property name="StabilitySupport" value="false"/> 
-    	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-    	<property name="Mesh" value="models"/>
-    	<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
-    	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
-    	<property name="IsTerrainDecoration" value="true"/>
-    	<property name="LootList" value="WhiteRiverToCPav01"/>
-    	<property name="CreativeMode" value="None"/>
-    	<drop event="Destroy" name="resourceWood" count="1,3"/>
-    	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-    	<property name="FilterTags" value="floot"/>
-    </block>
-    <block name="vetquestmap_toc_pav_map2_name">
-			<property name="DescriptionKey" value="vetquestmap_toc_pav_map2_desc"/>
+      <property name="DescriptionKey" value="vetquestmap_toc_pav_map1_desc"/>
       <property name="Class" value="Loot"/>
       <property name="CustomIcon" value="cntChest01"/>
       <property name="Material" value="MwoodReinforced"/>
-      <property name="StabilitySupport" value="false"/> 
-      <property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-      <property name="Mesh" value="models"/>
-      <property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+      <property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
+      <property name="HandleFace" value="Bottom"/>
+      <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="LootList" value="WhiteRiverToCPav01"/>
+      <property name="CreativeMode" value="None"/>
+      <drop event="Destroy" name="resourceWood" count="1,3"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="FilterTags" value="MC_helpers,SC_loot"/>
+    </block>
+    <block name="vetquestmap_toc_pav_map2_name">
+      <property name="DescriptionKey" value="vetquestmap_toc_pav_map2_desc"/>
+      <property name="Class" value="Loot"/>
+      <property name="CustomIcon" value="cntChest01"/>
+      <property name="Material" value="MwoodReinforced"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+      <property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
+      <property name="HandleFace" value="Bottom"/>
       <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
       <property name="IsTerrainDecoration" value="true"/>
       <property name="LootList" value="WhiteRiverToCPav02"/>
       <property name="CreativeMode" value="None"/>
       <drop event="Destroy" name="resourceWood" count="1,3"/>
       <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-      <property name="FilterTags" value="floot"/>
+      <property name="FilterTags" value="MC_helpers,SC_loot"/>
     </block>
   </append>
-<!-- END White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Remington's Steel Ammo by Shouden Kalferas, Based on Khaine's Steel Ammo -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-			<append xpath="/blocks">
-				<block name="remingtonTurret">
-					<property name="CustomIcon" value="autoTurret"/>
-					<property name="CustomIconTint" value="cc3300"/>
-					<property name="CreativeMode" value="Player"/>
-					<property name="Class" value="Ranged"/>
-					<property name="DisplayType" value="blockElectricalHardened"/>
-					<property name="Material" value="Mmetal_medium"/>
-					<property name="Shape" value="ModelEntity"/>
-					<property name="Mesh" value="models"/>
-					<property name="Path" value="solid"/>
-					<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
-					<property name="OnlySimpleRotations" value="true"/> 
-					<property name="AmmoItem" value="ammo762mmBulletFMJSteelRemington"/>
-					<property name="TurnSpeed" value="18.5"/>
-					<property name="MaxDistance" value="40"/>
-					<property name="EntityDamage" value="70"/> 
-					<property name="BlockDamage" value="1"/>
-					<property name="RaySpread" value="2.1"/> 
-					<property name="BurstRoundCount" value="3"/>
-					<property name="BurstFireRate" value="0.17"/>
-					<property name="CooldownTime" value=".2"/>
-					<property name="OvershootTime" value="0.3"/>
-					<property name="FallAsleepTime" value="10"/>
-					<property name="WakeUpTime" value="0.3"/>
-					<property name="YawRange" value="60"/>
-					<property name="PitchRange" value="60"/>
-					<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
-					<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
-					<property name="DamageBonus.head" value="4"/>
-					<property name="DamageBonus.leg" value="10"/>
-					<property name="DamageBonus.glass" value="1"/>
-					<property name="DamageBonus.wood" value="2"/>
-					<property name="DamageBonus.earth" value="0.2"/>
-					<property name="DamageBonus.stone" value="0.2"/>
-					<property name="DamageBonus.metal" value="0.2"/>
-					<property name="TargetingSound" value="turret_retarget_lp"/>
-					<property name="OverheatSound" value="turret_overheat_lp"/>
-					<property name="WakeUpSound" value="turret_windup"/>
-					<property name="FireSound" value="Pistol_Fire"/>
-				  <property name="RequiredPower" value="25"/>
-					<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
-    			<property name="IgnoreKeystoneOverlay" value="true"/>
-					<property class="RepairItems">
-						<property name="resourceForgedSteel" value="10"/>
-						<property name="resourceMechanicalParts" value="4"/>
-						<property name="resourceElectricParts" value="4"/>
-						<property name="carBattery" value="1"/>
-					</property>
-					<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-					<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
-					<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
-					<drop event="Harvest" name="carBattery" count="1,2" tag="salvageHarvest"/>
-					<drop event="Harvest" name="resourceScrapIron" count="10,80" tag="allHarvest"/>
-					<drop event="Destroy" count="0"/>
-					<property name="Stacknumber" value="10"/>
-					<property name="EconomicValue" value="5000"/>
-					<property name="EconomicBundleSize" value="1"/>
-					<property name="ImposterExchange" value="imposterBlock" param1="109"/>
-					<property name="Group" value="Tools/Traps,Science"/>
-					<property name="PickupJournalEntry" value="cameraTip"/>
-					<property name="FilterTags" value="MC_playerBlocks,SC_electrical,SC_traps"/>
-					<property name="SortOrder1" value="70a0"/>
-				</block>
-			</append>
-<!-- END White River Tools of Citizenship - Remington's Steel Ammo by Shouden Kalferas, Based on Khaine's Steel Ammo -->
-
-
-</configs>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Remingtons_Steel_Ammo -->
+  <append xpath="/blocks">
+    <block name="remingtonTurret">
+      <property name="CustomIcon" value="autoTurret"/>
+      <property name="CustomIconTint" value="cc3300"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Class" value="Ranged"/>
+      <property name="DisplayType" value="blockElectricalHardened"/>
+      <property name="Material" value="Mmetal_medium"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Path" value="solid"/>
+      <property name="Model" value="Entities/Traps/AutoTurret/autoTurretSMGPrefab"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="AmmoItem" value="ammo762mmBulletFMJSteelRemington"/>
+      <property name="TurnSpeed" value="18.5"/>
+      <property name="MaxDistance" value="40"/>
+      <property name="EntityDamage" value="70"/>
+      <property name="BlockDamage" value="1"/>
+      <property name="RaySpread" value="2.1"/>
+      <property name="BurstRoundCount" value="3"/>
+      <property name="BurstFireRate" value="0.17"/>
+      <property name="CooldownTime" value=".2"/>
+      <property name="OvershootTime" value="0.3"/>
+      <property name="FallAsleepTime" value="10"/>
+      <property name="WakeUpTime" value="0.3"/>
+      <property name="YawRange" value="60"/>
+      <property name="PitchRange" value="60"/>
+      <property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+      <property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="4"/>
+      <property name="DamageBonus.leg" value="10"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="DamageBonus.wood" value="2"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="DamageBonus.stone" value="0.2"/>
+      <property name="DamageBonus.metal" value="0.2"/>
+      <property name="TargetingSound" value="turret_retarget_lp"/>
+      <property name="OverheatSound" value="turret_overheat_lp"/>
+      <property name="WakeUpSound" value="turret_windup"/>
+      <property name="FireSound" value="Pistol_Fire"/>
+      <property name="RequiredPower" value="25"/>
+      <property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
+      <property name="IgnoreKeystoneOverlay" value="true"/>
+      <property class="RepairItems">
+        <property name="resourceForgedSteel" value="10"/>
+        <property name="resourceMechanicalParts" value="4"/>
+        <property name="resourceElectricParts" value="4"/>
+        <property name="carBattery" value="1"/>
+      </property>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+      <drop event="Harvest" name="carBattery" count="1,2" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceScrapIron" count="10,80" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="EconomicValue" value="5000"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="ImposterExchange" value="imposterBlock" param1="109"/>
+      <property name="Group" value="Tools/Traps,Science"/>
+      <property name="PickupJournalEntry" value="cameraTip"/>
+      <property name="FilterTags" value="MC_playerBlocks,SC_electrical,SC_traps"/>
+      <property name="SortOrder1" value="70a0"/>
+    </block>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Remingtons_Steel_Ammo -->
+  </config>

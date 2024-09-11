@@ -1,10 +1,27 @@
-<configs>
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-  <append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_pants_name,item_toc_kuvablue_boots_name</append>
-<!-- END White River Tools of Citizenship - Kuva's Red and Blue Armor by Shouden Kalferas and Aeyvi Kalferas -->
-
-
-</configs>
+  <config>
+  <!-- Start XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']">
+    <display_entry icon="armorNomadHelmet" name_key="armorT5" has_quality="true" unlock_level="11,20,40,60,80,100">
+      <unlock_entry item="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name"/>
+    </display_entry>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <!-- Start XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name"/>
+    <passive_effect name="CraftingTier" operation="base_add" level="20,40,60,80,100" value="1,2,3,4,5" tags="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name"/>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']">
+    <display_entry item="questitem_toc_pav_rifle_name" unlock_level="61,68,76,84,92,100">
+		</display_entry>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/effect_group">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="questitem_toc_pav_rifle_name"/>
+    <passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="questitem_toc_pav_rifle_name"/>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  </config>

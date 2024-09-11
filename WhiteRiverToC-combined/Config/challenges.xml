@@ -1,0 +1,251 @@
+  <config>
+  <!-- Start XML_Block: WhiteRiverToC__REQUIRED -->
+  <insertAfter xpath="/challenges/challenge[@name='twitchHomerunDerby']">
+    <challenge_category name="White_River_ToC" title_key="WhiteRiverToolsOfCitizenship_Header" icon="ui_game_symbol_challenge_basics_stone_axe_harvest"/>
+    <challenge_group category="White_River_ToC" name="ToCInitiate1" title_key="WhiteRiverToCInitiateGroup" reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_toc_basic" link_challenges="true"/>
+    <challenge name="challengeInitiate5" title_key="initiate_challenge_toc_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCInitiate1" short_description_key="initiate_challenge_toc_short" description_key="initiate_challenge_toc_long" reward_text_key="initiate_challenge_toc_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_citizencard_name"/>
+    </challenge>
+    <challenge_group category="White_River_ToC" name="ToCCitizen1" title_key="WhiteRiverToCCitizenGroup" reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_toc_basic" link_challenges="true"/>
+    <challenge_group category="White_River_ToC" name="ToCCitizen2" title_key="WhiteRiverToCCitizenGroup" reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_homesteading" link_challenges="true"/>
+    <challenge name="challengeCitizen25" title_key="citizen_challenge_toc_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCCitizen2" short_description_key="citizen_challenge_toc_short" description_key="citizen_challenge_toc_long" reward_text_key="citizen_challenge_toc_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_veterancard_name"/>
+    </challenge>
+    <challenge_group category="White_River_ToC" name="ToCVeteran1" title_key="WhiteRiverToCVeteranGroup" reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true"/>
+    <challenge_group category="White_River_ToC" name="ToCVeteran2" title_key="WhiteRiverToCVeteranGroup" reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true"/>
+    <challenge name="challengeVeteran26" title_key="veteran_challenge_toc_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCVeteran2" short_description_key="veteran_challenge_toc_short" description_key="veteran_challenge_toc_long" reward_text_key="veteran_challenge_toc_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_elitecard_name"/>
+    </challenge>
+    <challenge_group category="White_River_ToC" name="ToCElite1" title_key="WhiteRiverToCEliteGroup" reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true"/>
+    <challenge name="challengeInitiate99" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="ToCInitiate1" prerequisite_hint="tocInitiatechallengeGroupCompleteHint1" hint="tocInitiatechallengeGroupCompleteHint2" short_description_key="tocInitiatechallengeGroupCompleteShort" description_key="tocInitiatechallengeGroupCompleteDesc" redeem_always="false">
+      <objective type="ChallengeComplete" challenge="ToCInitiate1" is_redeemed="true" is_group="true"/>
+    </challenge>
+    <challenge name="challengeCitizen99" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="ToCCitizen2" prerequisite_hint="tocCitizenchallengeGroupCompleteHint1" hint="tocCitizenchallengeGroupCompleteHint2" short_description_key="tocCitizenchallengeGroupCompleteShort" description_key="tocCitizenchallengeGroupCompleteDesc" redeem_always="false">
+      <objective type="ChallengeComplete" challenge="ToCCitizen2" is_redeemed="true" is_group="true"/>
+    </challenge>
+    <challenge name="challengeVeteran99" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="ToCVeteran2" prerequisite_hint="tocVeteranchallengeGroupCompleteHint1" hint="tocVeteranchallengeGroupCompleteHint2" short_description_key="tocVeteranchallengeGroupCompleteShort" description_key="tocVeteranchallengeGroupCompleteDesc" redeem_always="false">
+      <objective type="ChallengeComplete" challenge="ToCVeteran2" is_redeemed="true" is_group="true"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC__REQUIRED -->
+  <!-- Start XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+    <challenge name="challengeVeteran25" title_key="veteran_challenge_toc_amelia_name" icon="ui_game_symbol_wind" group="ToCVeteran2" short_description_key="veteran_challenge_toc_amelia_short" description_key="veteran_challenge_toc_amelia_long" reward_text_key="veteran_challenge_toc_amelia_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_amelia1_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Amelias_Gyrocopter -->
+  <!-- Start XML_Block: WhiteRiverToC_Bambis_Bow -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
+    <challenge name="challengeCitizen13" title_key="citizen_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1" short_description_key="citizen_challenge_toc_bambi_short" description_key="citizen_challenge_toc_bambi_long" reward_text_key="citizen_challenge_toc_bambi_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_bambi_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Bambis_Bow -->
+  <!-- Start XML_Block: WhiteRiverToC_Bambis_Bow -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+    <challenge name="challengeVeteran14" title_key="veteran_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCVeteran1" short_description_key="veteran_challenge_toc_bambi_short" description_key="veteran_challenge_toc_bambi_long" reward_text_key="veteran_challenge_toc_bambi_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_bambi_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Bambis_Bow -->
+  <!-- Start XML_Block: WhiteRiverToC_Bambis_Bow -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+    <challenge name="challengeElite5" title_key="elite_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCElite1" short_description_key="elite_challenge_toc_bambi_short" description_key="elite_challenge_toc_bambi_long" reward_text_key="elite_challenge_toc_bambi_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="elitequestitem_toc_bambi_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Bambis_Bow -->
+  <!-- Start XML_Block: WhiteRiverToC_Bear_Grylls_Claws -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
+    <challenge name="challengeInitiate15" title_key="initiate_challenge_toc_grylls_name" icon="ui_game_symbol_knife" group="ToCInitiate1" short_description_key="initiate_challenge_toc_grylls_short" description_key="initiate_challenge_toc_grylls_long" reward_text_key="initiatequestitem_toc_claws_name" reward_event="challenge_reward_default">
+      <objective type="Craft" item="initiateitem_toc_claws_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Bear_Grylls_Claws -->
+  <!-- Start XML_Block: WhiteRiverToC_Bear_Grylls_Claws -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
+    <challenge name="challengeCitizen16" title_key="citizen_challenge_toc_grylls_name" icon="ui_game_symbol_knife" group="ToCCitizen1" short_description_key="citizen_challenge_toc_grylls_short" description_key="citizen_challenge_toc_grylls_long" reward_text_key="citizen_challenge_toc_grylls_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_claws_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Bear_Grylls_Claws -->
+  <!-- Start XML_Block: WhiteRiverToC_BlackBarts_Dig_Tools -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+    <challenge name="challengeVeteran13" title_key="veteran_challenge_toc_blackbart_name" icon="ui_game_symbol_treasure" group="ToCVeteran1" short_description_key="veteran_challenge_toc_blackbart_short" description_key="veteran_challenge_toc_blackbart_long" reward_text_key="veteran_challenge_toc_blackbart_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_blackb_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_BlackBarts_Dig_Tools -->
+  <!-- Start XML_Block: WhiteRiverToC_Brass_For_Lead -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
+    <challenge name="challengeInitiate4" title_key="initiate_challenge_toc_brass_name" icon="ui_game_symbol_challenge_basics_gather_resources" group="ToCInitiate1" short_description_key="initiate_challenge_toc_brass_short" description_key="initiate_challenge_toc_brass_long" reward_text_key="initiate_challenge_toc_brass_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_brass_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Brass_For_Lead -->
+  <!-- Start XML_Block: WhiteRiverToC_Bunyans_FireAxe -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
+    <challenge name="challengeCitizen21" title_key="citizen_challenge_toc_bunyan_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCCitizen2" short_description_key="citizen_challenge_toc_bunyan_short" description_key="citizen_challenge_toc_bunyan_long" reward_text_key="citizen_challenge_toc_bunyan_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_bunyan_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Bunyans_FireAxe -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+    <challenge name="challengeElite4" title_key="veteran_challenge_toc_daryl_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCElite1" short_description_key="veteran_challenge_toc_daryl_short" description_key="veteran_challenge_toc_daryl_long" reward_text_key="veteran_challenge_toc_daryl_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="elitequestitem_toc_daryl_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+    <challenge name="challengeVeteran21" title_key="elite_challenge_toc_daryl_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCVeteran2" short_description_key="elite_challenge_toc_daryl_short" description_key="elite_challenge_toc_daryl_long" reward_text_key="elite_challenge_toc_daryl_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_daryl_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Deschains_Revolver -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
+    <challenge name="challengeCitizen24" title_key="citizen_challenge_toc_deschain_name" icon="ui_game_symbol_pistol" group="ToCCitizen2" short_description_key="citizen_challenge_toc_deschain_short" description_key="citizen_challenge_toc_deschain_long" reward_text_key="citizen_challenge_toc_deschain_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_desch_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Deschains_Revolver -->
+  <!-- Start XML_Block: WhiteRiverToC_Dundees_Knife -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
+    <challenge name="challengeInitiate2" title_key="initiate_challenge_toc_dundee_name" icon="ui_game_symbol_knife" group="ToCInitiate1" short_description_key="initiate_challenge_toc_dundee_axe_short" description_key="initiate_challenge_toc_dundee_axe_long" reward_text_key="initiate_challenge_toc_dundee_axe_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="initiatequestitem_toc_dundee_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Dundees_Knife -->
+  <!-- Start XML_Block: WhiteRiverToC_Dundees_Knife -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
+    <challenge name="challengeCitizen12" title_key="citizen_challenge_toc_dundee_name" icon="ui_game_symbol_knife" group="ToCCitizen1" short_description_key="citizen_challenge_toc_dundee_short" description_key="citizen_challenge_toc_dundee_long" reward_text_key="citizen_challenge_toc_dundee_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_dundee_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Dundees_Knife -->
+  <!-- Start XML_Block: WhiteRiverToC_Everdeens_Arrows -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
+    <challenge name="challengeCitizen14" title_key="citizen_challenge_toc_everdeena_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1" short_description_key="citizen_challenge_toc_everdeena_short" description_key="citizen_challenge_toc_everdeena_long" reward_text_key="citizen_challenge_toc_everdeena_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_earrows_name"/>
+    </challenge>
+    <challenge name="challengeCitizen15" title_key="citizen_challenge_toc_everdeenb_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1" short_description_key="citizen_challenge_toc_everdeenb_short" description_key="citizen_challenge_toc_everdeenb_long" reward_text_key="citizen_challenge_toc_everdeenb_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_ebolts_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Everdeens_Arrows -->
+  <!-- Start XML_Block: WhiteRiverToC_Guptas_Bandages -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+    <challenge name="challengeVeteran24" title_key="veteran_challenge_toc_gupta_name" icon="ui_game_symbol_healing_factor" group="ToCVeteran2" short_description_key="veteran_challenge_toc_gupta_short" description_key="veteran_challenge_toc_gupta_long" reward_text_key="veteran_challenge_toc_gupta_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_gupta_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Guptas_Bandages -->
+  <!-- Start XML_Block: WhiteRiverToC_Jasons_Machete -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
+    <challenge name="challengeInitiate3" title_key="initiate_challenge_toc_jason_name" icon="ui_game_symbol_knife" group="ToCInitiate1" short_description_key="initiate_challenge_toc_jason_axe_short" description_key="initiate_challenge_toc_jason_axe_long" reward_text_key="initiate_challenge_toc_jason_axe_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="initiatequestitem_toc_jason_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Jasons_Machete -->
+  <!-- Start XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
+    <challenge name="challengeCitizen23" title_key="citizen_challenge_toc_kuva_name" icon="ui_game_symbol_armor_leather" group="ToCCitizen2" short_description_key="citizen_challenge_toc_kuva_short" description_key="citizen_challenge_toc_kuva_long" reward_text_key="citizen_challenge_toc_kuva_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_kuva_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <!-- Start XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+    <challenge name="challengeVeteran16" title_key="veteran_challenge_toc_kuva_name" icon="ui_game_symbol_armor_leather" group="ToCVeteran1" short_description_key="veteran_challenge_toc_kuva_short" description_key="veteran_challenge_toc_kuva_long" reward_text_key="veteran_challenge_toc_kuva_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_kuva_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Kuvas_Armor -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
+    <challenge name="challengeCitizen22" title_key="citizen_challenge_toc_leon_name" icon="ui_game_symbol_pistol" group="ToCCitizen2" short_description_key="citizen_challenge_toc_leon_short" description_key="citizen_challenge_toc_leon_long" reward_text_key="citizen_challenge_toc_leon_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_leon_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+    <challenge name="challengeVeteran15" title_key="veteran_challenge_toc_leon_name" icon="ui_game_symbol_pistol" group="ToCVeteran1" short_description_key="veteran_challenge_toc_leon_short" description_key="veteran_challenge_toc_leon_long" reward_text_key="veteran_challenge_toc_leon_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_leon_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Molino_Glass -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+    <challenge name="challengeElite6" title_key="veteran_challenge_toc_molino_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCElite1" short_description_key="veteran_challenge_toc_molino_short" description_key="veteran_challenge_toc_molino_long" reward_text_key="veteran_challenge_toc_molino_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Molino_Glass -->
+  <!-- Start XML_Block: WhiteRiverToC_Molino_Glass -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+    <challenge name="challengeVeteran23" title_key="elite_challenge_toc_molino_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCVeteran2" short_description_key="elite_challenge_toc_molino_short" description_key="elite_challenge_toc_molino_long" reward_text_key="elite_challenge_toc_molino_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Molino_Glass -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+    <challenge name="challengeVeteran22" title_key="veteran_challenge_toc_pavlichenko_name" icon="ui_game_symbol_rifle" group="ToCVeteran2" short_description_key="veteran_challenge_toc_pavlichenko_short" description_key="veteran_challenge_toc_pavlichenko_long" reward_text_key="veteran_challenge_toc_pavlichenko_reward" reward_event="challenge_reward_500">
+      <objective type="Craft" item="vetquestitem_toc_pav_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Remingtons_Steel_Ammo -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+    <challenge name="challengeElite3" title_key="elite_challenge_toc_remington_name" icon="ui_game_symbol_pistol" group="ToCElite1" short_description_key="elite_challenge_toc_remington_short" description_key="elite_challenge_toc_remington_long" reward_text_key="elite_challenge_toc_remington_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="elitequestitem_toc_remington_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Remingtons_Steel_Ammo -->
+  <!-- Start XML_Block: WhiteRiverToC_Rick_Danger_Auger -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+    <challenge name="challengeVeteran12" title_key="veteran_challenge_toc_rickdanger_name" icon="ui_game_symbol_treasure" group="ToCVeteran1" short_description_key="veteran_challenge_toc_rickdanger_short" description_key="veteran_challenge_toc_rickdanger_long" reward_text_key="veteran_challenge_toc_rickdanger_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_rickdanger_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Rick_Danger_Auger -->
+  <!-- Start XML_Block: WhiteRiverToC_Rick_Danger_Auger -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+    <challenge name="challengeElite2" title_key="elite_challenge_toc_rickdanger_name" icon="ui_game_symbol_treasure" group="ToCElite1" short_description_key="elite_challenge_toc_rickdanger_short" description_key="elite_challenge_toc_rickdanger_long" reward_text_key="elite_challenge_toc_rickdanger_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="elitequestitem_toc_rickdanger_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Rick_Danger_Auger -->
+  <!-- Start XML_Block: WhiteRiverToC_Spirit_of_Vengence -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+    <challenge name="challengeElite1" title_key="elite_challenge_toc_spirit_name" icon="ui_game_symbol_4x4" group="ToCElite1" short_description_key="elite_challenge_toc_spirit_short" description_key="elite_challenge_toc_spirit_long" reward_text_key="elite_challenge_toc_spirit_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_spirit_vengeance_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Spirit_of_Vengence -->
+  <!-- Start XML_Block: WhiteRiverToC_Tazas_Axe -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
+    <challenge name="challengeInitiate1" title_key="initiate_challenge_toc_initiates_axe_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCInitiate1" short_description_key="initiate_challenge_toc_initiates_axe_short" description_key="initiate_challenge_toc_initiates_axe_long" prerequisite_hint="initiate_challenge_toc_initiates_axe_Hint1" reward_text_key="initiate_challenge_toc_initiates_axe_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="initiatequestitem_toc_initiates_axe_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Tazas_Axe -->
+  <!-- Start XML_Block: WhiteRiverToC_Tazas_Axe -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
+    <challenge name="challengeCitizen11" title_key="citizen_challenge_toc_taza_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCCitizen1" short_description_key="citizen_challenge_toc_taza_short" description_key="citizen_challenge_toc_taza_long" reward_text_key="citizen_challenge_toc_taza_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="questitem_toc_taza_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Tazas_Axe -->
+  <!-- Start XML_Block: WhiteRiverToC_Tazas_Axe -->
+  <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+    <challenge name="challengeVeteran11" title_key="veteran_challenge_toc_taza_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCVeteran1" short_description_key="veteran_challenge_toc_taza_short" description_key="veteran_challenge_toc_taza_long" reward_text_key="veteran_challenge_toc_taza_reward" reward_event="challenge_reward_default">
+      <objective type="Craft" item="vetquestitem_toc_taza_name"/>
+    </challenge>
+  </insertAfter>
+  <!-- End XML_Block: WhiteRiverToC_Tazas_Axe -->
+  </config>

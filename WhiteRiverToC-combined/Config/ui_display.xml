@@ -1,16 +1,11 @@
-<configs>
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Remington's Steel Ammo by Shouden Kalferas, Based on Khaine's Steel Ammo -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/ui_display_info/item_display">
-		<item_display_info display_type="ammoBulletSteel" display_group="groupAmmo">
-			<display_entry name="EntityDamage" title_key="statEntityDamageRanged"/>
-			<display_entry name="BlockDamage" title_key="statBlockDamage"/>
-			<display_entry name="DegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" negative_preferred="true"/>
-		</item_display_info>
-	</append>
-<!-- END White River Tools of Citizenship - Remington's Steel Ammo by Shouden Kalferas, Based on Khaine's Steel Ammo -->
-
-
-</configs>
+  <config>
+  <!-- Start XML_Block: WhiteRiverToC_Remingtons_Steel_Ammo -->
+  <append xpath="/ui_display_info/item_display">
+    <item_display_info display_type="ammoBulletSteel" display_group="groupAmmo">
+      <display_entry name="EntityDamage" title_key="statEntityDamageRanged"/>
+      <display_entry name="BlockDamage" title_key="statBlockDamage"/>
+      <display_entry name="DegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" negative_preferred="true"/>
+    </item_display_info>
+  </append>
+  <!-- End XML_Block: WhiteRiverToC_Remingtons_Steel_Ammo -->
+  </config>

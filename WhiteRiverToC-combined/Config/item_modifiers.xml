@@ -1,8 +1,5 @@
-<configs>
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+  <config>
+  <!-- Start XML_Block: WhiteRiverToC_Bear_Grylls_Claws -->
   <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
     <item_property_overrides name="vetitem_toc_claws_name">
       <property name="FlameEffect" value="ParticleEffects/p_torch_wall"/>
@@ -11,109 +8,99 @@
       <property name="FlameEffect" value="ParticleEffects/p_torch_wall"/>
     </item_property_overrides>
   </append>
-<!-- END White River Tools of Citizenship - Bear Claws by Shouden Kalferas with help from SteamM0nkey -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+  <!-- End XML_Block: WhiteRiverToC_Bear_Grylls_Claws -->
+  <!-- Start XML_Block: WhiteRiverToC_Bunyans_FireAxe -->
   <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
     <item_property_overrides name="item_toc_bunyanaxe_name">
       <property name="FlameEffect" value="ItemModEffects/mod_fireaxe_flamePrefab"/>
     </item_property_overrides>
   </append>
-<!-- END White River Tools of Citizenship - Bunyan's FireAxe by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+  <!-- End XML_Block: WhiteRiverToC_Bunyans_FireAxe -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
     <item_property_overrides name="vetitem_toc_daryl_name">
-			<property name="SideOffset" value="0,0,.32"/>
-			<property name="SideScale" value="1,1,1"/>
+      <property name="SideOffset" value="0,0,.32"/>
+      <property name="SideScale" value="1,1,1"/>
     </item_property_overrides>
     <item_property_overrides name="eliteitem_toc_daryl_name">
-			<property name="SideOffset" value="0,0,.32"/>
-			<property name="SideScale" value="1,1,1"/>
+      <property name="SideOffset" value="0,0,.32"/>
+      <property name="SideScale" value="1,1,1"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
     <item_property_overrides name="vetitem_toc_daryl_name">
-			<property name="SideOffset" value="0,0,.32"/>
-			<property name="SideScale" value="1,1,1"/>
+      <property name="SideOffset" value="0,0,.32"/>
+      <property name="SideScale" value="1,1,1"/>
     </item_property_overrides>
     <item_property_overrides name="eliteitem_toc_daryl_name">
-			<property name="SideOffset" value="0,0,.32"/>
-			<property name="SideScale" value="1,1,1"/>
+      <property name="SideOffset" value="0,0,.32"/>
+      <property name="SideScale" value="1,1,1"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
     <item_property_overrides name="vetitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.092,-.06"/>
-			<property name="ScopeScale" value=".9,.9,.9"/>
+      <property name="ScopeOffset" value="0,.092,-.06"/>
+      <property name="ScopeScale" value=".9,.9,.9"/>
     </item_property_overrides>
     <item_property_overrides name="eliteitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.092,-.06"/>
-			<property name="ScopeScale" value=".9,.9,.9"/>
+      <property name="ScopeOffset" value="0,.092,-.06"/>
+      <property name="ScopeScale" value=".9,.9,.9"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
     <item_property_overrides name="vetitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.092,-.06"/>
-			<property name="ScopeScale" value=".9,.9,.9"/>
+      <property name="ScopeOffset" value="0,.092,-.06"/>
+      <property name="ScopeScale" value=".9,.9,.9"/>
     </item_property_overrides>
     <item_property_overrides name="eliteitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.092,-.06"/>
-			<property name="ScopeScale" value=".9,.9,.9"/>
+      <property name="ScopeOffset" value="0,.092,-.06"/>
+      <property name="ScopeScale" value=".9,.9,.9"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
     <item_property_overrides name="vetitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.061,-.0761"/>
-			<property name="ScopeScale" value=".9,.9,.9"/>
-			<property name="ScopeCameraOffset" value="0,0,0"/>
+      <property name="ScopeOffset" value="0,.061,-.0761"/>
+      <property name="ScopeScale" value=".9,.9,.9"/>
+      <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
     <item_property_overrides name="eliteitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.061,-.0761"/>
-			<property name="ScopeScale" value=".9,.9,.9"/>
-			<property name="ScopeCameraOffset" value="0,0,0"/>
+      <property name="ScopeOffset" value="0,.061,-.0761"/>
+      <property name="ScopeScale" value=".9,.9,.9"/>
+      <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Daryls_Crossbow -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
     <item_property_overrides name="vetitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.09,-.055"/>
-			<property name="ScopeScale" value=".6,.6,.6"/>
-			<property name="ScopeCameraOffset" value=".00008,-.021,.03"/>
+      <property name="ScopeOffset" value="0,.09,-.055"/>
+      <property name="ScopeScale" value=".6,.6,.6"/>
+      <property name="ScopeCameraOffset" value=".00008,-.021,.03"/>
     </item_property_overrides>
     <item_property_overrides name="eliteitem_toc_daryl_name">
-			<property name="ScopeOffset" value="0,.09,-.055"/>
-			<property name="ScopeScale" value=".6,.6,.6"/>
-			<property name="ScopeCameraOffset" value=".00008,-.021,.03"/>
+      <property name="ScopeOffset" value="0,.09,-.055"/>
+      <property name="ScopeScale" value=".6,.6,.6"/>
+      <property name="ScopeCameraOffset" value=".00008,-.021,.03"/>
     </item_property_overrides>
   </append>
-<!-- END White River Tools of Citizenship - Daryl's Zombie-Killer Crossbow by Shouden Kalferas, and morggin -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
+  <!-- End XML_Block: WhiteRiverToC_Daryls_Crossbow -->
+  <!-- Start XML_Block: WhiteRiverToC_Jasons_Machete -->
   <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
     <item_property_overrides name="item_toc_jason_name">
       <property name="FlameEffect" value="ItemModEffects/mod_machete_flamePrefab"/>
     </item_property_overrides>
   </append>
-<!-- END White River Tools of Citizenship - Jason's Machete by Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+  <!-- End XML_Block: WhiteRiverToC_Jasons_Machete -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
+  <append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="Sound_start" value="smg_s_fire"/>
       <property name="Sound_end" value="silencefiller"/>
@@ -129,16 +116,20 @@
       <property name="BarrelScale" value="1,1,1"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="SideOffset" value="0,.0108,.0148"/>
-			<property name="SideScale" value="1.25,1.25,1.25"/>
+      <property name="SideScale" value="1.25,1.25,1.25"/>
     </item_property_overrides>
     <item_property_overrides name="questitem_toc_leonsmg_name">
       <property name="SideOffset" value="0,.0108,.0148"/>
-			<property name="SideScale" value="1.25,1.25,1.25"/>
+      <property name="SideScale" value="1.25,1.25,1.25"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="SideOffset" value="0,.0065,0"/>
@@ -149,6 +140,8 @@
       <property name="SideScale" value="1.5,1.5,1.5"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="ScopeOffset" value="0,.0999,-.2534"/>
@@ -161,6 +154,8 @@
       <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="ScopeOffset" value="-.0012,.098,-.2405"/>
@@ -173,6 +168,8 @@
       <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="ScopeOffset" value="0,-.1029,-.1373"/>
@@ -185,6 +182,8 @@
       <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Leons_SMG -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="ScopeOffset" value=".0001,.1,-.15"/>
@@ -197,62 +196,67 @@
       <property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
     </item_property_overrides>
   </append>
-<!-- END White River Tools of Citizenship - Leon's Modded SMG by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-<!-- #################################### -->
-<!-- START White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-<!-- Website: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/ -->
-<!-- Download URL: https://github.com/XelaNull/7DTD-WhiteRiver_ToC.git -->
-	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+  <!-- End XML_Block: WhiteRiverToC_Leons_SMG -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
     <item_property_overrides name="questitem_toc_pav_rifle_name">
-			<property name="Sound_start" value="sniperrifle_s_fire"/>
-			<property name="Sound_loop" value="sniperrifle_s_fire"/>
-			<property name="BarrelOffset" value="0,-.02,.2182"/>
-			<property name="BarrelScale" value=".88,.88,.88"/>
+      <property name="Sound_start" value="sniperrifle_s_fire"/>
+      <property name="Sound_loop" value="sniperrifle_s_fire"/>
+      <property name="BarrelOffset" value="0,0,0"/>
+      <property name="BarrelScale" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
     <item_property_overrides name="questitem_toc_pav_rifle_name">
-			<property name="SideOffset" value="0,.003,.1674"/>
-			<property name="SideScale" value="1,1,1"/>
+      <property name="SideOffset" value="0,0,0"/>
+      <property name="SideScale" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
     <item_property_overrides name="questitem_toc_pav_rifle_name">
-			<property name="SideOffset" value="0,-.0025,.175"/>
-			<property name="SideScale" value="1.12,1.12,1.12"/>
+      <property name="SideOffset" value="0,0,0"/>
+      <property name="SideScale" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
     <item_property_overrides name="questitem_toc_pav_rifle_name">
-			<property name="ScopeOffset" value="0,.0736,-.1497"/>
-			<property name="ScopeScale" value=".9,.9,.9"/>
-			<property name="ScopeCameraOffset" value="0,0,0"/>
+      <property name="ScopeOffset" value="0,0,0"/>
+      <property name="ScopeScale" value="0,0,0"/>
+      <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
     <item_property_overrides name="questitem_toc_pav_rifle_name">
-			<property name="ScopeOffset" value="-.0018,.07,-.10"/>
-			<property name="ScopeScale" value="1.6,1.6,1.6"/>
-			<property name="ScopeCameraOffset" value="0,0,0"/>
+      <property name="ScopeOffset" value="0,0,0"/>
+      <property name="ScopeScale" value="0,0,0"/>
+      <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
     <item_property_overrides name="questitem_toc_pav_rifle_name">
-			<property name="ScopeOffset" value="0,0,0"/>
-			<property name="ScopeScale" value="1,1,1"/>
-			<property name="ScopeCameraOffset" value="0,0,0"/>
+      <property name="ScopeOffset" value="0,0,0"/>
+      <property name="ScopeScale" value="0,0,0"/>
+      <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  <!-- Start XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
   <append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
     <item_property_overrides name="questitem_toc_pav_rifle_name">
-			<property name="ScopeOffset" value="0,.073,-.13"/>
-			<property name="ScopeScale" value=".7,.7,.7"/>
-			<property name="ScopeCameraOffset" value="0,-.0147,.12"/>
+      <property name="ScopeOffset" value="0,0,0"/>
+      <property name="ScopeScale" value="0,0,0"/>
+      <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
-<!-- END White River Tools of Citizenship - Pavlichenko's Rifle by Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet -->
-
-
-</configs>
+  <!-- End XML_Block: WhiteRiverToC_Pavlichenkos_Rifle -->
+  </config>
